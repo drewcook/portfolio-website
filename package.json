@@ -13,6 +13,10 @@
     "lint:formatting": "npx prettier --config ./prettier.config.js **/*.* --check",
     "fix:formatting": "npx prettier --config ./prettier.config.js **/*.* --write"
   },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
   "dependencies": {
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3"
