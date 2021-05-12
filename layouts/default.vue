@@ -1,6 +1,6 @@
 <template>
 	<v-app dark>
-		<v-app-bar :clipped-left="clipped" fixed app>
+		<v-app-bar app>
 			<v-container>
 				<v-row class="d-flex justify-space-between align-center">
 					<v-col>
@@ -25,7 +25,7 @@
 				<nuxt />
 			</v-container>
 		</v-main>
-		<v-footer :absolute="!fixed" app>
+		<v-footer>
 			<span>&copy; {{ new Date().getFullYear() }}</span>
 		</v-footer>
 	</v-app>
