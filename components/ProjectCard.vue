@@ -15,15 +15,37 @@
 		</v-card-text>
 		<v-card-actions>
 			<v-spacer />
-			<v-btn color="primary"><a :href="project.demoUrl" target="_blank">Demo</a></v-btn>
-			<v-btn color="info"><a :href="project.codeUrl" target="_blank">Code</a></v-btn>
+			<v-btn color="primary">
+				<a :href="project.demoUrl" target="_blank">
+					<v-icon>{{ demoIcon }}</v-icon>
+					Demo
+				</a>
+			</v-btn>
+			<v-btn color="info">
+				<a :href="project.codeUrl" target="_blank">
+					<v-icon>{{ githubIcon }}</v-icon>
+					Code
+				</a>
+			</v-btn>
 		</v-card-actions>
 	</v-card>
 </template>
 
 <script>
+	import { mdiDesktopMac, mdiGithub } from '@mdi/js'
 	export default {
-		props: ['project'],
+		props: {
+			project: {
+				type: Object,
+				default: () => ({}),
+			},
+		},
+		data() {
+			return {
+				demoIcon: mdiDesktopMac,
+				githubIcon: mdiGithub,
+			}
+		},
 	}
 </script>
 
