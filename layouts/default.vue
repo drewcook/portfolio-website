@@ -55,18 +55,15 @@
 
 		<!-- Header and Nav Btn -->
 		<v-container>
-			<v-row class="d-flex justify-space-between align-center">
-				<v-col>
-					<nuxt-link to="/" tag="h1" class="title">
-						<v-app-bar-title>{{ title }}</v-app-bar-title>
-					</nuxt-link>
-				</v-col>
-				<v-col class="d-flex justify-end">
-					<v-app-bar-nav-icon class="nav-btn" x-large @click="toggleNav">
-						<v-icon>{{ navOpen ? closeIcon : menuIcon }}</v-icon>
-					</v-app-bar-nav-icon>
-				</v-col>
-			</v-row>
+			<div class="mb-9">
+				<nuxt-link to="/" tag="h1" class="title">
+					<v-app-bar-title>{{ title }}</v-app-bar-title>
+				</nuxt-link>
+
+				<v-app-bar-nav-icon class="nav-btn" x-large @click="toggleNav">
+					<v-icon>{{ navOpen ? closeIcon : menuIcon }}</v-icon>
+				</v-app-bar-nav-icon>
+			</div>
 		</v-container>
 
 		<!-- Page Content -->
@@ -163,11 +160,16 @@
 
 	.title {
 		cursor: pointer;
+		left: 5%;
+		position: fixed;
+		text-shadow: 1px 1px 5px #111;
+		top: 5%;
+		z-index: 99;
 	}
 
 	.nav-btn {
 		background-color: $primary;
-		box-shadow: 0 0 5px #333;
+		box-shadow: 0 0 9px #111;
 		height: 60px;
 		position: fixed;
 		right: 5%;
