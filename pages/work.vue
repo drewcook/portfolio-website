@@ -24,7 +24,7 @@
 						codeUrl: 'https://github.com/drewcook/beerbuddy-api',
 						description:
 							'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The backend is built in node.js and express and uses MongoDB for storage.',
-						techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT'],
+						techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
 					},
 					{
 						title: 'BeerBuddy Web',
@@ -49,6 +49,13 @@
 						description:
 							'Gutar Exchange is built using the Nuxt.js framework. It is a web application that allows users to rent guitars in the style of AirBnb. You can rent out guitars which will then get added to your rental list.',
 						techStack: ['Nuxt.js', 'Vue.js'],
+					},
+					{
+						title: 'Vidly API',
+						demoUrl: 'https://vidly-service.herokuapp.com',
+						codeUrl: 'https://github.com/drewcook/vidly-service',
+						description: '',
+						techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
 					},
 					{
 						title: 'You Got Served',

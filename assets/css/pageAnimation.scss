@@ -1,0 +1,14 @@
+/*
+  These are the transition definitions for the page compnent. These transitions will occur on each time a page is entered or left.page-enter
+
+  These will apply a fade when navigating from page to page, resulting in a cleaner UX.
+*/
+.page-enter-active,
+.page-leave-active {
+	transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+	opacity: 0;
+}
