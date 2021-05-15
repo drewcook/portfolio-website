@@ -1,0 +1,40 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify from the originals
+// Source - https://github.com/vuetifyjs/vuetify/blob/8bb752b210d25fbebcea12cd073d2ce4986f5e12/packages/vuetify/src/styles/settings/_variables.scss
+
+/* DC Color Palette */
+$dc-red: #e63946;
+$dc-neutral: #f1faee;
+$dc-blue-lt: #a8dadc;
+$dc-blue-md: #457b9d;
+$dc-blue-dk: #1d3557;
+
+$dc-light: #efefef;
+$dc-gray: #646d78;
+$dc-gray-lt: #d0cdcd;
+$dc-dark: #071104;
+
+/* Roscoe Color Palette */
+$r-green: #1eb05d;
+$r-cyan: #2ba0b4;
+
+
+// Colors to Use
+$primary: $dc-blue-md;
+$secondary: $dc-blue-lt;
+$accent: $dc-red;
+
+$bg-color: $dc-light;
+$border-color: $dc-gray;
+
+
+/* Fonts and Typography */
+$font-size-root: 20px;
+
+$heading-font-family: 'Prompt', monospace;
+$heading-color: $dc-blue-dk;
+
+$body-font-family: 'Libre Franklin', sans-serif;
+$body-color: $dc-dark;
+

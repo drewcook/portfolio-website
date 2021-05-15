@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+// import colors from 'vuetify/es5/util/colors'
 
 export default {
 	// Global page headers: https://go.nuxtjs.dev/config-head
@@ -17,7 +17,7 @@ export default {
 	},
 
 	// Global CSS: https://go.nuxtjs.dev/config-css
-	css: [],
+	css: ['animate.css', 'hover.css', '~/assets/scss/styles'],
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 	plugins: [],
@@ -28,30 +28,54 @@ export default {
 	// Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 	buildModules: [
 		// https://go.nuxtjs.dev/eslint
-		'@nuxtjs/eslint-module',
+		[
+			'@nuxtjs/eslint-module',
+			{
+				fix: true,
+			},
+		],
 		// https://go.nuxtjs.dev/stylelint
-		'@nuxtjs/stylelint-module',
+		[
+			'@nuxtjs/stylelint-module',
+			{
+				fix: true,
+			},
+		],
 		// https://go.nuxtjs.dev/vuetify
 		'@nuxtjs/vuetify',
+		// https://google-fonts.nuxtjs.org/
+		'@nuxtjs/google-fonts',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [],
 
+	googleFonts: {
+		families: {
+			'Libre+Franklin': [100, 300, 600],
+			'Titillium+Web': [200, 400, 600, 900],
+			Prompt: true,
+		},
+	},
+
 	// Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
 	vuetify: {
-		customVariables: ['~/assets/variables.scss'],
+		customVariables: ['~/assets/scss/_variables.scss'],
+		treeShake: true,
+		defaultFonts: false,
 		theme: {
-			dark: true,
+			options: {
+				customPropreties: true,
+			},
 			themes: {
-				dark: {
-					primary: colors.blue.darken2,
-					accent: colors.grey.darken3,
-					secondary: colors.amber.darken3,
-					info: colors.teal.lighten1,
-					warning: colors.amber.base,
-					error: colors.deepOrange.accent4,
-					success: colors.green.accent3,
+				light: {
+					primary: '#457b9d',
+					secondary: '#a8dadc',
+					accent: '#e63946',
+					error: '#f44336',
+					warning: '#ffc107',
+					info: '#009688',
+					success: '#4caf50',
 				},
 			},
 		},

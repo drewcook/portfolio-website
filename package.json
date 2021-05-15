@@ -19,13 +19,17 @@
     "npm": "6.x"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "core-js": "^3.12.1",
+    "hamburgers": "^1.1.3",
+    "hover.css": "^2.3.2",
     "nuxt": "^2.15.5"
   },
   "devDependencies": {
     "@mdi/js": "^5.9.55",
     "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-fonts": "^1.3.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "@nuxtjs/vuetify": "^1.11.3",
     "altheajs-prettier-config": "^1.1.4",
