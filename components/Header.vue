@@ -65,23 +65,26 @@
 				<span class="site-subtitle" :class="{ lighten: navOpen }">{{ subtitle }}</span>
 			</nuxt-link>
 
-			<v-app-bar-nav-icon class="nav-btn hvr-pulse" x-large @click="toggleNav">
-				<v-icon class="nav-btn-icon">{{ navOpen ? closeIcon : menuIcon }}</v-icon>
+			<v-app-bar-nav-icon
+				class="nav-btn hvr-grow hamburger hamburger--spring"
+				:class="{ 'is-active': navOpen }"
+				@click="toggleNav"
+			>
+				<span class="nav-btn-icon hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
 			</v-app-bar-nav-icon>
 		</header>
 	</div>
 </template>
 
 <script>
-	import { mdiClose, mdiEmail, mdiGithub, mdiLinkedin, mdiMenu } from '@mdi/js'
+	import { mdiEmail, mdiGithub, mdiLinkedin } from '@mdi/js'
 	export default {
 		data() {
 			return {
 				title: 'Drew Cook',
 				subtitle: 'Builder of web things.',
-				sidebar: false,
-				menuIcon: mdiMenu,
-				closeIcon: mdiClose,
 				navOpen: false,
 				opened: false,
 				applyGradient: true,
@@ -178,7 +181,7 @@
 	.site-subtitle {
 		color: $dc-gray;
 		display: block;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.2;
 		text-align: right;
 		text-shadow: none;
@@ -197,9 +200,21 @@
 	.nav-btn {
 		background-color: $dc-red;
 		box-shadow: 2px 2px 0 $dc-blue-lt;
-		color: #fff !important;
-		height: 60px;
-		width: 60px;
+		height: 70px !important;
+		width: 70px !important;
+
+		&:hover {
+			opacity: 1 !important;
+		}
+	}
+
+	.nav-btn-icon .hamburger-inner {
+		background-color: #fff;
+
+		&::before,
+		&::after {
+			background-color: #fff;
+		}
 	}
 
 	.nav-list {

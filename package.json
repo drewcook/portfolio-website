@@ -21,6 +21,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "core-js": "^3.12.1",
+    "hamburgers": "^1.1.3",
     "hover.css": "^2.3.2",
     "nuxt": "^2.15.5"
   },
