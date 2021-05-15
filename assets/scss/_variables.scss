@@ -29,6 +29,11 @@ $border-color: $dc-gray;
 
 
 /* Fonts and Typography */
-$heading-font-family: 'Prompt', monospace;
-$body-font-family: 'Libre Franklin', sans-serif;
 $font-size-root: 20px;
+
+$heading-font-family: 'Prompt', monospace;
+$heading-color: $dc-blue-dk;
+
+$body-font-family: 'Libre Franklin', sans-serif;
+$body-color: $dc-dark;
+

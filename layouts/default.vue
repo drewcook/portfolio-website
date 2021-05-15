@@ -18,10 +18,10 @@
 </template>
 
 <style lang="scss" scoped>
-	$header-height: 180px;
+	$header-height: 190px;
 
 	.scroll-away-spacer {
-		background-image: linear-gradient(0deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 50%);
+		background-image: linear-gradient(0deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 40%);
 		height: $header-height;
 		position: fixed;
 		width: 100%;

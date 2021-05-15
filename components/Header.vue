@@ -62,6 +62,7 @@
 		<header class="site-header">
 			<nuxt-link to="/" tag="h1" class="site-title">
 				<v-app-bar-title>{{ title }}</v-app-bar-title>
+				<span class="site-subtitle" :class="{ lighten: navOpen }">{{ subtitle }}</span>
 			</nuxt-link>
 
 			<v-app-bar-nav-icon class="nav-btn hvr-pulse" x-large @click="toggleNav">
@@ -76,7 +77,8 @@
 	export default {
 		data() {
 			return {
-				title: 'Drew Cook, Developer',
+				title: 'Drew Cook',
+				subtitle: 'Builder of web things.',
 				sidebar: false,
 				menuIcon: mdiMenu,
 				closeIcon: mdiClose,
@@ -158,13 +160,37 @@
 	.site-title {
 		color: $accent;
 		cursor: pointer;
-		font-size: 50px;
 		font-weight: 900;
 		text-shadow: 3px 3px 0 $dc-blue-lt;
 
 		div {
 			font-family: inherit;
 			font-size: inherit;
+			line-height: 1;
+			padding-top: 10px;
+		}
+
+		@media (min-width: 700px) {
+			font-size: 50px;
+		}
+	}
+
+	.site-subtitle {
+		color: $dc-gray;
+		display: block;
+		font-size: 14px;
+		line-height: 1.2;
+		text-align: right;
+		text-shadow: none;
+		transition: color 100ms linear 900ms;
+
+		&.lighten {
+			color: #fff;
+			transition: color 100ms ease-in;
+		}
+
+		@media (min-width: 700px) {
+			font-size: 20px;
 		}
 	}
 
