@@ -23,17 +23,26 @@ h6 {
 	}
 
 	&.v-footer {
-		background-color: $dc-dark !important;
-		color: $dc-neutral !important;
+		background-color: $dc-neutral !important;
+		border-color: $dc-gray-lt !important;
+		border-top: 1px dotted;
+		color: $dc-dark !important;
+		font-size: 14px;
+		padding: 10px 0;
 	}
 }
 
-// .v-application main a {
-// 	color: $secondary;
-// 	text-decoration: none;
-// 	transition: color 300ms ease-in-out;
+// Links that appear within page content
+#site-content {
+	a:not(button a) {
+		color: $primary;
+		text-decoration: none;
+		transition: color 200ms ease-in-out;
+	}
 
-// 	&:hover {
-// 		color: $primary;
-// 	}
-// }
+	a:not(button a):hover {
+		color: $accent;
+		transition: color 200ms ease-in-out;
+	}
+}
+

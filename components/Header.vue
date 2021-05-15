@@ -1,13 +1,7 @@
 <template>
 	<div>
 		<!-- Overlay Menu -->
-		<transition
-			name="slide-in"
-			@before-enter="beforeEnter"
-			@after-enter="afterEnter"
-			@before-leave="beforeLeave"
-			@after-leave="afterLeave"
-		>
+		<transition name="slide-in" @after-enter="afterEnter" @before-leave="beforeLeave">
 			<v-sheet v-show="navOpen" class="overlay">
 				<v-container>
 					<transition name="nav">
@@ -26,32 +20,8 @@
 					</transition>
 					<transition name="contact">
 						<div v-show="opened" class="text-center">
-							<h3>Get In Touch With Me</h3>
-							<div class="contact-icons">
-								<a
-									href="https://linkedin.com/in/drewcook2"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<v-btn color="primary" elevation="2" fab class="hvr-grow">
-										<v-icon large color="secondary">{{ linkedInIcon }}</v-icon>
-									</v-btn>
-								</a>
-								<a href="https://github.com/drewcook" target="_blank" rel="noopener noreferrer">
-									<v-btn color="primary" elevation="2" fab class="hvr-grow">
-										<v-icon large color="secondary">{{ githubIcon }}</v-icon>
-									</v-btn>
-								</a>
-								<a
-									href="mailto:altheawebservices@gmail.com"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<v-btn color="primary" elevation="2" fab class="hvr-grow">
-										<v-icon large color="secondary">{{ emailIcon }}</v-icon>
-									</v-btn>
-								</a>
-							</div>
+							<h3>Let's Be Social Buddies</h3>
+							<contact-icons />
 						</div>
 					</transition>
 				</v-container>
@@ -79,7 +49,6 @@
 </template>
 
 <script>
-	import { mdiEmail, mdiGithub, mdiLinkedin } from '@mdi/js'
 	export default {
 		data() {
 			return {
@@ -87,10 +56,6 @@
 				subtitle: 'Builder of web things.',
 				navOpen: false,
 				opened: false,
-				applyGradient: true,
-				githubIcon: mdiGithub,
-				linkedInIcon: mdiLinkedin,
-				emailIcon: mdiEmail,
 				navLinks: [
 					{
 						title: 'About',
@@ -115,23 +80,21 @@
 			toggleNav() {
 				this.navOpen = !this.navOpen
 			},
-			beforeEnter() {
-				this.applyGradient = false
-			},
 			afterEnter() {
 				this.opened = true
 			},
 			beforeLeave() {
 				this.opened = false
 			},
-			afterLeave() {
-				this.applyGradient = true
-			},
 		},
 	}
 </script>
 
 <style lang="scss" scoped>
+	h3 {
+		color: #fff;
+	}
+
 	.container {
 		align-items: center;
 		display: flex;
@@ -197,6 +160,7 @@
 		}
 	}
 
+	// Hamburger Menu
 	.nav-btn {
 		background-color: $dc-red;
 		box-shadow: 2px 2px 0 $dc-blue-lt;
@@ -217,14 +181,10 @@
 		}
 	}
 
+	// Navigation
 	.nav-list {
 		background: none !important;
-		height: 50%;
-	}
-
-	a {
-		color: #fff;
-		text-decoration: none;
+		margin-bottom: 10%;
 	}
 
 	.nav-link {
@@ -233,24 +193,10 @@
 		font-size: 48px;
 		margin: 15px auto;
 		text-align: center;
+		text-decoration: none;
 
 		&::before {
 			background-color: $dc-red;
-		}
-	}
-
-	h3 {
-		color: #fff;
-	}
-
-	.contact-icons {
-		align-items: center;
-		display: flex;
-		justify-content: space-evenly;
-		margin: 20px 0;
-
-		a {
-			margin: 0 5px;
 		}
 	}
 </style>

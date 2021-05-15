@@ -4,7 +4,7 @@
 		<div class="scroll-away-spacer" />
 
 		<!-- Page Content -->
-		<v-main class="overflow-y-auto site-content">
+		<v-main id="site-content" class="overflow-y-auto">
 			<v-container>
 				<nuxt />
 			</v-container>
@@ -12,13 +12,15 @@
 
 		<!-- Site Footer -->
 		<v-footer>
-			<span> &copy; {{ new Date().getFullYear() }} | Drew Cook </span>
+			<v-container>
+				<span> &copy; {{ new Date().getFullYear() }} | Drew Cook </span>
+			</v-container>
 		</v-footer>
 	</v-app>
 </template>
 
 <style lang="scss" scoped>
-	$header-height: 190px;
+	$header-height: 185px;
 
 	.scroll-away-spacer {
 		background-image: linear-gradient(0deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 40%);
@@ -28,7 +30,7 @@
 		z-index: 50;
 	}
 
-	.site-content {
+	#site-content {
 		margin-top: $header-height;
 	}
 </style>
