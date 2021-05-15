@@ -21,7 +21,7 @@
 					Demo
 				</a>
 			</v-btn>
-			<v-btn color="info">
+			<v-btn color="accent">
 				<a :href="project.codeUrl" target="_blank">
 					<v-icon>{{ githubIcon }}</v-icon>
 					Code
