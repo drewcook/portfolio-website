@@ -1,0 +1,46 @@
+/* Menu Overlay */
+.slide-in-enter-active {
+	animation: slideInDown;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in;
+}
+
+.slide-in-leave-active {
+	animation: slideOutUp;
+	animation-delay: 500ms;
+	animation-duration: 500ms;
+	animation-timing-function: ease-in;
+}
+
+/* Navigation Links */
+.nav-enter-active {
+	animation: fadeIn;
+	animation-duration: 2000ms;
+}
+
+.nav-leave-active {
+	animation: bounceOutUp;
+	animation-duration: 1500ms;
+}
+
+/* Contact Info Overlay */
+.contact-enter-active {
+	animation: fadeIn;
+	animation-duration: 2000ms;
+}
+
+.contact-leave-active {
+	animation: bounceOutUp;
+	animation-duration: 1500ms;
+}
+
+/* Nuxt Page Transitions */
+.page-enter-active,
+.page-leave-active {
+	transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+	opacity: 0;
+}

@@ -1,0 +1,37 @@
+/* Main */
+html,
+body {
+	background: #efefef;
+}
+
+/* Fonts and Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $heading-font-family;
+}
+
+// Vuetify Light Theme Overrides
+.theme--light {
+	&.v-application {
+		background-color: $dc-light;
+	}
+
+	&.v-footer {
+		background-color: $dc-dark !important;
+		color: $dc-neutral !important;
+	}
+}
+
+// .v-application main a {
+// 	color: $secondary;
+// 	text-decoration: none;
+// 	transition: color 300ms ease-in-out;
+
+// 	&:hover {
+// 		color: $primary;
+// 	}
+// }
