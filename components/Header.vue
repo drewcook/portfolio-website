@@ -30,7 +30,7 @@
 
 		<!-- Header and Nav Btn -->
 		<header class="site-header">
-			<nuxt-link to="/" tag="h1" class="site-title">
+			<nuxt-link to="/" tag="h1" class="site-title" @click.native="navOpen = false">
 				<v-app-bar-title>{{ title }}</v-app-bar-title>
 				<span class="site-subtitle" :class="{ lighten: navOpen }">{{ subtitle }}</span>
 			</nuxt-link>
@@ -56,6 +56,7 @@
 				subtitle: 'Builder of web things.',
 				navOpen: false,
 				opened: false,
+				scrollY: 0,
 				navLinks: [
 					{
 						title: 'About',
@@ -77,14 +78,21 @@
 			}
 		},
 		methods: {
+			togglePreventScroll() {
+				document.body.classList.toggle('prevent-scroll')
+			},
 			toggleNav() {
 				this.navOpen = !this.navOpen
 			},
 			afterEnter() {
 				this.opened = true
+				this.scrollY = window.scrollY
+				this.togglePreventScroll()
 			},
 			beforeLeave() {
 				this.opened = false
+				this.togglePreventScroll()
+				window.scrollTo(0, this.scrollY)
 			},
 		},
 	}

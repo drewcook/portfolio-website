@@ -5,6 +5,12 @@ body {
 	color: $body-color;
 }
 
+// This is used when the overlay menu is open
+.prevent-scroll {
+	height: 100vh;
+	overflow-y: hidden;
+}
+
 /* Fonts and Typography */
 h1,
 h2,

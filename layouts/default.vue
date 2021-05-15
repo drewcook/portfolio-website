@@ -4,7 +4,7 @@
 		<div class="scroll-away-spacer" />
 
 		<!-- Page Content -->
-		<v-main id="site-content" class="overflow-y-auto">
+		<v-main id="site-content">
 			<v-container>
 				<nuxt />
 			</v-container>
