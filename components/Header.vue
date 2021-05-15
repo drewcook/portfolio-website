@@ -1,0 +1,215 @@
+<template>
+	<div>
+		<!-- Overlay Menu -->
+		<transition
+			name="slide-in"
+			@before-enter="beforeEnter"
+			@after-enter="afterEnter"
+			@before-leave="beforeLeave"
+			@after-leave="afterLeave"
+		>
+			<v-sheet v-show="navOpen" class="overlay">
+				<v-container>
+					<transition name="nav">
+						<!-- Main Navigation -->
+						<v-list v-show="opened" nav class="nav-list">
+							<nuxt-link
+								v-for="link in navLinks"
+								:key="link.title"
+								:to="link.to"
+								class="nav-link hvr-underline-from-right hvr-float"
+								@click.native="toggleNav"
+							>
+								{{ link.title }}
+							</nuxt-link>
+						</v-list>
+					</transition>
+					<transition name="contact">
+						<div v-show="opened" class="text-center">
+							<h3>Get In Touch With Me</h3>
+							<div class="contact-icons">
+								<a
+									href="https://linkedin.com/in/drewcook2"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<v-btn color="primary" elevation="2" fab class="hvr-grow">
+										<v-icon large color="secondary">{{ linkedInIcon }}</v-icon>
+									</v-btn>
+								</a>
+								<a href="https://github.com/drewcook" target="_blank" rel="noopener noreferrer">
+									<v-btn color="primary" elevation="2" fab class="hvr-grow">
+										<v-icon large color="secondary">{{ githubIcon }}</v-icon>
+									</v-btn>
+								</a>
+								<a
+									href="mailto:altheawebservices@gmail.com"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<v-btn color="primary" elevation="2" fab class="hvr-grow">
+										<v-icon large color="secondary">{{ emailIcon }}</v-icon>
+									</v-btn>
+								</a>
+							</div>
+						</div>
+					</transition>
+				</v-container>
+			</v-sheet>
+		</transition>
+
+		<!-- Header and Nav Btn -->
+		<header class="site-header">
+			<nuxt-link to="/" tag="h1" class="site-title">
+				<v-app-bar-title>{{ title }}</v-app-bar-title>
+			</nuxt-link>
+
+			<v-app-bar-nav-icon class="nav-btn hvr-pulse" x-large @click="toggleNav">
+				<v-icon class="nav-btn-icon">{{ navOpen ? closeIcon : menuIcon }}</v-icon>
+			</v-app-bar-nav-icon>
+		</header>
+	</div>
+</template>
+
+<script>
+	import { mdiClose, mdiEmail, mdiGithub, mdiLinkedin, mdiMenu } from '@mdi/js'
+	export default {
+		data() {
+			return {
+				title: 'Drew Cook, Developer',
+				sidebar: false,
+				menuIcon: mdiMenu,
+				closeIcon: mdiClose,
+				navOpen: false,
+				opened: false,
+				applyGradient: true,
+				githubIcon: mdiGithub,
+				linkedInIcon: mdiLinkedin,
+				emailIcon: mdiEmail,
+				navLinks: [
+					{
+						title: 'About',
+						to: '/about',
+					},
+					{
+						title: 'Work',
+						to: '/work',
+					},
+					{
+						title: 'Skills',
+						to: '/skills',
+					},
+					{
+						title: 'Contact',
+						to: '/contact',
+					},
+				],
+			}
+		},
+		methods: {
+			toggleNav() {
+				this.navOpen = !this.navOpen
+			},
+			beforeEnter() {
+				this.applyGradient = false
+			},
+			afterEnter() {
+				this.opened = true
+			},
+			beforeLeave() {
+				this.opened = false
+			},
+			afterLeave() {
+				this.applyGradient = true
+			},
+		},
+	}
+</script>
+
+<style lang="scss" scoped>
+	.container {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+	}
+
+	.overlay {
+		background: linear-gradient(0.35turn, $dc-blue-md, $dc-blue-dk) !important;
+		height: 100vh;
+		position: fixed;
+		width: 100vw;
+		z-index: 99;
+	}
+
+	.site-header {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		left: 5%;
+		padding-top: 15px;
+		position: fixed;
+		right: 5%;
+		top: 0;
+		z-index: 100;
+	}
+
+	.site-title {
+		color: $accent;
+		cursor: pointer;
+		font-size: 50px;
+		font-weight: 900;
+		text-shadow: 3px 3px 0 $dc-blue-lt;
+
+		div {
+			font-family: inherit;
+			font-size: inherit;
+		}
+	}
+
+	.nav-btn {
+		background-color: $dc-red;
+		box-shadow: 2px 2px 0 $dc-blue-lt;
+		color: #fff !important;
+		height: 60px;
+		width: 60px;
+	}
+
+	.nav-list {
+		background: none !important;
+		height: 50%;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.nav-link {
+		color: #fff;
+		display: block;
+		font-size: 48px;
+		margin: 15px auto;
+		text-align: center;
+
+		&::before {
+			background-color: $dc-red;
+		}
+	}
+
+	h3 {
+		color: #fff;
+	}
+
+	.contact-icons {
+		align-items: center;
+		display: flex;
+		justify-content: space-evenly;
+		margin: 20px 0;
+
+		a {
+			margin: 0 5px;
+		}
+	}
+</style>
