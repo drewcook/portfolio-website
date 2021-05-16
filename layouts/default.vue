@@ -13,7 +13,15 @@
 		<!-- Site Footer -->
 		<v-footer>
 			<v-container>
-				<span> &copy; {{ new Date().getFullYear() }} | Drew Cook </span>
+				<p>
+					<a
+						ref="noopener noreferrer"
+						href="https://github.com/drewcook/portfolio-website"
+						target="_blank"
+						>Designed &amp; Built by Drew Cook.</a
+					>
+				</p>
+				<p><small>&copy; Althea Web Services, LLC. All Rights Reserved.</small></p>
 			</v-container>
 		</v-footer>
 	</v-app>

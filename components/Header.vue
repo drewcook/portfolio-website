@@ -135,7 +135,7 @@
 		color: $accent;
 		cursor: pointer;
 		font-weight: 900;
-		text-shadow: 3px 3px 0 $dc-blue-lt;
+		text-shadow: 2px 2px 0 $dc-blue-lt;
 
 		div {
 			font-family: inherit;
