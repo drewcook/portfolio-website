@@ -84,5 +84,10 @@
 				],
 			}
 		},
+		head() {
+			return {
+				title: 'Web and Mobile Projects',
+			}
+		},
 	}
 </script>

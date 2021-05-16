@@ -33,5 +33,11 @@
 </template>
 
 <script>
-	export default {}
+	export default {
+		head() {
+			return {
+				title: 'Welcome To My Portfolio',
+			}
+		},
+	}
 </script>

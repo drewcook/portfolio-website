@@ -179,5 +179,10 @@
 				],
 			}
 		},
+		head() {
+			return {
+				title: 'Skills and Expertise',
+			}
+		},
 	}
 </script>
