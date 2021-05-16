@@ -71,6 +71,10 @@
 						to: '/skills',
 					},
 					{
+						title: 'Resume',
+						to: '/resume',
+					},
+					{
 						title: 'Contact',
 						to: '/contact',
 					},

@@ -15,7 +15,7 @@
 			<v-container>
 				<p>
 					<a
-						ref="noopener noreferrer"
+						rel="noopener noreferrer"
 						href="https://github.com/drewcook/portfolio-website"
 						target="_blank"
 						>Designed &amp; Built by Drew Cook.</a
