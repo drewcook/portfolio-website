@@ -40,13 +40,13 @@ h6 {
 
 // Links that appear within page content
 #site-content {
-	a:not(button a, .v-btn) {
+	.content-link {
 		color: $primary;
 		text-decoration: none;
 		transition: color 200ms ease-in-out;
 	}
 
-	a:not(button a, .v-btn):hover {
+	.content-link:hover {
 		color: $accent;
 		transition: color 200ms ease-in-out;
 	}

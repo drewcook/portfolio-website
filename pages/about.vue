@@ -1,27 +1,64 @@
 <template>
 	<v-row>
 		<v-col>
-			<h1>About Me</h1>
-			<h2>Who Are You?</h2>
-			<p>
-				Hello there reader! Thanks for visiting my online portolio. My name is Drew Cook. I
-				currently reside in Denver, Colorado. I have been building things ever since I was a young
-				lad, and it turns out that I also like building things as an adult. Aside from a
-				webmastering class I took senior year of high school, I've been building things with
-				software since 2014, when I decided to make a career change. I'd go through each day feeling
-				unsatisfied, yearning for something to scratch this itch I have to do something great,
-				something that could help unlock my true potential. I found software development and haven't
-				looked back.
-			</p>
+			<h1>About Drew Cook</h1>
+			<v-row>
+				<v-col cols="12" md="8">
+					<p>Hello there reader! Thanks for visiting my online portolio.</p>
+					<h2>Who Are You?</h2>
+					<p>
+						My name is Drew Cook. I currently reside in Denver, Colorado. I have been building
+						things ever since I was a young lad, and it turns out that I also like building things
+						as an adult. Aside from a webmastering class I took senior year of high school, I've
+						been building things with software since 2014, when I decided to make a career change.
+						I'd go through each day feeling unsatisfied, yearning for something to scratch this itch
+						I have to do something great, something that could help unlock my true potential. I
+						found software development and haven't looked back.
+					</p>
+				</v-col>
+				<v-col cols="12" md="4">
+					<div class="image">
+						<v-img
+							:src="require('~/assets/img/headshot.jpg')"
+							alt="Drew Cook, Web Engineer and Software Enthusiast"
+							title="Drew Cook Headshot"
+							max-width="400"
+							max-height="400"
+						/>
+					</div>
+				</v-col>
+			</v-row>
+
 			<h2>Let me see your credentials!</h2>
 			<p>
-				I was fortunate enough to get accepted into a small dev bootcamp startup here in the Denver
-				area in 2014 where we learned fullstack development in the .NET framework. I've since done a
-				lot more. I taught myself frontend development more deeply, started working for an agency
-				doing custom WordPress themes, started my own company in 2016 for consulting, worked on
-				enterprise .NET applications in the e-discovery world, shifted into the federal government
-				world working for some high-profile clients, worked for a scrappy startup, more self
-				learning, and even built this portfolio!
+				I've worked for, and with, a wide range of businesses in several different sectors. I've
+				worked for
+				<a
+					href="https://www.linkrightmedia.com/"
+					class="content-link"
+					target="_blank"
+					rel="noopener noreferrer"
+					>digital marketing agencies</a
+				>
+				as a tech lead, worked on enterprise level applications for an
+				<a
+					href="https://evolverinc.com/"
+					class="content-link"
+					target="_blank"
+					rel="noopener noreferrer"
+					>IT consulting company</a
+				>, contracted for a federal governement agency on
+				<a href="https://aoc.gov/" class="content-link" target="_blank" rel="noopener noreferrer"
+					>Capitol Hill</a
+				>, and as a frontend engineer well-funded
+				<a href="https://gloo.us/" class="content-link" target="_blank" rel="noopener noreferrer"
+					>tech startup</a
+				>
+				in Boulder, Colorado.
+			</p>
+			<p>
+				You can check out more details about my work experience
+				<nuxt-link to="/resume" class="content-link">Resume</nuxt-link>.
 			</p>
 			<h2>Okay, why do you like JavaScript so much?</h2>
 			<p>
@@ -56,19 +93,26 @@
 			</p>
 			<p>
 				I've also been getting into more React Native development recently, and am excited to get a
-				<a href="https://beerbuddy.io" target="_blank">BeerBuddy</a> mobile client app built. Of
-				course I'll use my existing
-				<a href="https://github.com/drewcook/beerbuddy-api" target="_blank">backend API</a> for
-				this!
+				<a href="https://beerbuddy.io" target="_blank" class="content-link">BeerBuddy</a> mobile
+				client app built. Of course I'll use my existing
+				<a href="https://github.com/drewcook/beerbuddy-api" target="_blank" class="content-link"
+					>backend API</a
+				>
+				for this!
 			</p>
 			<p>TypeScript! It's the future of JavaScript, period.</p>
 			<h2>What else are you into?</h2>
 			<p>
 				When I'm not writing code, I enjoy spending my time writing and producing my own music and
 				playing guitar in
-				<a href="https://open.spotify.com/artist/2Fv03ttGxfHRtBvwSDtyhc" target="_blank"
-					>Vanimal Kingdom</a
-				>, a Denver-based rock band. I also have picked up woodworking recently, and I've enjoyed
+				<a
+					href="https://open.spotify.com/artist/2Fv03ttGxfHRtBvwSDtyhc"
+					target="_blank"
+					class="content-link"
+				>
+					Vanimal Kingdom
+				</a>
+				, a Denver-based rock band. I also have picked up woodworking recently, and I've enjoyed
 				building some furniture to put around the house. And of course I enjoy all the outdoor
 				activites that Colorado has to offer - snowboarding, hiking, backpacking, kayaking, cycling,
 				and the Rockies!
@@ -86,3 +130,14 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.image {
+		background: #fff;
+		border: 1px solid $dc-gray-lt;
+		border-radius: 4px;
+		margin: 0 auto 30px;
+		max-width: 400px;
+		padding: 10px;
+	}
+</style>
