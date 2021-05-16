@@ -1,6 +1,6 @@
 <template>
 	<v-row justify="center" align="center">
-		<v-col cols="12" sm="8" md="6">
+		<v-col cols="12" sm="8">
 			<v-card>
 				<v-card-title class="headline"> Hello World, I'm Drew Cook! </v-card-title>
 				<v-card-text>
@@ -26,6 +26,7 @@
 				<v-card-actions>
 					<v-spacer />
 					<v-btn color="primary" nuxt to="/work">Check Out My Work</v-btn>
+					<v-btn color="accent" href="resume.pdf">Resume</v-btn>
 				</v-card-actions>
 			</v-card>
 		</v-col>
