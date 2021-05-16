@@ -4,16 +4,19 @@
 			<h1>About Drew Cook</h1>
 			<v-row>
 				<v-col cols="12" md="8">
-					<p>Hello there reader! Thanks for visiting my online portolio.</p>
+					<p>
+						Get to know me a little bit more. Ooh, ahh, just a little bit. Ooh, ahh, a little bit
+						more. Man, I miss the 90s.
+					</p>
 					<h2>Who Are You?</h2>
 					<p>
-						My name is Drew Cook. I currently reside in Denver, Colorado. I have been building
-						things ever since I was a young lad, and it turns out that I also like building things
-						as an adult. Aside from a webmastering class I took senior year of high school, I've
-						been building things with software since 2014, when I decided to make a career change.
-						I'd go through each day feeling unsatisfied, yearning for something to scratch this itch
-						I have to do something great, something that could help unlock my true potential. I
-						found software development and haven't looked back.
+						Hi there, I'm Drew Cook. I currently reside in Denver, Colorado. I have been building
+						things ever since I was a wee young lad, and it turns out that I also like building
+						things as a much, less young lad. Aside from a webmastering class I took senior year of
+						high school, I've been building things with software since 2014, when I decided to make
+						a career change. I'd go through each day feeling unsatisfied, yearning for something to
+						scratch this itch I have to do something great, something that could help unlock my true
+						potential. I found software development and haven't looked back.
 					</p>
 				</v-col>
 				<v-col cols="12" md="4">
@@ -25,10 +28,12 @@
 							max-width="400"
 							max-height="400"
 						/>
+						<div class="text-center">
+							<small><em>Man bun was a thing</em></small>
+						</div>
 					</div>
 				</v-col>
 			</v-row>
-
 			<h2>Let me see your credentials!</h2>
 			<p>
 				I've worked for, and with, a wide range of businesses in several different sectors. I've
@@ -60,10 +65,15 @@
 				You can check out more details about my work experience
 				<nuxt-link to="/resume" class="content-link">Resume</nuxt-link>.
 			</p>
+			<v-divider />
 			<h2>Okay, why do you like JavaScript so much?</h2>
 			<p>
-				You may have seen already, I like JavaScript. I choose to work in JavaScript primarily for
-				two reasons:
+				Firstly, if you haven't already, check out some of my
+				<nuxt-link to="/work">projects</nuxt-link>. Aside from the .NET work I've done, you'll see a
+				lot of code written in JavaScript. Aside from the flexability of writing object oriented
+				programming or functional programming, the continued support from the community at large,
+				and large library of open-source projects depending on it, I choose to work in JavaScript
+				primarily for two reasons:
 			</p>
 			<h3>It Is Isomorphic</h3>
 			<p>
@@ -86,13 +96,15 @@
 				stale, I will know it because something new hits the community, or existing things improve
 				and become better. Time to refactor and take advantage of that new thing!
 			</p>
+			<v-divider />
 			<h2>What are you currently excited about?</h2>
 			<p>
-				I am really enjoying working within the Vue ecosystem at the moment. There's a growing
-				community happening, and it is really refreshing to work with.
+				I am really enjoying working within the <strong>Vue ecosystem</strong> at the moment.
+				There's a growing community happening, and it is really refreshing to work with.
 			</p>
 			<p>
-				I've also been getting into more React Native development recently, and am excited to get a
+				I've also been getting into more <strong>React Native</strong> development recently, and am
+				excited to get a
 				<a href="https://beerbuddy.io" target="_blank" class="content-link">BeerBuddy</a> mobile
 				client app built. Of course I'll use my existing
 				<a href="https://github.com/drewcook/beerbuddy-api" target="_blank" class="content-link"
@@ -100,11 +112,19 @@
 				>
 				for this!
 			</p>
-			<p>TypeScript! It's the future of JavaScript, period.</p>
+			<p><strong>TypeScript!</strong> It's the future of JavaScript, period.</p>
+			<v-divider />
 			<h2>What else are you into?</h2>
 			<p>
-				When I'm not writing code, I enjoy spending my time writing and producing my own music and
-				playing guitar in
+				When I'm not writing code, I enjoy spending my time writing and producing
+				<a
+					href="https://soundcloud.com/thenotesbetween"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="content-link"
+					>my own music</a
+				>
+				and playing guitar in a Denver-based rock band,
 				<a
 					href="https://open.spotify.com/artist/2Fv03ttGxfHRtBvwSDtyhc"
 					target="_blank"
@@ -112,10 +132,10 @@
 				>
 					Vanimal Kingdom
 				</a>
-				, a Denver-based rock band. I also have picked up woodworking recently, and I've enjoyed
-				building some furniture to put around the house. And of course I enjoy all the outdoor
-				activites that Colorado has to offer - snowboarding, hiking, backpacking, kayaking, cycling,
-				and the Rockies!
+				. I've also picked up woodworking recently, and I've enjoyed building some furniture to put
+				in and around the house and garage. And of course I enjoy all the outdoor activites that
+				Colorado has to offer - snowboarding, hiking, backpacking, kayaking, cycling, the large
+				selection of craft brew and local breweries, and seeing the Rockies at Coors Field!
 			</p>
 		</v-col>
 	</v-row>
@@ -132,6 +152,10 @@
 </script>
 
 <style lang="scss" scoped>
+	hr {
+		margin: 30px 0;
+	}
+
 	.image {
 		background: #fff;
 		border: 1px solid $dc-gray-lt;
