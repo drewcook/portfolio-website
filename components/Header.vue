@@ -31,7 +31,7 @@
 		<!-- Header and Nav Btn -->
 		<header class="site-header">
 			<nuxt-link to="/" tag="h1" class="site-title" @click.native="navOpen = false">
-				<v-app-bar-title>{{ title }}</v-app-bar-title>
+				<div>{{ title }}</div>
 				<span class="site-subtitle" :class="{ lighten: navOpen }">{{ subtitle }}</span>
 			</nuxt-link>
 
