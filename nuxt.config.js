@@ -52,9 +52,11 @@ export default {
 
 	googleFonts: {
 		families: {
+			Exo: [300],
+			'La+Belle+Aurore': true,
 			'Libre+Franklin': [100, 300, 600],
 			'Titillium+Web': [200, 400, 600, 900],
-			Prompt: true,
+			Prompt: [400, 700],
 		},
 	},
 
