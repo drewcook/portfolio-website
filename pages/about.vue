@@ -107,8 +107,8 @@
 			<v-divider />
 			<h2>What else are you into?</h2>
 			<p>
-				When I'm not writing code, I enjoy travelling the world and experiencing other cultures. I'm
-				learning Spanish. I enjoy spending my time writing and producing
+				When I'm not writing code, I enjoy travelling the world and experiencing other cultures. I
+				enjoy spending my time writing and producing
 				<a
 					href="https://soundcloud.com/thenotesbetween"
 					target="_blank"
@@ -125,9 +125,10 @@
 					Vanimal Kingdom
 				</a>
 				. I've also picked up woodworking recently, and I've enjoyed building some furniture to put
-				in and around the house and garage. And of course I enjoy all the outdoor activites that
-				Colorado has to offer - snowboarding, hiking, backpacking, kayaking, cycling, the large
-				selection of craft brew and local breweries, and seeing the Rockies at Coors Field!
+				in and around the house and garage. I'm learning Spanish. And of course I enjoy all the
+				outdoor activites that Colorado has to offer - snowboarding, hiking, backpacking, kayaking,
+				cycling, the large selection of craft brew and local breweries, and seeing the Rockies at
+				Coors Field!
 			</p>
 		</v-col>
 	</v-row>
