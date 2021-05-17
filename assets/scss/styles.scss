@@ -1,5 +1,12 @@
 /* stylelint-disable */
+
+// Globals
 @import 'variables';
 @import 'global';
+
+// Animations
 @import 'animations';
+
+// Partials
+@import 'timeline';
 @import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';

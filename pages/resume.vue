@@ -29,6 +29,10 @@
 				</v-card>
 			</v-col>
 		</v-row>
+		<v-divider />
+		<h2>Work Experience</h2>
+		<p class="lead">Travel down the rabbit hole. Scoll down for the journey.</p>
+		<experience-timeline />
 	</div>
 </template>
 
@@ -89,5 +93,13 @@
 		color: $dc-blue-md;
 		margin-bottom: 10px;
 		margin-top: 15px;
+	}
+
+	hr {
+		margin: 30px auto;
+	}
+
+	.lead {
+		font-size: 24px;
 	}
 </style>
