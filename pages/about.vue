@@ -6,7 +6,7 @@
 				<v-col cols="12" md="8" lg="9" xl="10">
 					<p>Get to know me a little bit more.</p>
 					<p class="blocky">
-						Ooh, ahh, just a little bit. Ooh, ahh, a little bit more. Man, I miss the 90s.
+						"Ooh, ahh, just a little bit. Ooh, ahh, a little bit more." Man, I miss the 90s.
 					</p>
 					<h2>Who Are You?</h2>
 					<p>
