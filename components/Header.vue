@@ -4,23 +4,25 @@
 		<transition name="slide-in" @after-enter="afterEnter" @before-leave="beforeLeave">
 			<v-sheet v-show="navOpen" class="overlay">
 				<v-container>
-					<transition name="nav">
-						<!-- Main Navigation -->
-						<v-list v-show="opened" nav class="nav-list">
-							<nuxt-link
-								v-for="link in navLinks"
-								:key="link.title"
-								:to="link.to"
-								class="nav-link hvr-underline-from-right hvr-float"
-								@click.native="toggleNav"
-							>
-								{{ link.title }}
-							</nuxt-link>
-						</v-list>
-					</transition>
+					<div class="d-flex flex-column justify-center flex-grow-1">
+						<transition name="nav">
+							<!-- Main Navigation -->
+							<v-list v-show="opened" nav class="nav-list">
+								<nuxt-link
+									v-for="link in navLinks"
+									:key="link.title"
+									:to="link.to"
+									class="nav-link hvr-underline-from-right hvr-float"
+									@click.native="toggleNav"
+								>
+									{{ link.title }}
+								</nuxt-link>
+							</v-list>
+						</transition>
+					</div>
 					<transition name="contact">
-						<div v-show="opened" class="text-center">
-							<h3>Let's Be Social Buddies</h3>
+						<div v-show="opened" class="text-center contact-icons">
+							<h3 class="mb-5">Let's Be Social Buddies</h3>
 							<contact-icons />
 						</div>
 					</transition>
@@ -110,7 +112,12 @@
 
 <style lang="scss" scoped>
 	h3 {
-		color: #fff;
+		color: $dc-neutral;
+		font-size: 16px;
+
+		@media (min-width: 700px) {
+			font-size: 24px;
+		}
 	}
 
 	.container {
@@ -139,6 +146,10 @@
 		right: 5%;
 		top: 0;
 		z-index: 100;
+
+		@media (max-width: 380px) {
+			transform: scale(0.8);
+		}
 	}
 
 	.site-title {
@@ -184,10 +195,15 @@
 		background-color: $dc-blue-dk;
 		box-shadow: 3px 3px 0 $dc-blue-lt;
 		height: 70px !important;
+		transform: scale(0.75);
 		width: 70px !important;
 
 		&:hover {
 			opacity: 1 !important;
+		}
+
+		@media (min-width: 700px) {
+			transform: scale(1);
 		}
 	}
 
@@ -203,20 +219,33 @@
 	// Navigation
 	.nav-list {
 		background: none !important;
-		margin-bottom: 10%;
+		margin-top: 15%;
 	}
 
 	.nav-link {
 		color: #fff;
 		display: block;
-		font-size: 48px;
-		margin: 15px auto;
+		font-size: 36px;
+		margin: 7px auto;
 		text-align: center;
 		text-decoration: none;
 		text-shadow: 0 0 1px $dc-dark;
 
 		&::before {
 			background-color: $dc-red;
+		}
+
+		@media (min-width: 700px) {
+			font-size: 48px;
+			margin: 15px auto;
+		}
+	}
+
+	.contact-icons {
+		margin-bottom: 7%;
+
+		@media (min-width: 1200px) {
+			margin-bottom: 80px;
 		}
 	}
 </style>

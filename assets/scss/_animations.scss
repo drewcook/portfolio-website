@@ -15,7 +15,7 @@
 /* Navigation Links */
 .nav-enter-active {
 	animation: fadeInLeft;
-	animation-duration: 1200ms;
+	animation-duration: 1000ms;
 }
 
 .nav-leave-active {
@@ -26,7 +26,7 @@
 /* Contact Info Overlay */
 .contact-enter-active {
 	animation: fadeInRight;
-	animation-duration: 1200ms;
+	animation-duration: 1000ms;
 }
 
 .contact-leave-active {
