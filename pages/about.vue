@@ -1,9 +1,9 @@
 <template>
 	<v-row>
-		<v-col>
+		<v-col cols="12">
 			<h1>About Drew Cook</h1>
 			<v-row>
-				<v-col cols="12" md="8">
+				<v-col cols="12" md="8" lg="9" xl="10">
 					<p>
 						Get to know me a little bit more. Ooh, ahh, just a little bit. Ooh, ahh, a little bit
 						more. Man, I miss the 90s.
@@ -19,7 +19,7 @@
 						potential. I found software development and haven't looked back.
 					</p>
 				</v-col>
-				<v-col cols="12" md="4">
+				<v-col cols="12" md="4" lg="3" xl="2">
 					<div class="image">
 						<v-img
 							:src="require('~/assets/img/headshot.jpg')"
