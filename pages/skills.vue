@@ -1,6 +1,6 @@
 <template>
 	<v-row>
-		<v-col>
+		<v-col cols="12">
 			<h1>Skills</h1>
 			<p>
 				Firstly, I keep an open mind and am always craving to learn more. I don't know it, and I

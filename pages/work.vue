@@ -1,12 +1,12 @@
 <template>
 	<div>
-		<h1>My Work</h1>
-		<p>
+		<h1 class="text-center mb-5">My Work</h1>
+		<p class="text-center mb-10">
 			All of these projects have their own demo site available. You can find the code for each
 			project by clicking the Github link on each project card.
 		</p>
 		<v-row>
-			<v-col v-for="project in projects" :key="project.title" md="4" xl="3">
+			<v-col v-for="project in projects" :key="project.title" cols="12" sm="6" lg="4" xl="3">
 				<ProjectCard :project="project" />
 			</v-col>
 		</v-row>
