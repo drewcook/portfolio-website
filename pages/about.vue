@@ -69,11 +69,11 @@
 			<h2>Okay, why do you like JavaScript so much?</h2>
 			<p>
 				Firstly, if you haven't already, check out some of my
-				<nuxt-link to="/work">projects</nuxt-link>. Aside from the .NET work I've done, you'll see a
-				lot of code written in JavaScript. Aside from the flexability of writing object oriented
-				programming or functional programming, the continued support from the community at large,
-				and large library of open-source projects depending on it, I choose to work in JavaScript
-				primarily for two reasons:
+				<nuxt-link to="/work" class="content-link">projects</nuxt-link>. Aside from the .NET work
+				I've done, you'll see a lot of code written in JavaScript. Aside from the flexability of
+				writing object oriented programming or functional programming, the continued support from
+				the community at large, and large library of open-source projects depending on it, I choose
+				to work in JavaScript primarily for two reasons:
 			</p>
 			<h3>It Is Isomorphic</h3>
 			<p>

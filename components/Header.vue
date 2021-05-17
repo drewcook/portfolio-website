@@ -30,7 +30,13 @@
 
 		<!-- Header and Nav Btn -->
 		<header class="site-header">
-			<nuxt-link to="/" tag="h1" class="site-title" @click.native="navOpen = false">
+			<nuxt-link
+				to="/"
+				tag="h1"
+				class="site-title"
+				:class="{ lighten: navOpen }"
+				@click.native="navOpen = false"
+			>
 				<div>{{ title }}</div>
 				<span class="site-subtitle" :class="{ lighten: navOpen }">{{ subtitle }}</span>
 			</nuxt-link>
@@ -116,7 +122,7 @@
 	}
 
 	.overlay {
-		background: linear-gradient(0.35turn, $dc-blue-md, $dc-blue-dk) !important;
+		background: linear-gradient(-25deg, $dc-blue-md, $dc-green) !important;
 		height: 100vh;
 		position: fixed;
 		width: 100vw;
@@ -136,10 +142,11 @@
 	}
 
 	.site-title {
-		color: $accent;
+		color: $dc-blue-dk;
 		cursor: pointer;
 		font-weight: 900;
 		text-shadow: 2px 2px 0 $dc-blue-lt;
+		transition: all 100ms linear 900ms;
 
 		div {
 			font-family: inherit;
@@ -154,17 +161,17 @@
 	}
 
 	.site-subtitle {
-		color: $dc-gray;
+		color: $dc-blue-md;
 		display: block;
 		font-size: 16px;
 		line-height: 1.2;
 		text-align: right;
 		text-shadow: none;
-		transition: color 100ms linear 900ms;
+		transition: all 100ms linear 900ms;
 
 		&.lighten {
-			color: #fff;
-			transition: color 100ms ease-in;
+			color: $dc-neutral;
+			transition: all 100ms ease-in;
 		}
 
 		@media (min-width: 700px) {
@@ -174,8 +181,8 @@
 
 	// Hamburger Menu
 	.nav-btn {
-		background-color: $dc-red;
-		box-shadow: 2px 2px 0 $dc-blue-lt;
+		background-color: $dc-blue-dk;
+		box-shadow: 3px 3px 0 $dc-blue-lt;
 		height: 70px !important;
 		width: 70px !important;
 
@@ -185,11 +192,11 @@
 	}
 
 	.nav-btn-icon .hamburger-inner {
-		background-color: #fff;
+		background-color: $dc-neutral;
 
 		&::before,
 		&::after {
-			background-color: #fff;
+			background-color: $dc-neutral;
 		}
 	}
 
@@ -206,6 +213,7 @@
 		margin: 15px auto;
 		text-align: center;
 		text-decoration: none;
+		text-shadow: 0 0 1px $dc-dark;
 
 		&::before {
 			background-color: $dc-red;

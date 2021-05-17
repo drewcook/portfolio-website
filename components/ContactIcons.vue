@@ -37,3 +37,9 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.v-btn {
+		background-color: $dc-blue-dk !important;
+	}
+</style>
