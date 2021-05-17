@@ -107,7 +107,8 @@
 			<v-divider />
 			<h2>What else are you into?</h2>
 			<p>
-				When I'm not writing code, I enjoy spending my time writing and producing
+				When I'm not writing code, I enjoy travelling the world and experiencing other cultures. I'm
+				learning Spanish. I enjoy spending my time writing and producing
 				<a
 					href="https://soundcloud.com/thenotesbetween"
 					target="_blank"
