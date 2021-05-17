@@ -1,5 +1,5 @@
 <template>
-	<div class="d-flex justify-space-around align-center my-5">
+	<div class="d-flex justify-space-around align-center">
 		<a href="https://linkedin.com/in/drewcook2" target="_blank" rel="noopener noreferrer">
 			<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
 				<v-icon color="secondary">{{ linkedInIcon }}</v-icon>
@@ -37,3 +37,13 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.v-btn {
+		background-color: $dc-blue-dk !important;
+	}
+
+	.v-icon {
+		color: $dc-neutral !important;
+	}
+</style>

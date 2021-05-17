@@ -4,23 +4,25 @@
 		<transition name="slide-in" @after-enter="afterEnter" @before-leave="beforeLeave">
 			<v-sheet v-show="navOpen" class="overlay">
 				<v-container>
-					<transition name="nav">
-						<!-- Main Navigation -->
-						<v-list v-show="opened" nav class="nav-list">
-							<nuxt-link
-								v-for="link in navLinks"
-								:key="link.title"
-								:to="link.to"
-								class="nav-link hvr-underline-from-right hvr-float"
-								@click.native="toggleNav"
-							>
-								{{ link.title }}
-							</nuxt-link>
-						</v-list>
-					</transition>
+					<div class="d-flex flex-column justify-center flex-grow-1">
+						<transition name="nav">
+							<!-- Main Navigation -->
+							<v-list v-show="opened" nav class="nav-list">
+								<nuxt-link
+									v-for="link in navLinks"
+									:key="link.title"
+									:to="link.to"
+									class="nav-link hvr-underline-from-right hvr-float"
+									@click.native="toggleNav"
+								>
+									{{ link.title }}
+								</nuxt-link>
+							</v-list>
+						</transition>
+					</div>
 					<transition name="contact">
-						<div v-show="opened" class="text-center">
-							<h3>Let's Be Social Buddies</h3>
+						<div v-show="opened" class="text-center contact-icons">
+							<h3 class="mb-5">Let's Be Social Buddies</h3>
 							<contact-icons />
 						</div>
 					</transition>
@@ -30,7 +32,13 @@
 
 		<!-- Header and Nav Btn -->
 		<header class="site-header">
-			<nuxt-link to="/" tag="h1" class="site-title" @click.native="navOpen = false">
+			<nuxt-link
+				to="/"
+				tag="h1"
+				class="site-title"
+				:class="{ lighten: navOpen }"
+				@click.native="navOpen = false"
+			>
 				<div>{{ title }}</div>
 				<span class="site-subtitle" :class="{ lighten: navOpen }">{{ subtitle }}</span>
 			</nuxt-link>
@@ -104,7 +112,12 @@
 
 <style lang="scss" scoped>
 	h3 {
-		color: #fff;
+		color: $dc-neutral;
+		font-size: 16px;
+
+		@media (min-width: 700px) {
+			font-size: 24px;
+		}
 	}
 
 	.container {
@@ -116,7 +129,7 @@
 	}
 
 	.overlay {
-		background: linear-gradient(0.35turn, $dc-blue-md, $dc-blue-dk) !important;
+		background: linear-gradient(-25deg, $dc-blue-md, $dc-green) !important;
 		height: 100vh;
 		position: fixed;
 		width: 100vw;
@@ -133,13 +146,18 @@
 		right: 5%;
 		top: 0;
 		z-index: 100;
+
+		@media (max-width: 380px) {
+			transform: scale(0.8);
+		}
 	}
 
 	.site-title {
-		color: $accent;
+		color: $dc-blue-dk;
 		cursor: pointer;
 		font-weight: 900;
 		text-shadow: 2px 2px 0 $dc-blue-lt;
+		transition: all 100ms linear 900ms;
 
 		div {
 			font-family: inherit;
@@ -154,17 +172,17 @@
 	}
 
 	.site-subtitle {
-		color: $dc-gray;
+		color: $dc-blue-md;
 		display: block;
 		font-size: 16px;
 		line-height: 1.2;
 		text-align: right;
 		text-shadow: none;
-		transition: color 100ms linear 900ms;
+		transition: all 100ms linear 900ms;
 
 		&.lighten {
-			color: #fff;
-			transition: color 100ms ease-in;
+			color: $dc-neutral;
+			transition: all 100ms ease-in;
 		}
 
 		@media (min-width: 700px) {
@@ -174,41 +192,60 @@
 
 	// Hamburger Menu
 	.nav-btn {
-		background-color: $dc-red;
-		box-shadow: 2px 2px 0 $dc-blue-lt;
+		background-color: $dc-blue-dk;
+		box-shadow: 3px 3px 0 $dc-blue-lt;
 		height: 70px !important;
+		transform: scale(0.75);
 		width: 70px !important;
 
 		&:hover {
 			opacity: 1 !important;
 		}
+
+		@media (min-width: 700px) {
+			transform: scale(1);
+		}
 	}
 
 	.nav-btn-icon .hamburger-inner {
-		background-color: #fff;
+		background-color: $dc-neutral;
 
 		&::before,
 		&::after {
-			background-color: #fff;
+			background-color: $dc-neutral;
 		}
 	}
 
 	// Navigation
 	.nav-list {
 		background: none !important;
-		margin-bottom: 10%;
+		margin-top: 15%;
 	}
 
 	.nav-link {
 		color: #fff;
 		display: block;
-		font-size: 48px;
-		margin: 15px auto;
+		font-size: 36px;
+		margin: 7px auto;
 		text-align: center;
 		text-decoration: none;
+		text-shadow: 0 0 1px $dc-dark;
 
 		&::before {
 			background-color: $dc-red;
+		}
+
+		@media (min-width: 700px) {
+			font-size: 48px;
+			margin: 15px auto;
+		}
+	}
+
+	.contact-icons {
+		margin-bottom: 7%;
+
+		@media (min-width: 1200px) {
+			margin-bottom: 80px;
 		}
 	}
 </style>

@@ -20,6 +20,7 @@ h5,
 h6 {
 	color: $heading-color;
 	font-family: $heading-font-family;
+	font-weight: 500;
 }
 
 // Vuetify Light Theme Overrides
@@ -27,28 +28,21 @@ h6 {
 	&.v-application {
 		background-color: $dc-light;
 	}
-
-	&.v-footer {
-		background-color: $dc-neutral !important;
-		border-color: $dc-gray-lt !important;
-		border-top: 1px dotted;
-		color: $dc-dark !important;
-		font-size: 14px;
-		padding: 10px 0;
-	}
 }
 
-// Links that appear within page content
 #site-content {
-	a:not(button a, .v-btn) {
-		color: $primary;
-		text-decoration: none;
-		transition: color 200ms ease-in-out;
-	}
+	padding-bottom: 60px !important;
+}
 
-	a:not(button a, .v-btn):hover {
-		color: $accent;
-		transition: color 200ms ease-in-out;
-	}
+// Links that appear within page content or elsewhare with cleaner style
+.content-link {
+	color: $primary;
+	text-decoration: none;
+	transition: color 200ms ease-in-out;
+}
+
+.content-link:hover {
+	color: $accent;
+	transition: color 200ms ease-in-out;
 }
 

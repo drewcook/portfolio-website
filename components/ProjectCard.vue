@@ -1,5 +1,5 @@
 <template>
-	<v-card>
+	<v-card class="card">
 		<v-card-title class="headline"> {{ project.title }} </v-card-title>
 		<v-card-text>
 			<h3 class="my-2">About This Project</h3>
@@ -14,7 +14,6 @@
 			</ul>
 		</v-card-text>
 		<v-card-actions>
-			<v-spacer />
 			<v-btn color="primary">
 				<a :href="project.demoUrl" target="_blank">
 					<v-icon>{{ demoIcon }}</v-icon>
@@ -49,7 +48,11 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+	.card {
+		padding: 30px 15px;
+	}
+
 	button a {
 		color: #fff;
 		text-decoration: none;
