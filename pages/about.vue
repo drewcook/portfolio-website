@@ -1,7 +1,7 @@
 <template>
 	<v-row>
 		<v-col cols="12">
-			<h1>About Drew Cook</h1>
+			<h1>Let's Talk About Me</h1>
 			<v-row>
 				<v-col cols="12" md="8" lg="9" xl="10">
 					<p>Get to know me a little bit more.</p>
