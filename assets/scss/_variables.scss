@@ -9,6 +9,7 @@ $dc-neutral: #f1faee;
 $dc-blue-lt: #a8dadc;
 $dc-blue-md: #457b9d;
 $dc-blue-dk: #1d3557;
+$dc-heading: #324055;
 
 $dc-light: #efefef;
 $dc-gray: #646d78;
@@ -31,11 +32,16 @@ $border-color: $dc-gray;
 
 
 /* Fonts and Typography */
+$exo-font: 'Exo', sans-serif;
+$casual-font: 'Kalam', sans-serif;
+$serif-font: 'Libre Franklin', serif;
+$prompt-font: 'Prompt', monospace;
+$mono-font: 'Titillium Web', monospace;
+
 $font-size-root: 20px;
 
-$heading-font-family: 'Prompt', monospace;
-$heading-color: $dc-blue-dk;
+$heading-font-family: $prompt-font;
+$heading-color: $dc-heading;
 
-$body-font-family: 'Libre Franklin', sans-serif;
+$body-font-family: $exo-font;
 $body-color: $dc-dark;
-

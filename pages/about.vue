@@ -4,19 +4,18 @@
 			<h1>About Drew Cook</h1>
 			<v-row>
 				<v-col cols="12" md="8" lg="9" xl="10">
-					<p>
-						Get to know me a little bit more. Ooh, ahh, just a little bit. Ooh, ahh, a little bit
-						more. Man, I miss the 90s.
+					<p>Get to know me a little bit more.</p>
+					<p class="blocky">
+						Ooh, ahh, just a little bit. Ooh, ahh, a little bit more. Man, I miss the 90s.
 					</p>
 					<h2>Who Are You?</h2>
 					<p>
 						Hi there, I'm Drew Cook. I currently reside in Denver, Colorado. I have been building
-						things ever since I was a wee young lad, and it turns out that I also like building
-						things as a much, less young lad. Aside from a webmastering class I took senior year of
-						high school, I've been building things with software since 2014, when I decided to make
-						a career change. I'd go through each day feeling unsatisfied, yearning for something to
-						scratch this itch I have to do something great, something that could help unlock my true
-						potential. I found software development and haven't looked back.
+						things ever since I was a young lad, and it turns out that I also like building things
+						as an older lad as well. In 2014, I decided to make a career change. I'd go through each
+						day feeling unsatisfied, yearning for something to scratch this itch I have to do
+						something great, something that could help unlock my true potential. I found the world
+						of writing software and haven't looked back since.
 					</p>
 				</v-col>
 				<v-col cols="12" md="4" lg="3" xl="2">
@@ -34,35 +33,36 @@
 					</div>
 				</v-col>
 			</v-row>
-			<h2>Let me see your credentials!</h2>
+			<h3>Hm... Let me see your credentials!</h3>
 			<p>
-				I've worked for, and with, a wide range of businesses in several different sectors. I've
-				worked for
+				Over the years, I've worked for a wide range of businesses and clients over both the private
+				and public sectors. I have worked at full capacity on both server-side and client-side code
+				and am comfortably on either side. I've worked for as a tech lead at
 				<a
 					href="https://www.linkrightmedia.com/"
 					class="content-link"
 					target="_blank"
 					rel="noopener noreferrer"
 					>digital marketing agencies</a
-				>
-				as a tech lead, worked on enterprise level applications for an
+				>, on .NET enterprise applications for an
 				<a
 					href="https://evolverinc.com/"
 					class="content-link"
 					target="_blank"
 					rel="noopener noreferrer"
 					>IT consulting company</a
-				>, contracted for a federal governement agency on
+				>
+				and a federal governement agency on
 				<a href="https://aoc.gov/" class="content-link" target="_blank" rel="noopener noreferrer"
 					>Capitol Hill</a
-				>, and as a frontend engineer well-funded
+				>, and as a frontend specialist for a well-funded
 				<a href="https://gloo.us/" class="content-link" target="_blank" rel="noopener noreferrer"
 					>tech startup</a
 				>
 				in Boulder, Colorado.
 			</p>
-			<p>
-				You can check out more details about my work experience
+			<p class="blocky">
+				You can check out more details about my work experience on my
 				<nuxt-link to="/resume" class="content-link">Resume</nuxt-link>.
 			</p>
 			<v-divider />
@@ -77,42 +77,33 @@
 			</p>
 			<h3>It Is Isomorphic</h3>
 			<p>
-				How awesome is it that JavaScript can be run on both the server and the client. No longer is
-				it just the language you have to put up with if you wanted some interactivity on your
-				Geocities website or Myspace page. With the latest leaps that Node has had in the last 10
-				years, the recent developments and adoption for TypeScript, and the new advancements in
-				server-side rendered components, it's becoming a powerhouse technology that can do it all.
-				The best part may be the unseen benefits you get while not having to code-switch while
-				jumping from server to client code and vice versa. I'm sorry, C#, I do prefer my single
-				quotes!
+				How awesome is it that JavaScript can be run on both the server and the client? I think it's
+				pretty awesome, especially since you don't have to code-switch while jumping from server to
+				client code and vice versa. I'm sorry, C#, I do prefer my single quotes!
 			</p>
 			<h3>It Keeps Me Learning</h3>
 			<p>
-				The JavaScript world moves fast, and if you aren't staying up to date with the latest
-				updates, your app could get left in the dust and become a tech debt operation to upgrade.
-				You could also be missing out on all the amazing technologies out there that make web and
-				applicatoin development easier to write and maintain. I love the lifestyle I suppose; the
-				ecosystem holds myself accountable for staying sharp and relevant. Any time I am getting
-				stale, I will know it because something new hits the community, or existing things improve
-				and become better. Time to refactor and take advantage of that new thing!
+				The JavaScript world moves fast, and the ecosystem holds myself accountable for staying
+				sharp and relevant. Existing things improve and become better, thanks to the passionate
+				community members and open source contributions. Time to refactor and take advantage of that
+				new version of today's favorite flavor!
 			</p>
 			<v-divider />
 			<h2>What are you currently excited about?</h2>
 			<p>
-				I am really enjoying working within the <strong>Vue ecosystem</strong> at the moment.
-				There's a growing community happening, and it is really refreshing to work with.
-			</p>
-			<p>
-				I've also been getting into more <strong>React Native</strong> development recently, and am
-				excited to get a
+				There are so many things that grease my gears, but I'll mention just a few. I am really
+				enjoying working within the <strong>Vue ecosystem</strong> at the moment. There's a growing
+				community happening, and it is really refreshing to work with. I've also been getting into
+				more <strong>React Native</strong> development recently, and am excited to get a
 				<a href="https://beerbuddy.io" target="_blank" class="content-link">BeerBuddy</a> mobile
 				client app built. Of course I'll use my existing
 				<a href="https://github.com/drewcook/beerbuddy-api" target="_blank" class="content-link"
 					>backend API</a
 				>
-				for this!
+				for this! And I'm definitely excited about <strong>TypeScript</strong> and the adoption of
+				it that is currently taking place across our industry. It's the future of JavaScript.
 			</p>
-			<p><strong>TypeScript!</strong> It's the future of JavaScript, period.</p>
+			<p class="blocky">Clefairy, meet Clefable. No moon stone needed.</p>
 			<v-divider />
 			<h2>What else are you into?</h2>
 			<p>
@@ -163,5 +154,17 @@
 		margin: 0 auto 30px;
 		max-width: 400px;
 		padding: 10px;
+	}
+
+	.blocky {
+		background-color: #fff;
+		border-bottom-right-radius: 4px;
+		border-left: 10px solid $dc-blue-lt;
+		border-top-right-radius: 4px;
+		display: inline-block;
+		font-family: $casual-font;
+		// font-size: 16px;
+		padding: 15px 10px;
+		padding-right: 30px;
 	}
 </style>

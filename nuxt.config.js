@@ -52,11 +52,11 @@ export default {
 
 	googleFonts: {
 		families: {
+			Kalam: [400],
 			Exo: [300],
-			'La+Belle+Aurore': true,
-			'Libre+Franklin': [100, 300, 600],
-			'Titillium+Web': [200, 400, 600, 900],
+			'Libre Franklin': [100, 300, 600],
 			Prompt: [400, 700],
+			'Titillium Web': [200, 400, 600, 900],
 		},
 	},
 
