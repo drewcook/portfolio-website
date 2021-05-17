@@ -3,6 +3,36 @@
 		<Header />
 		<div class="scroll-away-spacer" />
 
+		<div class="spacer" />
+
+		<section class="melon text-center">
+			<v-container>
+				<h2>Hi, I'm Drew Cook.</h2>
+				<h3>I build things for the interwebs.</h3>
+			</v-container>
+		</section>
+
+		<section class="sky text-center">
+			<v-container>
+				<h2>Hi, I'm Drew Cook.</h2>
+				<h3>I build things for the interwebs.</h3>
+			</v-container>
+		</section>
+
+		<section class="water text-center">
+			<v-container>
+				<h2>Hi, I'm Drew Cook.</h2>
+				<h3>I build things for the interwebs.</h3>
+			</v-container>
+		</section>
+
+		<section class="deep text-center">
+			<v-container>
+				<h2 class="mb-3">Check Out Some Of My Work</h2>
+				<v-btn color="accent" nuxt to="/work">Project</v-btn>
+			</v-container>
+		</section>
+
 		<!-- Page Content -->
 		<v-main id="site-content">
 			<v-container>
@@ -71,6 +101,47 @@
 		position: fixed;
 		width: 100%;
 		z-index: 50;
+	}
+
+	.spacer {
+		margin-bottom: $header-height;
+	}
+
+	.melon {
+		background-color: $dc-neutral;
+		padding: 60px 0;
+	}
+
+	.sky {
+		background-color: $dc-blue-lt;
+		padding: 60px 0;
+
+		h2 {
+			color: $dc-blue-dk;
+		}
+
+		p {
+			color: $dc-blue-md;
+		}
+	}
+
+	.water {
+		background-color: $dc-blue-md;
+		padding: 60px 0;
+
+		h2,
+		h3 {
+			color: $dc-neutral;
+		}
+	}
+
+	.deep {
+		background-color: $dc-blue-dk;
+		padding: 60px 0;
+
+		h2 {
+			color: $dc-neutral;
+		}
 	}
 
 	#site-content {
