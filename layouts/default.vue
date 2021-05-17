@@ -11,7 +11,7 @@
 				<h3>I build things for the interwebs.</h3>
 			</v-container>
 		</section>
-
+		<!--
 		<section class="sky text-center">
 			<v-container>
 				<h2>Hi, I'm Drew Cook.</h2>
@@ -24,12 +24,12 @@
 				<h2>Hi, I'm Drew Cook.</h2>
 				<h3>I build things for the interwebs.</h3>
 			</v-container>
-		</section>
+		</section> -->
 
 		<section class="deep text-center">
 			<v-container>
 				<h2 class="mb-3">Check Out Some Of My Work</h2>
-				<v-btn color="accent" nuxt to="/work">Project</v-btn>
+				<v-btn color="accent" nuxt to="/work">Projects</v-btn>
 			</v-container>
 		</section>
 
@@ -109,6 +109,7 @@
 
 	.melon {
 		background-color: $dc-neutral;
+		border-bottom: 10px solid $dc-blue-lt;
 		padding: 60px 0;
 	}
 
@@ -137,6 +138,7 @@
 
 	.deep {
 		background-color: $dc-blue-dk;
+		border-top: 10px solid $dc-blue-md;
 		padding: 60px 0;
 
 		h2 {
