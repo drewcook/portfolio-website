@@ -241,7 +241,7 @@
 	}
 
 	.contact-icons {
-		margin-bottom: 7%;
+		margin-bottom: 13%;
 
 		@media (min-width: 1200px) {
 			margin-bottom: 80px;
