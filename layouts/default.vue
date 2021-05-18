@@ -87,13 +87,13 @@
 		}
 	}
 
-	#site-content {
-		margin-top: $header-height-mobile;
+	// #site-content {
+	// 	margin-top: $header-height-mobile;
 
-		@media (min-width: 700px) {
-			margin-top: $header-height;
-		}
-	}
+	// 	@media (min-width: 700px) {
+	// 		margin-top: $header-height;
+	// 	}
+	// }
 
 	.footer-cta {
 		background-color: $dc-neutral;
