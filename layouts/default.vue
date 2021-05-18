@@ -83,7 +83,7 @@
 		margin-bottom: $header-height-mobile;
 
 		@media (min-width: 700px) {
-			height: $header-height;
+			margin-bottom: $header-height;
 		}
 	}
 
@@ -91,7 +91,7 @@
 		margin-top: $header-height-mobile;
 
 		@media (min-width: 700px) {
-			height: $header-height;
+			margin-top: $header-height;
 		}
 	}
 
