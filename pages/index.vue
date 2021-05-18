@@ -116,7 +116,8 @@
 		padding: 60px 0;
 
 		h2,
-		h3 {
+		h3,
+		p {
 			color: $dc-neutral;
 		}
 	}
