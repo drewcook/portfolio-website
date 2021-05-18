@@ -20,12 +20,14 @@
 							</v-list>
 						</transition>
 					</div>
-					<transition name="contact">
-						<div v-show="opened" class="text-center contact-icons">
-							<h3 class="mb-5">Let's Be Social Buddies</h3>
-							<contact-icons />
-						</div>
-					</transition>
+					<div class="d-flex flex-column justify-center flex-grow-1">
+						<transition name="contact">
+							<div v-show="opened" class="text-center contact-icons">
+								<h3 class="mb-5">Let's Be Social Buddies</h3>
+								<contact-icons />
+							</div>
+						</transition>
+					</div>
 				</v-container>
 			</v-sheet>
 		</transition>
