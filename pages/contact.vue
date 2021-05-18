@@ -4,7 +4,7 @@
 			<h1>Contact Me</h1>
 			<p>
 				Feel free to send me an email at
-				<a href="mailto:drew@altheaweb.services">drew@altheaweb.services</a>.
+				<a href="mailto:drew@drewcook.dev">drew@drewcook.dev</a>.
 			</p>
 			<p>Or we can connect online.</p>
 			<div class="social-wrap">
