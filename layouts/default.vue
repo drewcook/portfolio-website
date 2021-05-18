@@ -64,7 +64,7 @@
 </template>
 
 <style lang="scss" scoped>
-	$header-height-mobile: 100px;
+	$header-height-mobile: 115px;
 	$header-height: 185px;
 
 	.scroll-away-spacer {
