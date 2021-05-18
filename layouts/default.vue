@@ -93,18 +93,27 @@
 </template>
 
 <style lang="scss" scoped>
+	$header-height-mobile: 90px;
 	$header-height: 185px;
 
 	.scroll-away-spacer {
 		background-image: linear-gradient(0deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 40%);
-		height: $header-height;
+		height: $header-height-mobile;
 		position: fixed;
 		width: 100%;
 		z-index: 50;
+
+		@media (min-width: 700px) {
+			height: $header-height;
+		}
 	}
 
 	.spacer {
-		margin-bottom: $header-height;
+		margin-bottom: $header-height-mobile;
+
+		@media (min-width: 700px) {
+			height: $header-height;
+		}
 	}
 
 	.melon {
@@ -147,7 +156,11 @@
 	}
 
 	#site-content {
-		margin-top: $header-height;
+		margin-top: $header-height-mobile;
+
+		@media (min-width: 700px) {
+			height: $header-height;
+		}
 	}
 
 	.footer-cta {

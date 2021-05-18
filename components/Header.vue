@@ -141,14 +141,13 @@
 		display: flex;
 		justify-content: space-between;
 		left: 5%;
-		padding-top: 15px;
 		position: fixed;
 		right: 5%;
 		top: 0;
 		z-index: 100;
 
-		@media (max-width: 380px) {
-			transform: scale(0.8);
+		@media (min-width: 700px) {
+			padding-top: 15px;
 		}
 	}
 
