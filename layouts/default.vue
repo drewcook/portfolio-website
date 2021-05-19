@@ -5,7 +5,7 @@
 		<div class="spacer" />
 
 		<!-- Page Content -->
-		<v-main id="site-content">
+		<v-main id="site-content" :class="$route.path === '/' ? 'is-home' : ''">
 			<nuxt />
 		</v-main>
 
@@ -128,13 +128,13 @@
 		}
 	}
 
-	// #site-content {
-	// 	margin-top: $header-height-mobile;
+	#site-content {
+		padding-bottom: 60px !important;
 
-	// 	@media (min-width: 700px) {
-	// 		margin-top: $header-height;
-	// 	}
-	// }
+		&.is-home {
+			padding-bottom: 0 !important;
+		}
+	}
 
 	.footer-cta {
 		background-color: $dc-neutral;
