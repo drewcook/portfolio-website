@@ -57,6 +57,17 @@ h6 {
 		display: block;
 		height: 4px;
 		margin: auto;
+		width: 80px;
+	}
+}
+
+.sm-divider {
+	&::after {
+		background-color: $accent;
+		content: '';
+		display: block;
+		height: 4px;
+		margin: 5px auto 15px;
 		width: 40px;
 	}
 }
