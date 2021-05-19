@@ -9,5 +9,6 @@ module.exports = {
 	rules: {
 		indentation: 'tab',
 		'selector-max-id': 1,
+		'max-nesting-depth': 3,
 	},
 }

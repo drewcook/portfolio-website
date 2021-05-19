@@ -1,61 +1,53 @@
 <template>
-	<v-row class="text-center">
-		<v-col cols="12">
-			<h1 class="page-title">Skills &amp; Specialization</h1>
-			<p>
-				Here's that laundry list of languages, frameworks, and libraries that I've come to
-				understand over the years. Scroll through the categories to read the specifics of what I
-				like to build with and what I have worked with in the past.
-			</p>
-			<v-sheet class="mt-9">
-				<v-tabs
-					v-model="tab"
-					light
-					centered
-					align-with-title
-					show-arrows
-					continuous
-					center-active
-					next-icon="mdi-arrow-right"
-					prev-icon="mdi-arrow-left"
+	<v-container class="text-center">
+		<h1 class="page-title">Skills &amp; Specialization</h1>
+		<p>
+			Here's that laundry list of languages, frameworks, and libraries that I've come to understand
+			over the years. Scroll through the categories to read the specifics of what I like to build
+			with and what I have worked with in the past.
+		</p>
+		<v-sheet class="mt-9" shaped>
+			<v-tabs
+				v-model="tab"
+				light
+				centered
+				align-with-title
+				show-arrows
+				continuous
+				center-active
+				next-icon="mdi-arrow-right"
+				prev-icon="mdi-arrow-left"
+			>
+				<v-tabs-slider color="accent"></v-tabs-slider>
+				<v-tab
+					v-for="item in tabInfo"
+					:key="item.title"
+					:href="`#tab-${item.title}`"
+					@click="tab = `tab-${item.title}`"
 				>
-					<v-tabs-slider color="accent"></v-tabs-slider>
-					<v-tab
-						v-for="item in tabInfo"
-						:key="item.title"
-						:href="`#tab-${item.title}`"
-						@click="tab = `tab-${item.title}`"
-					>
-						{{ item.title }}
-					</v-tab>
-				</v-tabs>
+					{{ item.title }}
+				</v-tab>
+			</v-tabs>
 
-				<v-tabs-items
-					v-model="tab"
-					class="skill-content"
-					continuous
-					show-arrows
-					show-arrows-on-hover
-				>
-					<v-tab-item v-for="item in tabInfo" :key="item.title" :value="`tab-${item.title}`">
-						<h4 class="text-center">{{ item.info }}:</h4>
-						<v-card flat>
-							<v-list flat>
-								<v-list-item v-for="skill in item.skills" :key="skill" class="text-center">
-									<!-- <v-list-item-icon>
+			<v-tabs-items v-model="tab" class="skill-content" continuous show-arrows show-arrows-on-hover>
+				<v-tab-item v-for="item in tabInfo" :key="item.title" :value="`tab-${item.title}`">
+					<h4 class="text-center">{{ item.info }}:</h4>
+					<v-card flat>
+						<v-list flat>
+							<v-list-item v-for="skill in item.skills" :key="skill" class="text-center">
+								<!-- <v-list-item-icon>
 										<v-icon v-text="skil"></v-icon>
 									</v-list-item-icon> -->
-									<v-list-item-content>
-										<v-list-item-title v-text="skill"></v-list-item-title>
-									</v-list-item-content>
-								</v-list-item>
-							</v-list>
-						</v-card>
-					</v-tab-item>
-				</v-tabs-items>
-			</v-sheet>
-		</v-col>
-	</v-row>
+								<v-list-item-content>
+									<v-list-item-title v-text="skill"></v-list-item-title>
+								</v-list-item-content>
+							</v-list-item>
+						</v-list>
+					</v-card>
+				</v-tab-item>
+			</v-tabs-items>
+		</v-sheet>
+	</v-container>
 </template>
 
 <script>
