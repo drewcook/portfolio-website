@@ -168,7 +168,6 @@
 		border-top-right-radius: 4px;
 		display: inline-block;
 		font-family: $casual-font;
-		// font-size: 16px;
 		padding: 15px 10px;
 		padding-right: 30px;
 	}
