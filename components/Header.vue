@@ -77,12 +77,12 @@
 						to: '/work',
 					},
 					{
-						title: 'Skills',
-						to: '/skills',
-					},
-					{
 						title: 'Experience',
 						to: '/experience',
+					},
+					{
+						title: 'Skills',
+						to: '/skills',
 					},
 					{
 						title: 'Contact',
@@ -220,7 +220,7 @@
 	// Navigation
 	.nav-list {
 		background: none !important;
-		margin-top: 15%;
+		margin-top: 35%;
 	}
 
 	.nav-link {
