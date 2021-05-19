@@ -1,17 +1,19 @@
 <template>
-	<v-row>
-		<v-col cols="12">
-			<h1>Contact Me</h1>
-			<p>
-				Feel free to send me an email at
-				<a href="mailto:drew@drewcook.dev">drew@drewcook.dev</a>.
-			</p>
-			<p>Or we can connect online.</p>
-			<div class="social-wrap">
-				<contact-icons />
-			</div>
-		</v-col>
-	</v-row>
+	<v-container class="text-center">
+		<h1 class="page-title">Contact Me</h1>
+		<p>
+			I love working on new and exciting projects, and I am always open to connecting with other
+			professionals. Please reach out to me if you'd like to work together.
+		</p>
+		<p>
+			Feel free to send me an email at
+			<a href="mailto:drew@drewcook.dev" class="content-link">drew@drewcook.dev</a>.
+		</p>
+		<h4 class="mb-3">Or let's connect online!</h4>
+		<div class="social-wrap">
+			<contact-icons />
+		</div>
+	</v-container>
 </template>
 
 <script>
@@ -26,6 +28,7 @@
 
 <style lang="scss" scoped>
 	.social-wrap {
+		margin: auto;
 		max-width: 240px;
 	}
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<div class="text-center">
+	<v-container class="text-center">
 		<h1 class="page-title">Resume &amp; Work Experience</h1>
 		<p>
 			Please feel free to grab my resume. I understand by making this public, I'm taking risks, but
@@ -33,7 +33,7 @@
 		<h2>Work Experience</h2>
 		<p class="lead">Travel down the rabbit hole. Scoll down for the journey.</p>
 		<experience-timeline />
-	</div>
+	</v-container>
 </template>
 
 <script>
