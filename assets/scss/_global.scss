@@ -30,10 +30,6 @@ h6 {
 	}
 }
 
-#site-content {
-	padding-bottom: 60px !important;
-}
-
 // Links that appear within page content or elsewhare with cleaner style
 .content-link {
 	color: $primary;
@@ -46,3 +42,28 @@ h6 {
 	transition: color 200ms ease-in-out;
 }
 
+.page-title {
+	font-size: 50px;
+	margin: 0 auto 30px;
+	text-align: center;
+
+	&::after {
+		background-color: $accent;
+		content: '';
+		display: block;
+		height: 4px;
+		margin: auto;
+		width: 80px;
+	}
+}
+
+.sm-divider {
+	&::after {
+		background-color: $accent;
+		content: '';
+		display: block;
+		height: 4px;
+		margin: 5px auto 15px;
+		width: 40px;
+	}
+}

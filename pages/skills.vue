@@ -1,181 +1,130 @@
 <template>
-	<v-row>
-		<v-col cols="12">
-			<h1>Skills</h1>
-			<p>
-				Firstly, I keep an open mind and am always craving to learn more. I don't know it, and I
-				don't intend to. This page should give you a pretty good idea of who I am as an engineer,
-				what I know, and what I don't.
-			</p>
-			<p>
-				However, over the years, I've been exposed to many different languages, frameworks, and
-				libraries. Through that exposure, I've learned to focus my efforts around a subset of those,
-				as it would take a lifetime to learn all the thing software development. I've chosen to give
-				my time and energy towards specializing in the language of JavaScript. Writing code on both
-				the server and the client without having to context switch to a different language has many
-				benefits.
-			</p>
-			<p>
-				Well, here's that laundry list of languages, frameworks, and libraries that I've come to
-				understand over the years:
-			</p>
-			<h3>I like JavaScript.</h3>
-			<ul>
-				<li>ES6</li>
-				<li>React</li>
-				<li>Next.js Framework</li>
-				<li>React Native</li>
-				<li>Node</li>
-				<li>Express Framework</li>
-				<li>Vue</li>
-				<li>Nuxt.js Framework</li>
-				<li>Apollo GraphQL</li>
-				<li>JWT</li>
-				<li>Mongoose</li>
-				<li>Expo</li>
-			</ul>
-			<h3>I like .NET</h3>
-			<ul>
-				<li>ASP.NET MVC</li>
-				<li>ASP>NET Core</li>
-				<li>C#</li>
-				<li>Entity Framework</li>
-				<li>Web API</li>
-				<li>NUnit</li>
-				<li>Hangfire</li>
-				<li>LINQ</li>
-			</ul>
-			<h3>I like databases.</h3>
-			<ul>
-				<li>MongoDB</li>
-				<li>SQL</li>
-				<li>Firebase / Firestore</li>
-			</ul>
-			<h3>I like testing.</h3>
-			<ul>
-				<li>Jest</li>
-				<li>Enzyme</li>
-				<li>React Testing Library</li>
-				<li>Cypress</li>
-			</ul>
-			<h3>I like tooling.</h3>
-			<ul>
-				<li>Babel</li>
-				<li>Webpack</li>
-				<li>ESLint</li>
-				<li>Prettier</li>
-				<li>Stylelint</li>
-				<li>SignalR</li>
-				<li>VS Code</li>
-			</ul>
-			<h3>I like component libraries.</h3>
-			<ul>
-				<li>Bootstrap</li>
-				<li>Reactstrap</li>
-				<li>Material UI</li>
-				<li>Vuetify</li>
-			</ul>
-			<h3>I like shipping code.</h3>
-			<ul>
-				<li>Heroku</li>
-				<li>CircleCI</li>
-				<li>TravisCI</li>
-				<li>Docker</li>
-				<li>Git</li>
-			</ul>
-			<h3>I want to learn more about:</h3>
-			<ul>
-				<li>Progressive Web Apps</li>
-				<li>Blockchain tech</li>
-				<li>Vue</li>
-				<li>Go</li>
-				<li>Docker</li>
-				<li>Kubernetes</li>
-				<li>Flutter</li>
-				<li>Firebase / Firestore</li>
-				<li>System Design</li>
-				<li>Amazon Web Services</li>
-			</ul>
-		</v-col>
-	</v-row>
+	<v-container class="text-center">
+		<h1 class="page-title">Skills &amp; Specialization</h1>
+		<p>
+			Here's that laundry list of languages, frameworks, and libraries that I've come to understand
+			over the years. Scroll through the categories to read the specifics of what I like to build
+			with and what I have worked with in the past.
+		</p>
+		<v-sheet class="mt-9" shaped>
+			<v-tabs
+				v-model="tab"
+				light
+				centered
+				align-with-title
+				show-arrows
+				continuous
+				center-active
+				next-icon="mdi-arrow-right"
+				prev-icon="mdi-arrow-left"
+			>
+				<v-tabs-slider color="accent"></v-tabs-slider>
+				<v-tab
+					v-for="item in tabInfo"
+					:key="item.title"
+					:href="`#tab-${item.title}`"
+					@click="tab = `tab-${item.title}`"
+				>
+					{{ item.title }}
+				</v-tab>
+			</v-tabs>
+
+			<v-tabs-items v-model="tab" class="skill-content" continuous show-arrows show-arrows-on-hover>
+				<v-tab-item v-for="item in tabInfo" :key="item.title" :value="`tab-${item.title}`">
+					<h4 class="text-center">{{ item.info }}:</h4>
+					<v-card flat>
+						<v-list flat>
+							<v-list-item v-for="skill in item.skills" :key="skill" class="text-center">
+								<!-- <v-list-item-icon>
+										<v-icon v-text="skil"></v-icon>
+									</v-list-item-icon> -->
+								<v-list-item-content>
+									<v-list-item-title v-text="skill"></v-list-item-title>
+								</v-list-item-content>
+							</v-list-item>
+						</v-list>
+					</v-card>
+				</v-tab-item>
+			</v-tabs-items>
+		</v-sheet>
+	</v-container>
 </template>
 
 <script>
 	export default {
 		data() {
 			return {
-				languages: [
+				tab: 'tab-Languages',
+				tabInfo: [
 					{
-						name: 'JavaScript',
-						percent: 85,
-						yoe: 7,
+						title: 'Languages',
+						info: 'The foundational pillars',
+						skills: ['JavaScript ES6', 'HTML', 'CSS', 'SCSS/LESS', 'GraphQL', 'C#', 'PHP', 'SQL'],
 					},
 					{
-						name: 'C#',
-						percent: 70,
-						yoe: 7,
+						title: 'Frameworks',
+						info: 'The ecosystems & paradigms',
+						skills: [
+							'Node',
+							'Express',
+							'React',
+							'Next.js',
+							'React Native',
+							'Expo',
+							'Vue',
+							'Nuxt.js',
+							'.NET Core & MVC',
+						],
 					},
 					{
-						name: 'HTML',
-						percent: 95,
-						yoe: 8,
+						title: 'Storage',
+						info: 'The warehouses & datastores',
+						skills: ['MongoDB', 'Google Firebase', 'MS SQL Server', 'MySQL', 'S3'],
 					},
 					{
-						name: 'CSS',
-						percent: 90,
-						yoe: 8,
+						title: 'Tooling',
+						info: 'The parts & accessories',
+						skills: [
+							'Babel',
+							'Webpack',
+							'Redux',
+							'Apollo',
+							'ESLint',
+							'Prettier',
+							'Stylelint',
+							'Material UI',
+							'Vuetify',
+							'Reactstrap',
+							'Bootstrap',
+							'SignalR',
+							'Hangfire',
+						],
 					},
 					{
-						name: 'SQL',
-						percent: 65,
-					},
-				],
-				frameworks: [
-					{
-						name: 'Entity Framework / .NET',
-						percent: 60,
-						yoe: 7,
+						title: 'Testing',
+						info: 'The damage controllers',
+						skills: ['Jest', 'React Testing Library', 'Enzyme', 'Cypress', 'NUnit'],
 					},
 					{
-						name: 'Node',
-						percent: 60,
-						yoe: 5,
+						title: 'Deployment',
+						info: 'The shipping & handling',
+						skills: ['Heroku', 'CircleCI', 'TravisCI', 'Docker', 'Git'],
 					},
-					{
-						name: 'Express',
-						percent: 80,
-						yoe: 5,
-					},
-					{
-						name: 'React',
-						percent: 88,
-						yoe: 4,
-					},
-					{
-						name: 'Vue',
-						percent: 25,
-						yoe: 1,
-					},
-					{
-						name: 'Angular',
-						percent: 10,
-						yoe: 1,
-					},
-					{
-						name: 'Next.js',
-						percent: 70,
-						yoe: 3,
-					},
-					{
-						name: 'Nuxt.js',
-						percent: 30,
-						yoe: 1,
-					},
-					{
-						name: 'Apollo GraphQL',
-						percent: 60,
-						yoe: 3,
-					},
+					// {
+					// 	title: 'More',
+					// 	skills: [
+					// 		'Progressive Web Apps',
+					// 		'Blockchain tech',
+					// 		'Vue',
+					// 		'Go',
+					// 		'Docker',
+					// 		'Kubernetes',
+					// 		'Flutter',
+					// 		'Firebase / Firestore',
+					// 		'System Design',
+					// 		'Amazon Web Services',
+					// 	],
+					// },
 				],
 			}
 		},
@@ -186,3 +135,31 @@
 		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.v-sheet {
+		padding: 30px 20px;
+	}
+
+	h4 {
+		padding: 20px 0;
+	}
+
+	.v-card {
+		padding-top: 10px;
+	}
+
+	.v-list {
+		padding: 0;
+	}
+
+	.skill-content {
+		padding-top: 30px;
+		/* stylelint-disable */
+		.v-window__prev,
+		.v-window__next {
+			background: none;
+		}
+		/* stylelint-enable */
+	}
+</style>

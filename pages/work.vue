@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<h1 class="text-center mb-5">My Work</h1>
+	<v-container>
+		<h1 class="page-title">My Work</h1>
 		<p class="text-center mb-10">
 			All of these projects have their own demo site available. You can find the code for each
 			project by clicking the Github link on each project card.
@@ -10,7 +10,7 @@
 				<ProjectCard :project="project" />
 			</v-col>
 		</v-row>
-	</div>
+	</v-container>
 </template>
 
 <script>
