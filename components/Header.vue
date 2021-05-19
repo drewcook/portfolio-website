@@ -81,8 +81,8 @@
 						to: '/skills',
 					},
 					{
-						title: 'Resume',
-						to: '/resume',
+						title: 'Experience',
+						to: '/experience',
 					},
 					{
 						title: 'Contact',

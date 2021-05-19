@@ -63,7 +63,7 @@
 			</p>
 			<p class="blocky">
 				You can check out more details about my work experience on my
-				<nuxt-link to="/resume" class="content-link">Resume</nuxt-link>.
+				<nuxt-link to="/experience" class="content-link">Resume</nuxt-link>.
 			</p>
 			<v-divider />
 			<h2>Okay, why do you like JavaScript so much?</h2>

@@ -1,6 +1,6 @@
 <template>
 	<div class="text-center">
-		<h1 class="mb-4">My Resume and Work Experience</h1>
+		<h1 class="page-title">Resume &amp; Work Experience</h1>
 		<p>
 			Please feel free to grab my resume. I understand by making this public, I'm taking risks, but
 			hopefully you are a good person and will use it with good intention.
