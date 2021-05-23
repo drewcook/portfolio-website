@@ -37,7 +37,7 @@
 							<ul>
 								<li><nuxt-link class="content-link" to="/about">About</nuxt-link></li>
 								<li><nuxt-link class="content-link" to="/work">Work</nuxt-link></li>
-								<li><nuxt-link class="content-link" to="/resume.pdf">Resume</nuxt-link></li>
+								<li><a class="content-link" href="/resume.pdf">Resume</a></li>
 								<li><nuxt-link class="content-link" to="/experience">Experience</nuxt-link></li>
 								<li><nuxt-link class="content-link" to="/contact">Contact</nuxt-link></li>
 							</ul>
