@@ -1,15 +1,7 @@
 <template>
 	<v-container class="text-center">
 		<h1 class="page-title">Resume &amp; Work Experience</h1>
-		<p>
-			Please feel free to grab my resume. I understand by making this public, I'm taking risks, but
-			hopefully you are a good person and will use it with good intention.
-		</p>
-		<p>
-			By using it, all I ask from you is that you please do not use it for spamming others, please
-			do not pirate it, and please do not plagerize it or assume it as your own. You are free to use
-			it as a template for your own experience, however.
-		</p>
+		<p>Feel free to view, download, or save my resume to your Google Drive.</p>
 		<v-row>
 			<v-col v-for="option in options" :key="option.id" cols="12" md="4">
 				<v-card

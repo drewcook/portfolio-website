@@ -1,6 +1,11 @@
 <template>
 	<v-card class="card">
-		<v-card-title class="headline"> {{ project.title }} </v-card-title>
+		<v-card-title class="headline">
+			{{ project.title }}
+			<a :href="project.demoUrl" target="_blank">
+				<v-icon>{{ demoIcon }}</v-icon>
+			</a>
+		</v-card-title>
 		<v-card-text>
 			<h3 class="my-2">About This Project</h3>
 			<p>
@@ -14,16 +19,9 @@
 			</ul>
 		</v-card-text>
 		<v-card-actions>
-			<v-btn color="primary">
-				<a :href="project.demoUrl" target="_blank">
-					<v-icon>{{ demoIcon }}</v-icon>
-					Demo
-				</a>
-			</v-btn>
-			<v-btn color="accent">
+			<v-btn color="secondary" fab elevation="0" small>
 				<a :href="project.codeUrl" target="_blank">
 					<v-icon>{{ githubIcon }}</v-icon>
-					Code
 				</a>
 			</v-btn>
 		</v-card-actions>
@@ -31,7 +29,7 @@
 </template>
 
 <script>
-	import { mdiDesktopMac, mdiGithub } from '@mdi/js'
+	import { mdiGithub, mdiOpenInNew } from '@mdi/js'
 	export default {
 		props: {
 			project: {
@@ -41,7 +39,7 @@
 		},
 		data() {
 			return {
-				demoIcon: mdiDesktopMac,
+				demoIcon: mdiOpenInNew,
 				githubIcon: mdiGithub,
 			}
 		},

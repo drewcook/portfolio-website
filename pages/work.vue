@@ -2,8 +2,17 @@
 	<v-container>
 		<h1 class="page-title">My Work</h1>
 		<p class="text-center mb-10">
-			All of these projects have their own demo site available. You can find the code for each
-			project by clicking the Github link on each project card.
+			Here are a few selected projects that I have built in my spare time. You can view a larger
+			body of work on my
+			<a href="https://github.com/drewcook" target="_blank" class="content-link">Github page</a>.
+		</p>
+		<p class="text-center mb-10">
+			Each project has a live demo that you can test out by clicking the
+			<v-icon>{{ demoIcon }}</v-icon
+			>. Some will ask for you to sign up to use the features, but all you need is to put in an
+			email. I don't do anything with your data, and I hash all the passwords for all accounts.
+			You'll also find a link to the source code by clicking the
+			<v-icon>{{ githubIcon }}</v-icon> icon.
 		</p>
 		<v-row>
 			<v-col v-for="project in projects" :key="project.title" cols="12" sm="6" lg="4" xl="3">
@@ -14,9 +23,12 @@
 </template>
 
 <script>
+	import { mdiGithub, mdiOpenInNew } from '@mdi/js'
 	export default {
 		data() {
 			return {
+				demoIcon: mdiOpenInNew,
+				githubIcon: mdiGithub,
 				projects: [
 					{
 						title: 'BeerBuddy API',
@@ -73,14 +85,14 @@
 							'DadJokes is built using the Nuxt.js framework. It connects with the Dadjokes.io API to list out jokes by category. You can search for a joke, filter by category, and view the setup and punchlines for each joke.',
 						techStack: ['Nuxt.js', 'Vue.js'],
 					},
-					{
-						title: 'Powder Chat',
-						demoUrl: 'https://powder.chat',
-						codeUrl: 'https://github.com/drewcook/powderchat-api',
-						description:
-							'Powderchat is both a web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
-						techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
-					},
+					// {
+					// 	title: 'Powder Chat',
+					// 	demoUrl: 'https://powder.chat',
+					// 	codeUrl: 'https://github.com/drewcook/powderchat-api',
+					// 	description:
+					// 		'Powderchat is both a web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
+					// 	techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
+					// },
 				],
 			}
 		},
