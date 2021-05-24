@@ -1,7 +1,7 @@
 <template>
-	<v-card :class="flipped ? 'flipped card' : 'card'" shaped>
+	<div>
 		<transition name="flip-card">
-			<div v-show="!flipped" class="front">
+			<v-card v-show="!flipped" class="card front" shaped>
 				<v-img src="https://picsum.photos/300/200" />
 				<v-card-title class="d-flex justify-space-between align-center card-title">
 					{{ project.title }}
@@ -30,40 +30,36 @@
 					<a :href="project.codeUrl" target="_blank" color="primary">
 						<v-icon>{{ githubIcon }}</v-icon>
 					</a>
-					<v-btn color="secondary" outlined small @click="flipCard()">
+					<v-btn color="secondary" outlined small @click="flipCard">
 						Details
 						<v-icon>{{ detailsIcon }}</v-icon>
 					</v-btn>
 				</v-card-actions>
-			</div>
+			</v-card>
 		</transition>
 		<transition name="flip-card">
-			<div v-show="flipped" class="back">
-				<div class="d-flex justify-center align-center">
-					<v-card-title class="d-flex justify-space-between align-center card-title">
-						About This Project
-					</v-card-title>
+			<v-card v-show="flipped" class="card back" shaped>
+				<div class="d-flex flex-column justify-center align-center text-center">
+					<v-card-title>About This Project</v-card-title>
 					<v-card-text>
 						<p>{{ project.description }}</p>
 					</v-card-text>
 					<v-card-text class="pt-0">
-						<div class="d-flex justify-start align-center tech-stack">
-							<h3 class="my-2">Tech Stack</h3>
-							<a :href="project.codeUrl" target="_blank" color="primary" class="ml-1">
-								<v-icon>{{ githubIcon }}</v-icon>
-							</a>
-						</div>
+						<h3 class="my-2">Tech Stack</h3>
 						<v-chip v-for="tech in project.techStack" :key="`${project.title}-${tech}`" small>
 							{{ tech }}
 						</v-chip>
 					</v-card-text>
 					<v-card-actions>
-						<v-btn color="primary" @click="flipCard()">Return</v-btn>
+						<v-btn color="secondary" outlined small @click="flipCard">
+							Return
+							<v-icon>{{ detailsIcon }}</v-icon>
+						</v-btn>
 					</v-card-actions>
 				</div>
-			</div>
+			</v-card>
 		</transition>
-	</v-card>
+	</div>
 </template>
 
 <script>

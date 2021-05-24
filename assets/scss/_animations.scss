@@ -47,13 +47,13 @@
 
 /* Project Cards */
 .flip-card-enter-active {
-	animation: fadeInLeft;
+	animation: flipInY;
 	// animation-delay: 500ms;
 	animation-duration: 500ms;
 }
 
 .flip-card-leave-active {
-	animation: fadeOutLeft;
+	animation: flipOutY;
 	// animation-delay: 500ms;
 	animation-duration: 500ms;
 }
