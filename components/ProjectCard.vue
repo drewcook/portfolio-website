@@ -41,11 +41,13 @@
 			<v-card v-show="flipped" class="card back" shaped>
 				<div class="d-flex flex-column justify-center align-center text-center">
 					<v-card-title>About This Project</v-card-title>
+					<div class="sm-divider" />
 					<v-card-text>
 						<p>{{ project.description }}</p>
 					</v-card-text>
 					<v-card-text class="pt-0">
 						<h3 class="my-2">Tech Stack</h3>
+						<div class="sm-divider" />
 						<v-chip-group column>
 							<v-chip v-for="tech in project.techStack" :key="`${project.title}-${tech}`" small>
 								{{ tech }}
@@ -53,9 +55,14 @@
 						</v-chip-group>
 					</v-card-text>
 					<v-card-actions class="actions d-flex justify-space-between align-center px-5">
-						<a :href="project.codeUrl" target="_blank" color="primary">
-							<v-icon>{{ githubIcon }}</v-icon>
-						</a>
+						<div>
+							<a :href="project.codeUrl" target="_blank" color="primary">
+								<v-icon>{{ githubIcon }}</v-icon>
+							</a>
+							<a :href="project.demoUrl" target="_blank" color="primary">
+								<v-icon>{{ demoIcon }}</v-icon>
+							</a>
+						</div>
 						<v-btn color="secondary" outlined small @click="flipBack">
 							Return
 							<v-icon>{{ detailsIcon }}</v-icon>

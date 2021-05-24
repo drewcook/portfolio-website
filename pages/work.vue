@@ -3,7 +3,10 @@
 		<h1 class="page-title">My Work</h1>
 		<p class="text-center mb-10">
 			Here are a few selected projects that I have built in my spare time. You can view a larger
-			body of work on my
+			body of work, including this
+			<a href="https://github.com/drewcook/portfolio-website" target="_blank" class="content-link"
+				>portfolio website</a
+			>, on my
 			<a href="https://github.com/drewcook" target="_blank" class="content-link">Github page</a>.
 		</p>
 		<p class="text-center mb-10">
@@ -13,7 +16,6 @@
 			passwords for all accounts. You'll also find a link to the source code by clicking the
 			<v-icon>{{ githubIcon }}</v-icon> icon.
 		</p>
-		<p>You may also filter the list by either application type or frameworks used.</p>
 		<v-sheet class="pa-5 mb-8" elevation="1" shaped>
 			<div class="mb-5">
 				<h4 class="d-flex justify-space-between align-center">
