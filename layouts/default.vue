@@ -10,7 +10,7 @@
 		</v-main>
 
 		<!-- Contact CTA -->
-		<section class="footer-cta">
+		<section v-show="$route.name !== 'contact'" class="footer-cta">
 			<v-container>
 				<v-row>
 					<v-spacer />
@@ -37,7 +37,7 @@
 							<ul>
 								<li><nuxt-link class="content-link" to="/about">About</nuxt-link></li>
 								<li><nuxt-link class="content-link" to="/work">Work</nuxt-link></li>
-								<li><a class="content-link" href="/resume.pdf">Resume</a></li>
+								<li><a class="content-link" href="/resume.pdf" target="_blank">Resume</a></li>
 								<li><nuxt-link class="content-link" to="/experience">Experience</nuxt-link></li>
 								<li><nuxt-link class="content-link" to="/contact">Contact</nuxt-link></li>
 							</ul>
@@ -81,8 +81,9 @@
 									href="https://github.com/drewcook/portfolio-website"
 									target="_blank"
 									class="content-link"
-									>Designed &amp; Built by Drew Cook.</a
 								>
+									Designed &amp; Built by Drew Cook.
+								</a>
 								• {{ new Date().getFullYear() }}
 							</small>
 						</v-col>
@@ -148,6 +149,7 @@
 		.v-btn {
 			background-color: $dc-blue-dk !important;
 			color: #fff;
+			font-weight: bold;
 		}
 	}
 

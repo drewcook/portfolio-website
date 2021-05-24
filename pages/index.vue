@@ -97,7 +97,6 @@
 		}
 
 		.v-btn {
-			color: $dc-blue-dk;
 			font-weight: bold;
 		}
 	}
