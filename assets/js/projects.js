@@ -28,7 +28,7 @@ const projects = [
 		codeUrl: 'https://github.com/drewcook/beerbuddy-web',
 		description:
 			'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The client app is built using the Next.js framework and utilizing both GraphQL Apollo Client and Server.',
-		filters: ['mobile', 'react'],
+		filters: ['mobile', 'react native'],
 		frameworks: ['React Native / Expo', 'GraphQL / Apollo'],
 		techStack: ['React Native', 'Expo', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
 	},
@@ -93,7 +93,7 @@ const projects = [
 		codeUrl: 'https://github.com/drewcook/powderchat-api',
 		description:
 			'Powderchat is both a full-stack web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
-		filters: ['mobile', 'node', 'react'],
+		filters: ['mobile', 'node', 'react native'],
 		frameworks: ['Node / Express', 'React Native / Expo', 'GraphQL / Apollo'],
 		techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
 	},

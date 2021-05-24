@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<transition name="flip-card">
-			<v-card v-show="!flipped" class="card front" shaped>
+		<transition name="flip-card" @after-leave="afterLeave">
+			<v-card v-show="!showDetails" class="card front" shaped>
 				<v-img src="https://picsum.photos/300/200" />
 				<v-card-title class="d-flex justify-space-between align-center card-title">
 					{{ project.title }}
@@ -30,14 +30,14 @@
 					<a :href="project.codeUrl" target="_blank" color="primary">
 						<v-icon>{{ githubIcon }}</v-icon>
 					</a>
-					<v-btn color="secondary" outlined small @click="flipCard">
+					<v-btn color="secondary" outlined small @click="flipOver">
 						Details
 						<v-icon>{{ detailsIcon }}</v-icon>
 					</v-btn>
 				</v-card-actions>
 			</v-card>
 		</transition>
-		<transition name="flip-card">
+		<transition name="flip-card" @after-leave="afterLeaveDetails">
 			<v-card v-show="flipped" class="card back" shaped>
 				<div class="d-flex flex-column justify-center align-center text-center">
 					<v-card-title>About This Project</v-card-title>
@@ -46,12 +46,17 @@
 					</v-card-text>
 					<v-card-text class="pt-0">
 						<h3 class="my-2">Tech Stack</h3>
-						<v-chip v-for="tech in project.techStack" :key="`${project.title}-${tech}`" small>
-							{{ tech }}
-						</v-chip>
+						<v-chip-group column>
+							<v-chip v-for="tech in project.techStack" :key="`${project.title}-${tech}`" small>
+								{{ tech }}
+							</v-chip>
+						</v-chip-group>
 					</v-card-text>
-					<v-card-actions>
-						<v-btn color="secondary" outlined small @click="flipCard">
+					<v-card-actions class="actions d-flex justify-space-between align-center px-5">
+						<a :href="project.codeUrl" target="_blank" color="primary">
+							<v-icon>{{ githubIcon }}</v-icon>
+						</a>
+						<v-btn color="secondary" outlined small @click="flipBack">
 							Return
 							<v-icon>{{ detailsIcon }}</v-icon>
 						</v-btn>
@@ -77,12 +82,21 @@
 				githubIcon: mdiGithub,
 				detailsIcon: mdiUndoVariant,
 				flipped: false,
+				showDetails: false,
 			}
 		},
 		methods: {
-			flipCard() {
-				console.log('flipping card')
-				this.flipped = !this.flipped
+			flipOver() {
+				this.showDetails = true
+			},
+			flipBack() {
+				this.flipped = false
+			},
+			afterLeave() {
+				this.flipped = true
+			},
+			afterLeaveDetails() {
+				this.showDetails = false
 			},
 		},
 	}
@@ -104,6 +118,8 @@
 	}
 
 	.back {
-		flex-direction: column;
+		.actions {
+			width: 100%;
+		}
 	}
 </style>

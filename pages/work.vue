@@ -15,40 +15,42 @@
 		</p>
 		<p>You may also filter the list by either application type or frameworks used.</p>
 		<v-sheet class="pa-5 mb-8" elevation="1" shaped>
-			<v-btn v-show="filters.length > 0" color="accent" @click="resetFilters">
-				<v-icon>{{ resetIcon }}</v-icon>
-			</v-btn>
-			<div class="text-center mb-5">
-				<h4>Filters - Application Type</h4>
+			<div class="mb-5">
+				<h4 class="d-flex justify-space-between align-center">
+					Filters - Application Type
+					<v-chip v-show="filters.length > 0" outlined color="grey" close @click="resetFilters">
+						Clear
+					</v-chip>
+				</h4>
 				<v-chip-group multiple column>
-					<v-chip active-class="active" color="info" data-filter="api" @click="filterByChip">
-						Backend API
-					</v-chip>
-					<v-chip active-class="active" color="info" data-filter="web" @click="filterByChip">
-						Web Application
-					</v-chip>
-					<v-chip active-class="active" color="info" data-filter="mobile" @click="filterByChip"
-						>Mobile Application
+					<v-chip
+						v-for="tag in tags.types"
+						:key="tag.title"
+						active-class="active"
+						active="tag.checked"
+						:close="tag.checked"
+						color="info"
+						:data-filter="tag.filter"
+						@click="e => filterByChip(e, 'type')"
+					>
+						{{ tag.title }}
 					</v-chip>
 				</v-chip-group>
 			</div>
-			<div class="text-center">
+			<div>
 				<h4>Filters - Frameworks</h4>
 				<v-chip-group multiple column>
-					<v-chip active-class="active" color="primary" data-filter="node" @click="filterByChip">
-						Node / Express
-					</v-chip>
-					<v-chip active-class="active" color="primary" data-filter="react" @click="filterByChip">
-						React / Next
-					</v-chip>
-					<v-chip active-class="active" color="primary" data-filter="vue" @click="filterByChip">
-						Vue / Nuxt
-					</v-chip>
-					<v-chip active-class="active" color="primary" data-filter="graphql" @click="filterByChip">
-						GraphQL / Apollo
-					</v-chip>
-					<v-chip active-class="active" color="primary" data-filter="graphql" @click="filterByChip">
-						React Native / Expo
+					<v-chip
+						v-for="tag in tags.frameworks"
+						:key="tag.title"
+						active-class="active"
+						active="tag.checked"
+						:close="tag.checked"
+						color="primary"
+						:data-filter="tag.filter"
+						@click="e => filterByChip(e, 'framework')"
+					>
+						{{ tag.title }}
 					</v-chip>
 				</v-chip-group>
 			</div>
@@ -73,6 +75,52 @@
 				resetIcon: mdiCloseCircle,
 				filters: [],
 				projects,
+				tags: {
+					types: [
+						{
+							title: 'Backend API',
+							checked: false,
+							filter: 'api',
+						},
+						{
+							title: 'Web Application',
+							checked: false,
+							filter: 'web',
+						},
+						{
+							title: 'Mobile Application',
+							checked: false,
+							filter: 'mobile',
+						},
+					],
+					frameworks: [
+						{
+							title: 'Node / Express',
+							checked: false,
+							filter: 'node',
+						},
+						{
+							title: 'React / Next',
+							checked: false,
+							filter: 'react',
+						},
+						{
+							title: 'React Native / Expo',
+							checked: false,
+							filter: 'react native',
+						},
+						{
+							title: 'Vue / Nuxt',
+							checked: false,
+							filter: 'vue',
+						},
+						{
+							title: 'GraphQL / Apollo',
+							checked: false,
+							filter: 'graphql',
+						},
+					],
+				},
 			}
 		},
 		head() {
@@ -81,8 +129,19 @@
 			}
 		},
 		methods: {
-			filterByChip(e) {
+			filterByChip(e, category) {
 				const { filter } = e.target.parentElement.dataset
+
+				// update checked state for tag
+				if (category === 'type') {
+					const typeMatch = this.tags.types.filter(tag => tag.filter === filter)[0]
+					typeMatch.checked = !typeMatch.checked
+				}
+				if (category === 'framework') {
+					const frameworkMatch = this.tags.frameworks.filter(tag => tag.filter === filter)[0]
+					frameworkMatch.checked = !frameworkMatch.checked
+				}
+
 				if (!this.filters.includes(filter)) {
 					// add filter
 					this.filters = [...this.filters, filter]
@@ -111,9 +170,15 @@
 				}
 			},
 			resetFilters() {
+				// Reset tags
+				this.tags.types = this.tags.types.map(tag => ({ ...tag, checked: false }))
+				this.tags.frameworks = this.tags.frameworks.map(tag => ({ ...tag, checked: false }))
 				const activeChips = document.querySelectorAll('span.active')
-				activeChips.forEach(chip => chip.classList.remove('active'))
+				console.log(activeChips)
+				// activeChips.forEach(chip => chip.classList.remove('active', 'v-chip--active'))
+				// Reset filters
 				this.filters = []
+				// Reset projects
 				this.projects = projects
 			},
 		},
