@@ -8,12 +8,51 @@
 		</p>
 		<p class="text-center mb-10">
 			Each project has a live demo that you can test out by clicking the
-			<v-icon>{{ demoIcon }}</v-icon
-			>. Some will ask for you to sign up to use the features, but all you need is to put in an
-			email. I don't do anything with your data, and I hash all the passwords for all accounts.
-			You'll also find a link to the source code by clicking the
+			<v-icon>{{ demoIcon }}</v-icon> icon. Some will ask for you to sign up to use the features,
+			but all you need is to put in an email. I don't do anything with your data, and I hash all the
+			passwords for all accounts. You'll also find a link to the source code by clicking the
 			<v-icon>{{ githubIcon }}</v-icon> icon.
 		</p>
+		<p>You may also filter the list by either application type or frameworks used.</p>
+		<v-sheet class="pa-5 mb-8" elevation="1" shaped>
+			<v-btn v-show="filters.length > 0" color="accent" @click="resetFilters">
+				<v-icon>{{ resetIcon }}</v-icon>
+			</v-btn>
+			<div class="text-center mb-5">
+				<h4>Filters - Application Type</h4>
+				<v-chip-group multiple column>
+					<v-chip active-class="active" color="info" data-filter="api" @click="filterByChip">
+						Backend API
+					</v-chip>
+					<v-chip active-class="active" color="info" data-filter="web" @click="filterByChip">
+						Web Application
+					</v-chip>
+					<v-chip active-class="active" color="info" data-filter="mobile" @click="filterByChip"
+						>Mobile Application
+					</v-chip>
+				</v-chip-group>
+			</div>
+			<div class="text-center">
+				<h4>Filters - Frameworks</h4>
+				<v-chip-group multiple column>
+					<v-chip active-class="active" color="primary" data-filter="node" @click="filterByChip">
+						Node / Express
+					</v-chip>
+					<v-chip active-class="active" color="primary" data-filter="react" @click="filterByChip">
+						React / Next
+					</v-chip>
+					<v-chip active-class="active" color="primary" data-filter="vue" @click="filterByChip">
+						Vue / Nuxt
+					</v-chip>
+					<v-chip active-class="active" color="primary" data-filter="graphql" @click="filterByChip">
+						GraphQL / Apollo
+					</v-chip>
+					<v-chip active-class="active" color="primary" data-filter="graphql" @click="filterByChip">
+						React Native / Expo
+					</v-chip>
+				</v-chip-group>
+			</div>
+		</v-sheet>
 		<v-row>
 			<v-col v-for="project in projects" :key="project.title" cols="12" sm="6" lg="4" xl="3">
 				<ProjectCard :project="project" />
@@ -23,77 +62,17 @@
 </template>
 
 <script>
-	import { mdiGithub, mdiOpenInNew } from '@mdi/js'
+	import { mdiCloseCircle, mdiGithub, mdiOpenInNew } from '@mdi/js'
+	import projects from 'assets/js/projects'
+
 	export default {
 		data() {
 			return {
 				demoIcon: mdiOpenInNew,
 				githubIcon: mdiGithub,
-				projects: [
-					{
-						title: 'BeerBuddy API',
-						demoUrl: 'https://beerbuddy.io',
-						codeUrl: 'https://github.com/drewcook/beerbuddy-api',
-						description:
-							'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The backend is built in node.js and express and uses MongoDB for storage.',
-						techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
-					},
-					{
-						title: 'BeerBuddy Web',
-						demoUrl: 'https://beerbuddy.io',
-						codeUrl: 'https://github.com/drewcook/beerbuddy-web',
-						description:
-							'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The client app is built using the Next.js framework and utilizing both GraphQL Apollo Client and Server.',
-						techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
-					},
-					{
-						title: 'Flick Finder',
-						demoUrl: 'https://flickfinder.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/flick-finder',
-						description:
-							"Flick Finder is a fullstack web application built using the Next.js framework and using a GraphQL Apollo Client for requests. It is an application that allows users to search through the MovieDB.com database to search for movies. Users are able to favorite movies as well as add them to a watchlist. The application uses JWT for user authentication, and it connects to a MongoDB database to store users' watchlists and favorited movies.",
-						techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest'],
-					},
-					{
-						title: 'Guitar Exchange',
-						demoUrl: 'https://guitarxc.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/guitar-exchange',
-						description:
-							'Gutar Exchange is built using the Nuxt.js framework. It is a web application that allows users to rent guitars in the style of AirBnb. You can rent out guitars which will then get added to your rental list.',
-						techStack: ['Nuxt.js', 'Vue.js'],
-					},
-					{
-						title: 'Vidly API',
-						demoUrl: 'https://vidly-service.herokuapp.com',
-						codeUrl: 'https://github.com/drewcook/vidly-service',
-						description: '',
-						techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
-					},
-					{
-						title: 'You Got Served',
-						demoUrl: 'https://yougotserved.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/you-got-served',
-						description:
-							'You Got Served is built using the Next.js framework and using a GraphQL Apollo Client for requests. It is an app that mimics a restaurant POS system, with different tables and tickets. Each ticket has a list of items to order, and each ticket can get assigned to a table. Tickets can be created or destroyed as patrons come and go to different tables.',
-						techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest'],
-					},
-					{
-						title: 'DadJokes',
-						demoUrl: 'https://dadjokes.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/nuxt-dadjokes',
-						description:
-							'DadJokes is built using the Nuxt.js framework. It connects with the Dadjokes.io API to list out jokes by category. You can search for a joke, filter by category, and view the setup and punchlines for each joke.',
-						techStack: ['Nuxt.js', 'Vue.js'],
-					},
-					// {
-					// 	title: 'Powder Chat',
-					// 	demoUrl: 'https://powder.chat',
-					// 	codeUrl: 'https://github.com/drewcook/powderchat-api',
-					// 	description:
-					// 		'Powderchat is both a web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
-					// 	techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
-					// },
-				],
+				resetIcon: mdiCloseCircle,
+				filters: [],
+				projects,
 			}
 		},
 		head() {
@@ -101,5 +80,56 @@
 				title: 'Web and Mobile Projects',
 			}
 		},
+		methods: {
+			filterByChip(e) {
+				const { filter } = e.target.parentElement.dataset
+				if (!this.filters.includes(filter)) {
+					// add filter
+					this.filters = [...this.filters, filter]
+					// filter projects
+					this.projects = this.projects.filter(p => p.filters.includes(filter))
+				} else {
+					// remove filter
+					const updated = this.filters.filter(f => f !== filter)
+					this.filters = updated
+					// reset if zero filters
+					if (updated.length === 0) {
+						this.projects = projects
+					} else {
+						// filter projects
+						console.log('filtering', updated)
+						// const filteredProjects = this.projects
+						updated.forEach(filter => {
+							const included = projects.filter(p => p.filters.includes(filter))
+							this.projects = included
+							console.log(
+								filter,
+								included.map(p => p.title),
+							)
+						})
+					}
+				}
+			},
+			resetFilters() {
+				const activeChips = document.querySelectorAll('span.active')
+				activeChips.forEach(chip => chip.classList.remove('active'))
+				this.filters = []
+				this.projects = projects
+			},
+		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.v-chip {
+		background-color: $dc-blue-dk !important;
+
+		&.active.info {
+			background-color: $dc-green !important;
+		}
+
+		&.active.primary {
+			background-color: $dc-blue-md !important;
+		}
+	}
+</style>
