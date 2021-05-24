@@ -58,6 +58,8 @@ export default {
 			Prompt: [400, 700],
 			'Titillium Web': [200, 400, 600, 900],
 		},
+		preconnect: true,
+		preload: true,
 	},
 
 	// Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
