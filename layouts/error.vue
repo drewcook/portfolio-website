@@ -1,11 +1,15 @@
 <template>
 	<v-app dark>
 		<v-container>
-			<v-sheet class="pa-5 d-flex flex-column justify-center align-center">
-				<h2 v-if="error.statusCode === 404" class="page-title">
+			<v-sheet
+				class="pa-5 mx-auto d-flex flex-column justify-center align-center"
+				max-width="800"
+				min-height="500"
+			>
+				<h2 v-if="error.statusCode === 404" class="page-title mb-16">
 					{{ pageNotFound }}
 				</h2>
-				<h2 v-else class="page-title">
+				<h2 v-else class="page-title mb-16">
 					{{ otherError }}
 				</h2>
 				<p v-if="error.statusCode === 404">
@@ -45,9 +49,3 @@
 		},
 	}
 </script>
-
-<style scoped>
-	h1 {
-		font-size: 20px;
-	}
-</style>
