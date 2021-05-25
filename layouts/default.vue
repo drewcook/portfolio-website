@@ -138,8 +138,8 @@
 	}
 
 	.footer-cta {
-		background-color: $dc-neutral;
-		border-top: 1px solid $dc-gray-lt;
+		background-color: $dc-heading;
+		border-top: 1px dotted $dc-gray;
 		padding: 60px 0;
 
 		.card {
@@ -171,8 +171,8 @@
 
 		.footer-links {
 			background-color: $dc-blue-md !important;
-			border-bottom: 15px solid $dc-blue-dk;
-			border-top: 15px solid $dc-blue-lt;
+			border-bottom: 15px solid $dc-blue-dk !important;
+			border-top: 15px solid $dc-blue-lt !important;
 			padding: 40px 0;
 			text-align: center;
 
