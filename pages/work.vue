@@ -28,12 +28,12 @@
 					<v-chip
 						v-for="tag in tags.types"
 						:key="tag.title"
-						active-class="active"
-						active="tag.checked"
 						:close="tag.checked"
-						color="info"
 						:data-filter="tag.filter"
+						active-class="active"
+						color="info"
 						@click="e => filterByChip(e, 'type')"
+						@click:close="e => filterByChip(e, 'type')"
 					>
 						{{ tag.title }}
 					</v-chip>
@@ -45,12 +45,12 @@
 					<v-chip
 						v-for="tag in tags.frameworks"
 						:key="tag.title"
-						active-class="active"
-						:active="`${tag.checked}`"
 						:close="tag.checked"
-						color="primary"
 						:data-filter="tag.filter"
+						active-class="active"
+						color="primary"
 						@click="e => filterByChip(e, 'framework')"
+						@click:close="e => filterByChip(e, 'framework')"
 					>
 						{{ tag.title }}
 					</v-chip>
@@ -134,7 +134,7 @@
 			filterByChip(e, category) {
 				const { filter } = e.target.parentElement.dataset
 
-				// update checked state for tag
+				// Update tags - local checked state
 				if (category === 'type') {
 					const typeMatch = this.tags.types.filter(tag => tag.filter === filter)[0]
 					typeMatch.checked = !typeMatch.checked
@@ -144,40 +144,30 @@
 					frameworkMatch.checked = !frameworkMatch.checked
 				}
 
+				// Update filters
+				let updatedFilters = this.filters
 				if (!this.filters.includes(filter)) {
 					// add filter
-					this.filters = [...this.filters, filter]
-					// filter projects
-					this.projects = this.projects.filter(p => p.filters.includes(filter))
+					updatedFilters = [...this.filters, filter]
+					this.filters = updatedFilters
 				} else {
 					// remove filter
-					const updated = this.filters.filter(f => f !== filter)
-					this.filters = updated
+					updatedFilters = this.filters.filter(f => f !== filter)
+					this.filters = updatedFilters
+				}
+
+				// Update projects
+				if (updatedFilters.length === 0) {
 					// reset if zero filters
-					if (updated.length === 0) {
-						this.projects = projects
-					} else {
-						// filter projects
-						console.log('filtering', updated)
-						// const filteredProjects = this.projects
-						updated.forEach(filter => {
-							const included = projects.filter(p => p.filters.includes(filter))
-							this.projects = included
-							console.log(
-								filter,
-								included.map(p => p.title),
-							)
-						})
-					}
+					this.projects = projects
+				} else {
+					// compound filtering
+					this.projects = projects.filter(project =>
+						updatedFilters.every(f => project.filters.includes(f)),
+					)
 				}
 			},
 			// resetFilters() {
-			// 	// TODO: This is not working, not removing class names.
-			// 	document.querySelectorAll('span.active').forEach(chip => {
-			// 		// console.log(chip.classList)
-			// 		chip.className = chip.className.replace('active', '')
-			// 		chip.className = chip.className.replace('v-chip--active', '')
-			// 	})
 			// 	// Reset tags
 			// 	this.tags.types = this.tags.types.map(tag => ({ ...tag, checked: false }))
 			// 	this.tags.frameworks = this.tags.frameworks.map(tag => ({ ...tag, checked: false }))
