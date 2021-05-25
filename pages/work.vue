@@ -20,9 +20,9 @@
 			<div class="mb-5">
 				<h4 class="d-flex justify-space-between align-center">
 					Filters - Application Type
-					<v-chip v-show="filters.length > 0" outlined color="grey" close @click="resetFilters">
+					<!-- <v-chip v-show="filters.length > 0" outlined color="grey" close @click="resetFilters">
 						Clear
-					</v-chip>
+					</v-chip> -->
 				</h4>
 				<v-chip-group multiple column>
 					<v-chip
@@ -46,7 +46,7 @@
 						v-for="tag in tags.frameworks"
 						:key="tag.title"
 						active-class="active"
-						active="tag.checked"
+						:active="`${tag.checked}`"
 						:close="tag.checked"
 						color="primary"
 						:data-filter="tag.filter"
@@ -171,18 +171,22 @@
 					}
 				}
 			},
-			resetFilters() {
-				// Reset tags
-				this.tags.types = this.tags.types.map(tag => ({ ...tag, checked: false }))
-				this.tags.frameworks = this.tags.frameworks.map(tag => ({ ...tag, checked: false }))
-				const activeChips = document.querySelectorAll('span.active')
-				console.log(activeChips)
-				// activeChips.forEach(chip => chip.classList.remove('active', 'v-chip--active'))
-				// Reset filters
-				this.filters = []
-				// Reset projects
-				this.projects = projects
-			},
+			// resetFilters() {
+			// 	// TODO: This is not working, not removing class names.
+			// 	document.querySelectorAll('span.active').forEach(chip => {
+			// 		// console.log(chip.classList)
+			// 		chip.className = chip.className.replace('active', '')
+			// 		chip.className = chip.className.replace('v-chip--active', '')
+			// 	})
+			// 	// Reset tags
+			// 	this.tags.types = this.tags.types.map(tag => ({ ...tag, checked: false }))
+			// 	this.tags.frameworks = this.tags.frameworks.map(tag => ({ ...tag, checked: false }))
+			// 	// console.log(activeChips)
+			// 	// Reset filters
+			// 	this.filters = []
+			// 	// Reset projects
+			// 	this.projects = projects
+			// },
 		},
 	}
 </script>
