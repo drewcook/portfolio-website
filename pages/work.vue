@@ -2,9 +2,61 @@
 	<v-container>
 		<h1 class="page-title">My Work</h1>
 		<p class="text-center mb-10">
-			All of these projects have their own demo site available. You can find the code for each
-			project by clicking the Github link on each project card.
+			Here are a few selected projects that I have built in my spare time. You can view a larger
+			body of work, including this
+			<a href="https://github.com/drewcook/portfolio-website" target="_blank" class="content-link"
+				>portfolio website</a
+			>, on my
+			<a href="https://github.com/drewcook" target="_blank" class="content-link">Github page</a>.
 		</p>
+		<p class="text-center mb-10">
+			Each project has a live demo that you can test out by clicking the
+			<v-icon>{{ demoIcon }}</v-icon> icon. Some will ask for you to sign up to use the features,
+			but all you need is to put in an email. I don't do anything with your data, and I hash all the
+			passwords for all accounts. You'll also find a link to the source code by clicking the
+			<v-icon>{{ githubIcon }}</v-icon> icon.
+		</p>
+		<v-sheet class="pa-5 mb-8" elevation="1" shaped>
+			<div class="mb-5">
+				<h4 class="d-flex justify-space-between align-center">
+					Filters - Application Type
+					<!-- <v-chip v-show="filters.length > 0" outlined color="grey" close @click="resetFilters">
+						Clear
+					</v-chip> -->
+				</h4>
+				<v-chip-group multiple column>
+					<v-chip
+						v-for="tag in tags.types"
+						:key="tag.title"
+						:close="tag.checked"
+						:data-filter="tag.filter"
+						active-class="active"
+						color="info"
+						@click="e => filterByChip(e, 'type')"
+						@click:close="e => filterByChip(e, 'type')"
+					>
+						{{ tag.title }}
+					</v-chip>
+				</v-chip-group>
+			</div>
+			<div>
+				<h4>Filters - Frameworks</h4>
+				<v-chip-group multiple column>
+					<v-chip
+						v-for="tag in tags.frameworks"
+						:key="tag.title"
+						:close="tag.checked"
+						:data-filter="tag.filter"
+						active-class="active"
+						color="primary"
+						@click="e => filterByChip(e, 'framework')"
+						@click:close="e => filterByChip(e, 'framework')"
+					>
+						{{ tag.title }}
+					</v-chip>
+				</v-chip-group>
+			</div>
+		</v-sheet>
 		<v-row>
 			<v-col v-for="project in projects" :key="project.title" cols="12" sm="6" lg="4" xl="3">
 				<ProjectCard :project="project" />
@@ -14,74 +66,63 @@
 </template>
 
 <script>
+	import { mdiCloseCircle, mdiGithub, mdiOpenInNew } from '@mdi/js'
+	import projects from 'assets/js/projects'
+
 	export default {
 		data() {
 			return {
-				projects: [
-					{
-						title: 'BeerBuddy API',
-						demoUrl: 'https://beerbuddy.io',
-						codeUrl: 'https://github.com/drewcook/beerbuddy-api',
-						description:
-							'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The backend is built in node.js and express and uses MongoDB for storage.',
-						techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
-					},
-					{
-						title: 'BeerBuddy Web',
-						demoUrl: 'https://beerbuddy.io',
-						codeUrl: 'https://github.com/drewcook/beerbuddy-web',
-						description:
-							'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The client app is built using the Next.js framework and utilizing both GraphQL Apollo Client and Server.',
-						techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
-					},
-					{
-						title: 'Flick Finder',
-						demoUrl: 'https://flickfinder.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/flick-finder',
-						description:
-							"Flick Finder is a fullstack web application built using the Next.js framework and using a GraphQL Apollo Client for requests. It is an application that allows users to search through the MovieDB.com database to search for movies. Users are able to favorite movies as well as add them to a watchlist. The application uses JWT for user authentication, and it connects to a MongoDB database to store users' watchlists and favorited movies.",
-						techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest'],
-					},
-					{
-						title: 'Guitar Exchange',
-						demoUrl: 'https://guitarxc.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/guitar-exchange',
-						description:
-							'Gutar Exchange is built using the Nuxt.js framework. It is a web application that allows users to rent guitars in the style of AirBnb. You can rent out guitars which will then get added to your rental list.',
-						techStack: ['Nuxt.js', 'Vue.js'],
-					},
-					{
-						title: 'Vidly API',
-						demoUrl: 'https://vidly-service.herokuapp.com',
-						codeUrl: 'https://github.com/drewcook/vidly-service',
-						description: '',
-						techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
-					},
-					{
-						title: 'You Got Served',
-						demoUrl: 'https://yougotserved.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/you-got-served',
-						description:
-							'You Got Served is built using the Next.js framework and using a GraphQL Apollo Client for requests. It is an app that mimics a restaurant POS system, with different tables and tickets. Each ticket has a list of items to order, and each ticket can get assigned to a table. Tickets can be created or destroyed as patrons come and go to different tables.',
-						techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest'],
-					},
-					{
-						title: 'DadJokes',
-						demoUrl: 'https://dadjokes.drewcook.dev',
-						codeUrl: 'https://github.com/drewcook/nuxt-dadjokes',
-						description:
-							'DadJokes is built using the Nuxt.js framework. It connects with the Dadjokes.io API to list out jokes by category. You can search for a joke, filter by category, and view the setup and punchlines for each joke.',
-						techStack: ['Nuxt.js', 'Vue.js'],
-					},
-					{
-						title: 'Powder Chat',
-						demoUrl: 'https://powder.chat',
-						codeUrl: 'https://github.com/drewcook/powderchat-api',
-						description:
-							'Powderchat is both a web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
-						techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
-					},
-				],
+				demoIcon: mdiOpenInNew,
+				githubIcon: mdiGithub,
+				resetIcon: mdiCloseCircle,
+				filters: [],
+				projects,
+				tags: {
+					types: [
+						{
+							title: 'Backend API',
+							checked: false,
+							filter: 'api',
+						},
+						{
+							title: 'Web Application',
+							checked: false,
+							filter: 'web',
+						},
+						{
+							title: 'Mobile Application',
+							checked: false,
+							filter: 'mobile',
+						},
+					],
+					frameworks: [
+						{
+							title: 'Node / Express',
+							checked: false,
+							filter: 'node',
+						},
+						{
+							title: 'React / Next',
+							checked: false,
+							filter: 'react',
+						},
+						{
+							title: 'React Native / Expo',
+							checked: false,
+							filter: 'react native',
+						},
+						{
+							title: 'Vue / Nuxt',
+							checked: false,
+							filter: 'vue',
+						},
+						{
+							title: 'GraphQL / Apollo',
+							checked: false,
+							filter: 'graphql',
+						},
+					],
+				},
 			}
 		},
 		head() {
@@ -89,5 +130,67 @@
 				title: 'Web and Mobile Projects',
 			}
 		},
+		methods: {
+			filterByChip(e, category) {
+				const { filter } = e.target.parentElement.dataset
+
+				// Update tags - local checked state
+				if (category === 'type') {
+					const typeMatch = this.tags.types.filter(tag => tag.filter === filter)[0]
+					typeMatch.checked = !typeMatch.checked
+				}
+				if (category === 'framework') {
+					const frameworkMatch = this.tags.frameworks.filter(tag => tag.filter === filter)[0]
+					frameworkMatch.checked = !frameworkMatch.checked
+				}
+
+				// Update filters
+				let updatedFilters = this.filters
+				if (!this.filters.includes(filter)) {
+					// add filter
+					updatedFilters = [...this.filters, filter]
+					this.filters = updatedFilters
+				} else {
+					// remove filter
+					updatedFilters = this.filters.filter(f => f !== filter)
+					this.filters = updatedFilters
+				}
+
+				// Update projects
+				if (updatedFilters.length === 0) {
+					// reset if zero filters
+					this.projects = projects
+				} else {
+					// compound filtering
+					this.projects = projects.filter(project =>
+						updatedFilters.every(f => project.filters.includes(f)),
+					)
+				}
+			},
+			// resetFilters() {
+			// 	// Reset tags
+			// 	this.tags.types = this.tags.types.map(tag => ({ ...tag, checked: false }))
+			// 	this.tags.frameworks = this.tags.frameworks.map(tag => ({ ...tag, checked: false }))
+			// 	// console.log(activeChips)
+			// 	// Reset filters
+			// 	this.filters = []
+			// 	// Reset projects
+			// 	this.projects = projects
+			// },
+		},
 	}
 </script>
+
+<style lang="scss" scoped>
+	.v-chip {
+		background-color: $dc-blue-dk !important;
+
+		&.active.info {
+			background-color: $dc-green !important;
+		}
+
+		&.active.primary {
+			background-color: $dc-blue-md !important;
+		}
+	}
+</style>

@@ -44,3 +44,16 @@
 .page-leave-to {
 	opacity: 0;
 }
+
+/* Project Cards */
+.flip-card-enter-active {
+	animation: flipInY;
+	// animation-delay: 500ms;
+	animation-duration: 500ms;
+}
+
+.flip-card-leave-active {
+	animation: flipOutY;
+	// animation-delay: 500ms;
+	animation-duration: 500ms;
+}

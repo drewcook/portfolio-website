@@ -11,6 +11,18 @@
 /* stylelint-disable */
 
 $date-width: 180px;
+$red-box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.3);
+$blue-box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.3);
+
+@mixin blue() {
+  background: $dc-blue-md;
+	box-shadow: $blue-box-shadow;
+}
+
+@mixin red() {
+  background: $dc-red;
+	box-shadow: $red-box-shadow;
+}
 
 .dc-timeline {
 	box-sizing: border-box;
@@ -58,9 +70,8 @@ $date-width: 180px;
 }
 
 .dc-timeline ul li:nth-child(odd)::before {
-	background: $dc-red;
+  @include blue;
 	border-radius: 50%;
-	box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.3);
 	content: '';
 	height: 10px;
 	position: absolute;
@@ -70,9 +81,8 @@ $date-width: 180px;
 }
 
 .dc-timeline ul li:nth-child(even)::before {
-	background: $dc-red;
+  @include blue;
 	border-radius: 50%;
-	box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.3);
 	content: '';
 	height: 10px;
 	left: -4px;
@@ -105,10 +115,9 @@ $date-width: 180px;
 }
 
 .dc-timeline ul li:nth-child(odd) .time {
-	background: $dc-blue-md;
-	color: #fff;
+  @include blue;
+  color: #fff;
 	border-radius: 18px;
-	box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.3);
 	margin: 0;
 	padding: 8px 16px;
 	position: absolute;
@@ -116,10 +125,9 @@ $date-width: 180px;
 }
 
 .dc-timeline ul li:nth-child(even) .time {
-	background: $dc-blue-md;
-	color: #fff;
+  @include blue;
+  color: #fff;
 	border-radius: 18px;
-	box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.3);
 	margin: 0;
 	padding: 8px 16px;
 	position: absolute;

@@ -164,11 +164,11 @@
 				</li>
 				<li>
 					<div data-aos="fade-up" data-aos-delay="300">
-						<div class="time redd">
+						<div class="time">
 							<h4>Present</h4>
 						</div>
 						<div class="content">
-							<h3 class="redd">Now We're Here</h3>
+							<h3>Now We're Here</h3>
 							<h5>Be In The Now</h5>
 							<p class="mb-5">
 								If you've made it this far, enhorabuenas! You know more about me than I probably do
@@ -191,14 +191,5 @@
 
 	.clear {
 		clear: both;
-	}
-
-	.redd {
-		color: $dc-red;
-	}
-
-	.time.redd {
-		background: $dc-red !important;
-		box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.3) !important;
 	}
 </style>
