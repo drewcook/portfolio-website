@@ -18,7 +18,7 @@
 				<p v-else>
 					{{ descriptionOther }}
 				</p>
-				<v-btn nuxt href="/" outlined color="primary"> Return Home</v-btn>
+				<v-btn nuxt href="/" outlined color="accent"> Return Home</v-btn>
 			</v-sheet>
 		</v-container>
 	</v-app>

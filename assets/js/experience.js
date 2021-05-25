@@ -29,7 +29,7 @@ const experience = [
 	},
 	{
 		timeframe: 'Sep 2015 - Apr 2017',
-		title: "Crawford &amp; O'Brien",
+		title: "Crawford & O'Brien",
 		category: 'Full Time',
 		description:
 			'I lead the technical develepment and maintenance for Wordpress websites for a digital marketing agency within a small team of developers.',
