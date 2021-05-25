@@ -1,12 +1,22 @@
 <template>
 	<v-app dark>
-		<h1 v-if="error.statusCode === 404">
-			{{ pageNotFound }}
-		</h1>
-		<h1 v-else>
-			{{ otherError }}
-		</h1>
-		<NuxtLink to="/"> Home page </NuxtLink>
+		<v-container>
+			<v-sheet class="pa-5 d-flex flex-column justify-center align-center">
+				<h2 v-if="error.statusCode === 404" class="page-title">
+					{{ pageNotFound }}
+				</h2>
+				<h2 v-else class="page-title">
+					{{ otherError }}
+				</h2>
+				<p v-if="error.statusCode === 404">
+					{{ description }}
+				</p>
+				<p v-else>
+					{{ descriptionOther }}
+				</p>
+				<v-btn nuxt href="/" outlined color="primary"> Return Home</v-btn>
+			</v-sheet>
+		</v-container>
 	</v-app>
 </template>
 
@@ -21,8 +31,10 @@
 		},
 		data() {
 			return {
-				pageNotFound: '404 Not Found',
-				otherError: 'An error occurred',
+				pageNotFound: 'Oops, Page Not Found',
+				otherError: 'Oops, Something Went Wrong',
+				description: 'The page you are trying to view does not exist.',
+				descriptionOther: 'An error has occured.',
 			}
 		},
 		head() {
