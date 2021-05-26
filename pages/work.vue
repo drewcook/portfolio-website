@@ -2,8 +2,8 @@
 	<v-container>
 		<h1 class="page-title">My Work</h1>
 		<p class="text-center mb-10">
-			Here are a few selected projects that I have built in my spare time. You can view a larger
-			body of work, including this
+			Here are a few selected projects that I have built in my spare time.<br />You can view a
+			larger body of work, including this
 			<a href="https://github.com/drewcook/portfolio-website" target="_blank" class="content-link"
 				>portfolio website</a
 			>, on my
@@ -11,10 +11,8 @@
 		</p>
 		<p class="text-center mb-10">
 			Each project has a live demo that you can test out by clicking the
-			<v-icon>{{ demoIcon }}</v-icon> icon. Some will ask for you to sign up to use the features,
-			but all you need is to put in an email. I don't do anything with your data, and I hash all the
-			passwords for all accounts. You'll also find a link to the source code by clicking the
-			<v-icon>{{ githubIcon }}</v-icon> icon.
+			<v-icon>{{ demoIcon }}</v-icon> icon.<br />You'll also find a link to the source code by
+			clicking the <v-icon>{{ githubIcon }}</v-icon> icon.
 		</p>
 		<v-sheet class="pa-5 mb-8" elevation="1" shaped>
 			<div class="mb-5">
@@ -62,6 +60,14 @@
 				<ProjectCard :project="project" />
 			</v-col>
 		</v-row>
+		<p class="text-center mt-16">
+			<small>
+				<strong>NOTE:</strong> Some apps will ask you to sign in or create an account to use the
+				features. All I require is usually an email and password. I use this data for authentication
+				purposes and improving the user experience across my applications. I hash all account
+				passwords before storing them, and under no circumstances will I ever sell your data.
+			</small>
+		</p>
 	</v-container>
 </template>
 
