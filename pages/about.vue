@@ -111,8 +111,9 @@
 					app built on top of the existing
 					<a href="https://github.com/drewcook/beerbuddy-api" target="_blank" class="content-link">
 						backend API </a
-					>. Finally, I'm definitely excited about <strong>TypeScript</strong> and the adoption of
-					it that is currently taking place across our industry. It's the future of JavaScript.
+					>. I'm interested in the new blockchain technologies and how we can write code around
+					that. Finally, I'm definitely excited about <strong>TypeScript</strong> and the adoption
+					of it that is currently taking place across our industry. It's the future of JavaScript.
 				</p>
 				<p class="blocky">Clefairy, meet Clefable. No moon stone needed.</p>
 				<v-divider />
