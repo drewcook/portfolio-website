@@ -55,6 +55,9 @@
 				</span>
 			</v-app-bar-nav-icon>
 		</header>
+
+		<div class="scroll-away-spacer" />
+		<div class="spacer" />
 	</div>
 </template>
 
@@ -113,6 +116,9 @@
 </script>
 
 <style lang="scss" scoped>
+	$header-height-mobile: 115px;
+	$header-height: 185px;
+
 	h3 {
 		color: $dc-neutral;
 		font-size: 16px;
@@ -247,6 +253,26 @@
 
 		@media (min-width: 1200px) {
 			margin-bottom: 80px;
+		}
+	}
+
+	.scroll-away-spacer {
+		background-image: linear-gradient(0deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 40%);
+		height: $header-height-mobile;
+		position: fixed;
+		width: 100%;
+		z-index: 50;
+
+		@media (min-width: 700px) {
+			height: $header-height;
+		}
+	}
+
+	.spacer {
+		margin-bottom: $header-height-mobile;
+
+		@media (min-width: 700px) {
+			margin-bottom: $header-height;
 		}
 	}
 </style>

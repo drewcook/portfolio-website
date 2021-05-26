@@ -22,7 +22,7 @@
 					<v-col cols="12" md="4" lg="3" xl="2">
 						<div class="image">
 							<v-img
-								:src="require('~/assets/img/headshot.jpg')"
+								:src="require('/assets/img/drewcook.jpg')"
 								alt="Drew Cook, Web Engineer and Software Enthusiast"
 								title="Drew Cook Headshot"
 								max-width="400"
