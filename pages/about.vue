@@ -11,12 +11,11 @@
 						</p>
 						<h2>Who Are You?</h2>
 						<p>
-							Hi there, I'm Drew Cook. I currently reside in Denver, Colorado. I have been building
-							things ever since I was a young lad, and it turns out that I also like building things
-							as an older lad as well. In 2014, I decided to make a career change. I'd go through
-							each day feeling unsatisfied, yearning for something to scratch this itch I have to do
-							something great, something that could help unlock my true potential. I found the world
-							of writing software and haven't looked back since.
+							Hi there! I'm Drew Cook, and I currently reside in Denver, Colorado. I have been
+							building things ever since I was a young lad, and it turns out that I also like
+							building things as an older lad as well. In the beginning of 2014, feeling unsatisfied
+							with my job, I decided to make a career change. I found the world of writing software
+							and haven't looked back since.
 						</p>
 					</v-col>
 					<v-col cols="12" md="4" lg="3" xl="2">
@@ -34,7 +33,7 @@
 						</div>
 					</v-col>
 				</v-row>
-				<h3>Hm... Let me see your credentials!</h3>
+				<h3>Hm... Let me see your credentials.</h3>
 				<p>
 					Over the years, I've worked for a wide range of businesses and clients over both the
 					private and public sectors. I have worked at full capacity on both server-side and
@@ -44,22 +43,26 @@
 						class="content-link"
 						target="_blank"
 						rel="noopener noreferrer"
-						>digital marketing agencies</a
-					>, on .NET enterprise applications for an
+					>
+						digital marketing agencies
+					</a>
+					, on .NET enterprise applications for an
 					<a
 						href="https://evolverinc.com/"
 						class="content-link"
 						target="_blank"
 						rel="noopener noreferrer"
-						>IT consulting company</a
 					>
+						IT consulting company
+					</a>
 					and a federal governement agency on
-					<a href="https://aoc.gov/" class="content-link" target="_blank" rel="noopener noreferrer"
-						>Capitol Hill</a
-					>, and as a frontend specialist for a well-funded
-					<a href="https://gloo.us/" class="content-link" target="_blank" rel="noopener noreferrer"
-						>tech startup</a
-					>
+					<a href="https://aoc.gov/" class="content-link" target="_blank" rel="noopener noreferrer">
+						Capitol Hill
+					</a>
+					, and as a frontend specialist for a well-funded
+					<a href="https://gloo.us/" class="content-link" target="_blank" rel="noopener noreferrer">
+						tech startup
+					</a>
 					in Boulder, Colorado.
 				</p>
 				<p class="blocky">
@@ -92,16 +95,16 @@
 				<v-divider />
 				<h2>What are you currently excited about?</h2>
 				<p>
-					There are so many things that grease my gears, but I'll mention just a few. I am really
+					There are so many things that I'm excited about, but I'll mention just a few. I'm really
 					enjoying working within the <strong>Vue ecosystem</strong> at the moment. There's a
-					growing community happening, and it is really refreshing to work with. I've also been
+					growing community happening, and it is really refreshing coming from React. I've also been
 					getting into more <strong>React Native</strong> development recently, and am excited to
 					get a
 					<a href="https://beerbuddy.io" target="_blank" class="content-link">BeerBuddy</a> mobile
 					client app built. Of course I'll use my existing
-					<a href="https://github.com/drewcook/beerbuddy-api" target="_blank" class="content-link"
-						>backend API</a
-					>
+					<a href="https://github.com/drewcook/beerbuddy-api" target="_blank" class="content-link">
+						backend API
+					</a>
 					for this! And I'm definitely excited about <strong>TypeScript</strong> and the adoption of
 					it that is currently taking place across our industry. It's the future of JavaScript.
 				</p>
