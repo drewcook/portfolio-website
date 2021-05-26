@@ -16,35 +16,35 @@ const experience = [
 	{
 		timeframe: 'Sep 2014',
 		title: 'Seedpaths',
-		category: 'Full Time',
+		category: 'Full-Time',
 		description:
 			'I attend an 8-week intensive bootcamp from a Denver startup and learn fundamental OOP using .NET MVC 4, SQL, lambdas, console applications, and jQuery. Write less, do more.',
 	},
 	{
 		timeframe: 'Dec 2014 - Feb 2015',
 		title: 'Access Now',
-		category: 'Full Time',
+		category: 'Full-Time',
 		description:
 			'I learn Wordpress and Photoshop to design and build websites for a digital marketing agency in Englewood, CO.',
 	},
 	{
 		timeframe: 'Sep 2015 - Apr 2017',
 		title: "Crawford & O'Brien",
-		category: 'Full Time',
+		category: 'Full-Time',
 		description:
 			'I lead the technical develepment and maintenance for Wordpress websites for a digital marketing agency within a small team of developers.',
 	},
 	{
 		timeframe: 'Aug 2016',
 		title: 'I start a company.',
-		category: 'Part Time',
+		category: 'Part-Time',
 		description:
 			'I register and form Althea Web Services, LLC for the purpose of doing freelance and contract work as an operating business. I also publish any personal products under this name.',
 	},
 	{
 		timeframe: 'Apr 2017 - Aug 2018',
 		title: 'Evolver Inc.',
-		category: 'Full Time',
+		category: 'Full-Time',
 		description:
 			'I switch back into .NET development on an enterprise level, and incorporate React and ES6 onto client applications while also providing full-stack support with C#, MongoDB, and SQL.',
 	},
@@ -58,7 +58,7 @@ const experience = [
 	{
 		timeframe: 'Jun 2019 - Sep 2020',
 		title: 'Gloo',
-		category: 'Full Time',
+		category: 'Full-Time',
 		description:
 			"I work in the frontend capacity within a medium size engineering department for a tech startup, working with Next.js, React, and Apollo's GraphQL for a series of platform products. I also wrote and owned large parts of the accounts, sign on, and onboarding flows that thousands of users experience.",
 	},
