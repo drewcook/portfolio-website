@@ -7,17 +7,17 @@
 				</v-btn>
 			</a>
 			<a href="https://github.com/drewcook" target="_blank" rel="noopener noreferrer">
-				<v-btn color="primaryry" elevation="2" fab class="hvr-grow" small>
+				<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
 					<v-icon color="secondary">{{ githubIcon }}</v-icon>
 				</v-btn>
 			</a>
 			<a href="https://www.npmjs.com/~drewcook" target="_blank" rel="noopener noreferrer">
-				<v-btn color="primaryry" elevation="2" fab class="hvr-grow" small>
+				<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
 					<v-icon color="secondary" large>{{ npmIcon }}</v-icon>
 				</v-btn>
 			</a>
 			<a href="https://soundcloud.com/thenotesbetween" target="_blank" rel="noopener noreferrer">
-				<v-btn color="primaryry" elevation="2" fab class="hvr-grow" small>
+				<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
 					<v-icon color="secondary">{{ soundcloudIcon }}</v-icon>
 				</v-btn>
 			</a>
@@ -28,7 +28,6 @@
 <script>
 	import { mdiEmail, mdiGithub, mdiLinkedin, mdiNpm, mdiSoundcloud } from '@mdi/js'
 	export default {
-		props: ['color'],
 		data() {
 			return {
 				githubIcon: mdiGithub,
