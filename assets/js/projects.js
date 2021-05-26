@@ -6,7 +6,7 @@ const projects = [
 		demoUrl: 'https://beerbuddy.io',
 		codeUrl: 'https://github.com/drewcook/beerbuddy-api',
 		description:
-			'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The backend is built in node.js and express and uses MongoDB for storage.',
+			'BeerBuddy is a cross-platform application powered by JavaScript. This is a RESTful API that is built with Node and Express and uses MongoDB for storage. It includes authentication with JWT, authorization, logging, testing, and can be reused for multiple client applications.',
 		filters: ['api', 'node'],
 		frameworks: ['Node / Express'],
 		techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
@@ -18,7 +18,7 @@ const projects = [
 		demoUrl: 'https://beerbuddy.io',
 		codeUrl: 'https://github.com/drewcook/beerbuddy-web',
 		description:
-			'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The client app is built using the Next.js framework and utilizing both GraphQL Apollo Client and Server.',
+			'BeerBuddy is a cross-platform application powered by JavaScript. The client web application is built on the Next.js framework and utilizes Apollo Client and Apollo Server to handle requests through a GraphQL schema, and then to the RESTful BeerBuddy API. It also incorporates user authentication with JWT.',
 		filters: ['web', 'graphql', 'react'],
 		frameworks: ['React / Next', 'GraphQL / Apollo'],
 		techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
@@ -26,11 +26,11 @@ const projects = [
 	{
 		title: 'BeerBuddy Mobile',
 		type: 'Mobile Application',
-		imgSrc: '/img/beerbuddy_web.png',
+		imgSrc: '/img/beerbuddy_mobile.png',
 		demoUrl: 'https://beerbuddy.io',
 		codeUrl: 'https://github.com/drewcook/beerbuddy-web',
 		description:
-			'Beerbuddy is a fullstack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The client app is built using the Next.js framework and utilizing both GraphQL Apollo Client and Server.',
+			'BeerBuddy is a cross-platform application powered by JavaScript. The client mobile application is written in React Native on top of the Expo framework. It incorporates user authentication with JWT.',
 		filters: ['mobile', 'react native', 'graphql'],
 		frameworks: ['React Native / Expo', 'GraphQL / Apollo'],
 		techStack: ['React Native', 'Expo', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
@@ -62,7 +62,7 @@ const projects = [
 	{
 		title: 'Vidly API',
 		type: 'Backend API',
-		imgSrc: 'https://picsum.photos/300/200',
+		imgSrc: '/img/vidly.png',
 		demoUrl: 'https://vidly-service.herokuapp.com',
 		codeUrl: 'https://github.com/drewcook/vidly-service',
 		description:
@@ -95,18 +95,18 @@ const projects = [
 		frameworks: ['Vue / Nuxt'],
 		techStack: ['Nuxt.js', 'Vue.js'],
 	},
-	{
-		title: 'Powder Chat',
-		type: 'Mobile Application',
-		imgSrc: 'https://picsum.photos/300/200',
-		demoUrl: 'https://powder.chat',
-		codeUrl: 'https://github.com/drewcook/powderchat-api',
-		description:
-			'Powderchat is both a full-stack web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
-		filters: ['mobile', 'node', 'react native'],
-		frameworks: ['Node / Express', 'React Native / Expo'],
-		techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
-	},
+	// {
+	// 	title: 'Powder Chat',
+	// 	type: 'Mobile Application',
+	// 	imgSrc: 'https://picsum.photos/300/200',
+	// 	demoUrl: 'https://powder.chat',
+	// 	codeUrl: 'https://github.com/drewcook/powderchat-api',
+	// 	description:
+	// 		'Powderchat is both a full-stack web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
+	// 	filters: ['mobile', 'node', 'react native'],
+	// 	frameworks: ['Node / Express', 'React Native / Expo'],
+	// 	techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
+	// },
 ]
 
 export default projects
