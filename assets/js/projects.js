@@ -2,6 +2,7 @@ const projects = [
 	{
 		title: 'BeerBuddy API',
 		type: 'Backend API',
+		imgSrc: '/img/beerbuddy_dashboard.png',
 		demoUrl: 'https://beerbuddy.io',
 		codeUrl: 'https://github.com/drewcook/beerbuddy-api',
 		description:
@@ -13,6 +14,7 @@ const projects = [
 	{
 		title: 'BeerBuddy Web',
 		type: 'Web Application',
+		imgSrc: '/img/beerbuddy_web.png',
 		demoUrl: 'https://beerbuddy.io',
 		codeUrl: 'https://github.com/drewcook/beerbuddy-web',
 		description:
@@ -24,10 +26,11 @@ const projects = [
 	{
 		title: 'BeerBuddy Mobile',
 		type: 'Mobile Application',
+		imgSrc: '/img/beerbuddy_web.png',
 		demoUrl: 'https://beerbuddy.io',
 		codeUrl: 'https://github.com/drewcook/beerbuddy-web',
 		description:
-			'Beerbuddy is a full-stack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The client app is built using the Next.js framework and utilizing both GraphQL Apollo Client and Server.',
+			'Beerbuddy is a fullstack web application powered by JavaScript. The code is split up into two repositories, so that the the backend can be reused for other client apps. The client app is built using the Next.js framework and utilizing both GraphQL Apollo Client and Server.',
 		filters: ['mobile', 'react native', 'graphql'],
 		frameworks: ['React Native / Expo', 'GraphQL / Apollo'],
 		techStack: ['React Native', 'Expo', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
@@ -35,10 +38,11 @@ const projects = [
 	{
 		title: 'Flick Finder',
 		type: 'Web Application',
+		imgSrc: '/img/flickfinder.png',
 		demoUrl: 'https://flickfinder.drewcook.dev',
 		codeUrl: 'https://github.com/drewcook/flick-finder',
 		description:
-			"Flick Finder is a fullstack web application built using the Next.js framework and using a GraphQL Apollo Client for requests. It is an application that allows users to search through the MovieDB.com database to search for movies. Users are able to favorite movies as well as add them to a watchlist. The application uses JWT for user authentication, and it connects to a MongoDB database to store users' watchlists and favorited movies.",
+			"Flick Finder is a fullstack web application that allows users to search through the MovieDB.com database to for movies and actors. It is built on Next.js framework and uses Apollo Client for requests through a GraphQL server. Users are able to favorite movies as well as add them to a watchlist. The application uses JWT for user authentication, and it connects to a MongoDB database to store users' watchlists and favorited movies.",
 		filters: ['web', 'graphql', 'react'],
 		frameworks: ['React / Next', 'GraphQL / Apollo'],
 		techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest'],
@@ -46,6 +50,7 @@ const projects = [
 	{
 		title: 'Guitar Exchange',
 		type: 'Web Application',
+		imgSrc: '/img/guitar_exchange.png',
 		demoUrl: 'https://guitarxc.drewcook.dev',
 		codeUrl: 'https://github.com/drewcook/guitar-exchange',
 		description:
@@ -57,9 +62,11 @@ const projects = [
 	{
 		title: 'Vidly API',
 		type: 'Backend API',
+		imgSrc: 'https://picsum.photos/300/200',
 		demoUrl: 'https://vidly-service.herokuapp.com',
 		codeUrl: 'https://github.com/drewcook/vidly-service',
-		description: '',
+		description:
+			'Vidly is a backend API that mocks a system that movie rental store may use. It built in Node and Express, and it uses a MongoDB database for storage.  It includes features for authentication, authorization, logging, and testing.',
 		filters: ['api', 'node'],
 		frameworks: ['Node / Express'],
 		techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
@@ -67,10 +74,11 @@ const projects = [
 	{
 		title: 'You Got Served',
 		type: 'Web Application',
+		imgSrc: '/img/yougotserved.png',
 		demoUrl: 'https://yougotserved.drewcook.dev',
 		codeUrl: 'https://github.com/drewcook/you-got-served',
 		description:
-			'You Got Served is built using the Next.js framework and using a GraphQL Apollo Client for requests. It is an app that mimics a restaurant POS system, with different tables and tickets. Each ticket has a list of items to order, and each ticket can get assigned to a table. Tickets can be created or destroyed as patrons come and go to different tables.',
+			'You Got Served is web application built on the Next.js framework and uses Apollo Client for requests to a GraphQL server. The application mimics a restaurant POS system, with different tables and tickets. Each ticket has a list of items to order, and each ticket can get assigned to a table. Tickets can be created or destroyed as patrons come and go to different tables.',
 		filters: ['web', 'graphql', 'react'],
 		frameworks: ['React / Next', 'GraphQL / Apollo'],
 		techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest'],
@@ -78,6 +86,7 @@ const projects = [
 	{
 		title: 'DadJokes',
 		type: 'Web Application',
+		imgSrc: '/img/dadjokes.png',
 		demoUrl: 'https://dadjokes.drewcook.dev',
 		codeUrl: 'https://github.com/drewcook/nuxt-dadjokes',
 		description:
@@ -89,6 +98,7 @@ const projects = [
 	{
 		title: 'Powder Chat',
 		type: 'Mobile Application',
+		imgSrc: 'https://picsum.photos/300/200',
 		demoUrl: 'https://powder.chat',
 		codeUrl: 'https://github.com/drewcook/powderchat-api',
 		description:

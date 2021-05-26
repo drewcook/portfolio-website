@@ -13,12 +13,12 @@
 			</v-container>
 		</section>
 
-		<!-- <section class="sky text-center">
+		<section class="sky text-center">
 			<v-container>
 				<h2>Hi, I'm Drew Cook.</h2>
 				<h3>I build things for the interwebs.</h3>
 			</v-container>
-		</section> -->
+		</section>
 
 		<section class="water text-center">
 			<v-container>
@@ -103,6 +103,7 @@
 
 	.deep {
 		background-color: $dc-blue-dk;
+		margin-bottom: -60px;
 		padding: 60px 0;
 
 		h2,

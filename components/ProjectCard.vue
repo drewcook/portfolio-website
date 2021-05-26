@@ -2,7 +2,7 @@
 	<div>
 		<transition name="flip-card" @after-leave="afterLeave">
 			<v-card v-show="!showDetails" class="card front" shaped>
-				<v-img src="https://picsum.photos/300/200" />
+				<v-img :src="project.imgSrc" :title="project.title" :alt="project.title" />
 				<v-card-title class="d-flex justify-space-between align-center card-title">
 					{{ project.title }}
 					<a :href="project.demoUrl" target="_blank" color="primary">
