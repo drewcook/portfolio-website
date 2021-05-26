@@ -56,6 +56,11 @@
 			</div>
 		</v-sheet>
 		<v-row>
+			<v-col v-show="projects.length === 0" cols="12">
+				<p class="text-center my-10">
+					There aren't any projects that match the filter criteria. Try something less specific.
+				</p>
+			</v-col>
 			<v-col v-for="project in projects" :key="project.title" cols="12" sm="6" lg="4" xl="3">
 				<ProjectCard :project="project" />
 			</v-col>
