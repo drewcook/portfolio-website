@@ -116,9 +116,6 @@
 </script>
 
 <style lang="scss" scoped>
-	$header-height-mobile: 115px;
-	$header-height: 185px;
-
 	h3 {
 		color: $dc-neutral;
 		font-size: 16px;
