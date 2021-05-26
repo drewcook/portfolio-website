@@ -2,7 +2,14 @@
 	<div>
 		<transition name="flip-card" @after-leave="afterLeave">
 			<v-card v-show="!showDetails" class="card front" shaped>
-				<v-img src="https://picsum.photos/300/200" />
+				<v-img
+					:src="project.imgSrc"
+					:title="project.title"
+					:alt="project.title"
+					max-height="240"
+					height="auto"
+					position="center top"
+				/>
 				<v-card-title class="d-flex justify-space-between align-center card-title">
 					{{ project.title }}
 					<a :href="project.demoUrl" target="_blank" color="primary">
@@ -43,7 +50,9 @@
 					<v-card-title>About This Project</v-card-title>
 					<div class="sm-divider" />
 					<v-card-text>
-						<p>{{ project.description }}</p>
+						<p>
+							<small>{{ project.description }}</small>
+						</p>
 					</v-card-text>
 					<v-card-text class="pt-0">
 						<h3 class="my-2">Tech Stack</h3>

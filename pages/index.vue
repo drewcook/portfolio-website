@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<section class="melon text-center">
+		<section class="deep text-center">
 			<v-container>
 				<h2>Hi, I'm Drew Cook.</h2>
 				<div class="sm-divider" />
@@ -8,42 +8,56 @@
 				<p>
 					I'm a Denver-based software engineer specializing frontend technologies for both native
 					web and mobile applications. I'm currently operating as a freelance consultant under my
-					own company, Althea Web Services, providing support for a host of tech-based products.
+					own company,
+					<a href="https://altheaweb.services" class="content-link" target="_blank">
+						Althea Web Services,
+					</a>
+					where I provide engineering support for a host of tech-based products.
 				</p>
+				<p>I am currently open for new positions.</p>
+				<v-btn color="info" nuxt to="/work">Portfolio</v-btn>
 			</v-container>
 		</section>
-
-		<!-- <section class="sky text-center">
-			<v-container>
-				<h2>Hi, I'm Drew Cook.</h2>
-				<h3>I build things for the interwebs.</h3>
-			</v-container>
-		</section> -->
 
 		<section class="water text-center">
 			<v-container>
-				<h2 class="mb-3">My Work</h2>
+				<h2 class="mb-3">My Experience</h2>
 				<div class="sm-divider" />
-				<h3>Personal Projects</h3>
+				<h3>I love to collaborate.</h3>
 				<p>
-					I love building web and mobile applicatons. Check out some of the projects I've built over
-					the years!
+					I've worked in both public and private sectors and have had the opportunity to work with a
+					variety of team sizes over my career. It has given me insight into the pros and cons of
+					both large and small engineering departments.
 				</p>
-				<v-btn color="secondary" nuxt to="/work">Portfolio</v-btn>
+				<v-btn color="secondary" nuxt to="/experience">Experience</v-btn>
 			</v-container>
 		</section>
 
-		<section class="deep text-center">
+		<section class="sky text-center">
 			<v-container>
 				<h2>About Me</h2>
 				<div class="sm-divider" />
-				<h3>I like to create.</h3>
+				<h3>I love to create.</h3>
 				<p>
 					I enjoy the process of making an idea come to life. All you need is to start with a seed,
 					and that through consistent nurture and dedication to an end-goal in mind, it can become
 					something great that can last the test of time, rooted in furtile soil.
 				</p>
-				<v-btn color="accent" nuxt to="/about">Read More</v-btn>
+				<v-btn color="primary" nuxt to="/about">Read More</v-btn>
+			</v-container>
+		</section>
+
+		<section class="melon text-center">
+			<v-container>
+				<h2>Levelling Up</h2>
+				<div class="sm-divider" />
+				<h3>I love to learn.</h3>
+				<p>
+					I welcome the opportunity when the solution to a problem calls for a new technology,
+					language, or library. Knowledge is power, and it is also the ability to determine what
+					tool is the right one for the best outcome when working through different solutions.
+				</p>
+				<v-btn color="info" nuxt to="/skills">My Skills</v-btn>
 			</v-container>
 		</section>
 	</div>
@@ -63,7 +77,13 @@
 	.melon {
 		background-color: $dc-neutral;
 		border-bottom: 10px solid $dc-blue-lt;
+		margin-bottom: -60px;
 		padding: 60px 0;
+	}
+
+	p {
+		margin: 15px auto 30px;
+		max-width: 700px;
 	}
 
 	.sky {
@@ -75,11 +95,11 @@
 		}
 
 		h3 {
-			color: $dc-gray;
+			color: $dc-blue-md;
 		}
 
 		p {
-			color: $dc-blue-md;
+			color: $dc-gray;
 		}
 	}
 
@@ -112,6 +132,14 @@
 
 		h3 {
 			color: $dc-gray-lt;
+		}
+
+		.content-link {
+			color: $dc-gray-lt;
+
+			&:hover {
+				color: $accent;
+			}
 		}
 
 		.v-btn {

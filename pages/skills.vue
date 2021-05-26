@@ -2,7 +2,7 @@
 	<v-container class="text-center">
 		<h1 class="page-title">Skills &amp; Specialization</h1>
 		<p>
-			Here's that laundry list of languages, frameworks, and libraries that I've come to understand
+			Here's a laundry list of languages, frameworks, and libraries that I've come to understand
 			over the years. Scroll through the categories to read the specifics of what I like to build
 			with and what I have worked with in the past.
 		</p>

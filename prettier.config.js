@@ -1,4 +1,4 @@
 module.exports = {
-  ...require('altheajs-prettier-config'),
-  semi: false,
+	...require('altheajs-prettier-config'),
+	semi: false,
 }
