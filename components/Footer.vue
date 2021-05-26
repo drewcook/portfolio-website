@@ -65,7 +65,14 @@
 </template>
 
 <script>
-	export default {}
+	import { mdiEmail } from '@mdi/js'
+	export default {
+		data() {
+			return {
+				emailIcon: mdiEmail,
+			}
+		},
+	}
 </script>
 
 <style lang="scss" scoped>
