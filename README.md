@@ -2,7 +2,15 @@
 
 This is the code for my online portfolio hosted at [https://drewcook.dev](https://drewcook.dev).
 
-It is built in the Nuxt.js framework and written in Vue. I incoporated the [Vuetify](https://vuetifyjs.com/) component library for a more Material Design based theme.
+### Tech Stack
+
+- It is built in the [Nuxt.js](https://nuxtjs.org) framework and written in [Vue](https://vuejs.org).
+
+- I incorporated the [Vuetify](https://vuetifyjs.com/) component library for a Material Design-based theme.
+
+- I also made use of [Vue transitions](https://v1.vuejs.org/guide/transitions.html) in combination with [Animate.css](https://animate.style/) for a more intereasting user experience.
+
+- It contains [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), and [Prettier](https://prettier.io/) linting packages.
 
 ## Build Setup
 
