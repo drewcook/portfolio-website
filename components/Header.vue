@@ -33,7 +33,7 @@
 		</transition>
 
 		<!-- Header and Nav Btn -->
-		<header class="site-header">
+		<header class="site-header" :class="{ isHome }">
 			<nuxt-link
 				to="/"
 				tag="h1"
@@ -56,8 +56,8 @@
 			</v-app-bar-nav-icon>
 		</header>
 
-		<div class="scroll-away-spacer" />
-		<div class="spacer" />
+		<div class="scroll-away-spacer" :class="{ isHome }" />
+		<div class="spacer" :class="{ isHome }" />
 	</div>
 </template>
 
@@ -70,6 +70,7 @@
 				navOpen: false,
 				opened: false,
 				scrollY: 0,
+				isHome: this.$route.path === '/',
 				navLinks: [
 					{
 						title: 'About',

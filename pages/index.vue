@@ -91,7 +91,7 @@
 		},
 		methods: {
 			scrollDown() {
-				const offset = window.innerWidth > 700 ? 690 : 760
+				const offset = window.innerWidth > 700 ? 600 : 670
 				window.scrollTo({
 					top: offset,
 					behavior: 'smooth',
