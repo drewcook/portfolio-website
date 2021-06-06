@@ -1,14 +1,14 @@
 <template>
-	<section class="footer-cta">
+	<section id="footer-cta">
 		<v-container>
 			<v-row>
 				<v-spacer />
 				<v-col cols="12" sm="8">
 					<v-card class="text-center pa-10" shaped>
-						<h3>{{ heading }}</h3>
+						<h3>{{ cta.heading }}</h3>
 						<div class="sm-divider" />
-						<p class="mb-7">{{ text }}</p>
-						<v-btn nuxt :to="btnLink">{{ btnText }}</v-btn>
+						<p class="mb-7">{{ cta.text }}</p>
+						<v-btn nuxt :to="cta.link">{{ cta.btn }}</v-btn>
 					</v-card>
 				</v-col>
 				<v-spacer />
@@ -20,28 +20,27 @@
 <script>
 	export default {
 		computed: {
-			heading() {
-				return this.$route.name === 'contact'
-					? 'Check out some of my work!'
-					: 'Would you like to work together?'
-			},
-			text() {
-				return this.$route.name === 'contact'
-					? 'I have built a number of things over the years in my spare time.'
-					: "Don't hesitate to reach out if you'd like to connect."
-			},
-			btnText() {
-				return this.$route.name === 'contact' ? 'View Projects' : 'Get In Touch'
-			},
-			btnLink() {
-				return this.$route.name === 'contact' ? '/work' : '/contact'
+			cta() {
+				const contactPage = {
+					heading: 'Check out some of my work!',
+					text: 'I have built a number of things over the years in my spare time.',
+					btn: 'View Projects',
+					link: '/work',
+				}
+				const page = {
+					heading: 'Would you like to work together?',
+					text: "Don't hesitate to reach out if you'd like to connect.",
+					btn: 'Get In Touch',
+					link: '/contact',
+				}
+				return this.$route.name === 'contact' ? contactPage : page
 			},
 		},
 	}
 </script>
 
 <style lang="scss" scoped>
-	.footer-cta {
+	#footer-cta {
 		background-color: $dc-heading;
 		border-top: 1px dotted $dc-gray;
 		margin-top: 60px;
