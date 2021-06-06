@@ -24,7 +24,8 @@
     "core-js": "^3.12.1",
     "hamburgers": "^1.1.3",
     "hover.css": "^2.3.2",
-    "nuxt": "^2.15.5"
+    "nuxt": "^2.15.5",
+    "smooth-scroll-into-view-if-needed": "^1.1.32"
   },
   "devDependencies": {
     "@mdi/js": "^5.9.55",

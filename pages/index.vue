@@ -1,5 +1,12 @@
 <template>
-	<div>
+	<div id="homepage">
+		<div id="scroll-btns">
+			<div class="scroll-btn hvr-grow" @click="scrollDown('home-jumbo')"></div>
+			<div class="scroll-btn hvr-grow" @click="scrollDown('home-experience')"></div>
+			<div class="scroll-btn hvr-grow" @click="scrollDown('home-about')"></div>
+			<div class="scroll-btn hvr-grow" @click="scrollDown('home-learn')"></div>
+			<div class="scroll-btn hvr-grow" @click="scrollDown('footer-cta')"></div>
+		</div>
 		<section id="home-jumbo" class="jumbo d-flex justify-center align-center text-center">
 			<v-container>
 				<h2>Hi, I'm Drew Cook.</h2>
@@ -16,11 +23,17 @@
 					</a>
 					where I provide engineering support for a host of tech-based products.
 				</p>
-				<p>I am currently open for new positions.</p>
+				<p>I am currently open to new positions and full-time opportunities.</p>
 				<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
 			</v-container>
 			<div class="scroll-down">
-				<v-btn class="hvr-sink" color="info" fab elevation="3" @click="scrollDown">
+				<v-btn
+					class="hvr-hang"
+					color="info"
+					fab
+					elevation="3"
+					@click="scrollDown('home-experience')"
+				>
 					<v-icon>{{ scrollDownIcon }}</v-icon>
 				</v-btn>
 			</div>
@@ -42,7 +55,7 @@
 			</v-container>
 		</section>
 
-		<section class="sky text-center">
+		<section id="home-about" class="sky text-center">
 			<v-container>
 				<div data-aos="fade-up" data-aos-delay="300">
 					<h2>About Me</h2>
@@ -58,7 +71,7 @@
 			</v-container>
 		</section>
 
-		<section class="melon text-center">
+		<section id="home-learn" class="melon text-center">
 			<v-container>
 				<div data-aos="fade-up" data-aos-delay="300">
 					<h2>Levelling Up</h2>
@@ -78,6 +91,8 @@
 
 <script>
 	import { mdiChevronDown } from '@mdi/js'
+	import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed'
+
 	export default {
 		data() {
 			return {
@@ -87,21 +102,52 @@
 		head() {
 			return {
 				title: 'Welcome To My Portfolio',
+				bodyAttrs: {
+					class: 'hide-scrollbar',
+				},
 			}
 		},
 		methods: {
-			scrollDown() {
-				const offset = window.innerWidth > 700 ? 600 : 670
-				window.scrollTo({
-					top: offset,
-					behavior: 'smooth',
-				})
+			scrollDown(sectionId) {
+				const section = document.getElementById(sectionId)
+				smoothScrollIntoView(section, { behavior: 'smooth' })
+				// const offset = window.innerWidth > 700 ? 600 : 670
+				// window.scrollTo({
+				// 	top: offset,
+				// 	behavior: 'smooth',
+				// })
 			},
 		},
 	}
 </script>
 
 <style lang="scss" scoped>
+	#homepage {
+		position: relative;
+	}
+
+	#scroll-btns {
+		display: flex;
+		flex-direction: column;
+		margin-right: 10px;
+		margin-top: -60px;
+		position: fixed;
+		right: 0;
+		top: 50%;
+		z-index: 90;
+
+		.scroll-btn {
+			background-color: #fff;
+			border: 3px solid $accent;
+			border-radius: 50%;
+			box-shadow: 1px 1px 3px $dc-gray;
+			cursor: pointer;
+			height: 15px;
+			margin: 5px;
+			width: 15px;
+		}
+	}
+
 	.melon {
 		background-color: $dc-neutral;
 		border-bottom: 10px solid $dc-blue-lt;
@@ -127,7 +173,7 @@
 		}
 
 		p {
-			color: $dc-gray;
+			color: $dc-gray-dk;
 		}
 	}
 

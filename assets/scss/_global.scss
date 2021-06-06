@@ -67,3 +67,15 @@ h6 {
 		width: 40px;
 	}
 }
+
+
+/* Hide scrollbar on Homepage */
+.hide-scrollbar {
+	-ms-overflow-style: none !important; /* IE and Edge */
+	scrollbar-width: none !important; /* Firefox */
+
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	&::-webkit-scrollbar {
+		display: none !important;
+	}
+}
