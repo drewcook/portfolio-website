@@ -45,6 +45,12 @@
 	opacity: 0;
 }
 
+/* Home Page Jumbo */
+.jumbo-enter-active {
+	animation: zoomIn;
+	animation-duration: 1000ms;
+}
+
 /* Project Cards */
 .flip-card-enter-active {
 	animation: flipInY;

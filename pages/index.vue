@@ -7,24 +7,29 @@
 			<div class="scroll-btn hvr-grow" @click="scrollDown('home-learn')"></div>
 			<div class="scroll-btn hvr-grow" @click="scrollDown('footer-cta')"></div>
 		</div>
-		<section id="home-jumbo" class="jumbo d-flex justify-center align-center text-center">
+		<section
+			id="home-jumbo"
+			class="jumbo d-flex flex-column justify-center align-center text-center"
+		>
 			<v-container>
-				<h2>Hi, I'm Drew Cook.</h2>
-
-				<div class="sm-divider" />
-				<h3>I build things for the interwebs.</h3>
-
-				<p>
-					I'm a Denver-based software engineer specializing frontend technologies for both native
-					web and mobile applications. I'm currently operating as a freelance consultant under my
-					own company,
-					<a href="https://altheaweb.services" class="content-link" target="_blank">
-						Althea Web Services,
-					</a>
-					where I provide engineering support for a host of tech-based products.
-				</p>
-				<p>I am currently open to new positions and full-time opportunities.</p>
-				<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
+				<transition name="jumbo">
+					<div v-show="loaded">
+						<h2>Hi, I'm Drew Cook.</h2>
+						<div class="sm-divider" />
+						<h3>I build things for the interwebs.</h3>
+						<p>
+							I'm a Denver-based software engineer specializing frontend technologies for both
+							native web and mobile applications. I'm currently operating as a freelance consultant
+							under my own company,
+							<a href="https://altheaweb.services" class="content-link" target="_blank">
+								Althea Web Services,
+							</a>
+							where I provide engineering support for a host of tech-based products.
+						</p>
+						<p>I am currently open to new positions and full-time opportunities.</p>
+						<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
+					</div>
+				</transition>
 			</v-container>
 			<div class="scroll-down">
 				<v-btn
@@ -96,6 +101,7 @@
 	export default {
 		data() {
 			return {
+				loaded: false,
 				scrollDownIcon: mdiChevronDown,
 			}
 		},
@@ -106,6 +112,9 @@
 					class: 'hide-scrollbar',
 				},
 			}
+		},
+		mounted() {
+			this.loaded = true
 		},
 		methods: {
 			scrollDown(sectionId) {
@@ -131,6 +140,7 @@
 		flex-direction: column;
 		margin-right: 10px;
 		margin-top: -60px;
+		opacity: 90%;
 		position: fixed;
 		right: 0;
 		top: 50%;
