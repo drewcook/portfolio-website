@@ -13,6 +13,7 @@ $dc-heading: #324055;
 
 $dc-light: #efefef;
 $dc-gray: #646d78;
+$dc-gray-dk: #505458;
 $dc-gray-lt: #d0cdcd;
 $dc-dark: #071104;
 $dc-green: #24a58e;
@@ -29,6 +30,7 @@ $accent: $dc-red;
 
 $bg-color: $dc-light;
 $border-color: $dc-gray;
+$scroll-btn-color: #36ff7c;
 
 
 /* Fonts and Typography */
@@ -45,3 +47,7 @@ $heading-color: $dc-heading;
 
 $body-font-family: $exo-font;
 $body-color: $dc-dark;
+
+/* Spacing */
+$header-height-mobile: 115px;
+$header-height: 185px;

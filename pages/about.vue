@@ -5,23 +5,15 @@
 				<h1 class="page-title">About Me</h1>
 				<v-row>
 					<v-col cols="12" md="8" lg="9" xl="10">
-						<p>Get to know me a little bit more.</p>
-						<p class="blocky">
-							"Ooh, ahh, just a little bit. Ooh, ahh, a little bit more." Man, I miss the 90s.
-						</p>
 						<h2>Who Are You?</h2>
 						<p>
 							Hi there! My name is Drew Cook, and I currently live in Denver, Colorado. I've always
-							enjoyed creating something out of nothing and being creative. Just like in music,
-							architecture, and community, all things that start from an idea, I think there's
-							nothing that can't be built when adopting a growth mindset. I'm super passionate about
-							what I do, and I love working with other people that are also passionate about what
-							they do, regardless of what it is.
+							enjoyed creating something out of nothing and being creative, and I think there's
+							nothing that can't be built when adopting a growth mindset.
 						</p>
 						<p>
-							In the beginning of 2014, feeling unsatisfied with my job, I decided to make a career
-							change. I found the world of writing software, using it as a media to be creative and
-							manifest ideas, and I haven't looked back since.
+							I'm super passionate about what I do, and I love working with other people that are
+							also passionate about what they do, regardless of what it is.
 						</p>
 					</v-col>
 					<v-col cols="12" md="4" lg="3" xl="2">
@@ -34,7 +26,7 @@
 								max-height="400"
 							/>
 							<div class="text-center">
-								<small><em>Man bun was a thing</em></small>
+								<small><em>R.I.P. man bun</em></small>
 							</div>
 						</div>
 					</v-col>
@@ -44,7 +36,10 @@
 					Over the years, I've worked for a wide range of businesses and clients in both the private
 					and public sectors. I have worked as a full stack engineer writing both server-side and
 					client-side code and am comfortable with a range of software development lifecycle
-					methods. I've worked as a tech lead for
+					methods.
+				</p>
+				<p>
+					I've worked as a tech lead for
 					<a
 						href="https://www.linkrightmedia.com/"
 						class="content-link"
@@ -80,66 +75,65 @@
 				<h2>Why do you like JavaScript so much?</h2>
 				<p>
 					If you haven't already, first check out some of my
-					<nuxt-link to="/work" class="content-link">projects</nuxt-link>. Apart from the .NET work
-					I've done at full-time positions, you'll see a lot of code written in JavaScript. Aside
-					from the flexability of writing object oriented programming or functional programming, the
-					continued support from the community at large, and large library of open-source projects
-					depending on it, I choose to work in JavaScript primarily for two reasons:
-				</p>
-				<h3>It Is Isomorphic</h3>
-				<p>
-					How convenient is it that JavaScript can be run on both the server and the client? I think
-					it's pretty awesome, especially since you don't have to code-switch while jumping from
-					server to client code and vice versa. I'm sorry, C#, I prefer my single quotes, and now I
-					don't have to be reminded to switch. Win!
+					<nuxt-link to="/work" class="content-link">projects</nuxt-link> - you'll see a lot of code
+					written in JavaScript. Aside from the flexability of writing within either object-oriented
+					or functional programming paradigms, I choose to work in JavaScript primarily for two
+					reasons:
 				</p>
 				<h3>It Keeps Me Learning</h3>
 				<p>
 					The JavaScript world moves fast, and the ever-changing ecosystem holds myself accountable
 					for staying sharp and relevant. Thanks to the passionate community members and open source
-					contributions, existing libraries improve and become better, or new ones become a solution
-					to a common problem.
+					contributions, existing libraries are being improved upon and new ones pop up quite often.
+				</p>
+				<h3>It Is Isomorphic</h3>
+				<p>
+					How convenient is it that JavaScript can be run on both the server and the client? I think
+					it's pretty awesome, especially since you don't have to code-switch while jumping from
+					server to client code and vice versa.
+				</p>
+				<p class="blocky">
+					I'm sorry, C#. I prefer my single quotes, and now I don't have to be reminded to switch.
+					Win!
 				</p>
 				<v-divider />
 				<h2>What are you currently excited about?</h2>
 				<p>
-					There are so many things that I'm excited about, but I'll mention just a few. I'm really
-					enjoying working within the <strong>Vue ecosystem</strong> at the moment. There's a
-					growing community happening, and it is really refreshing coming from React. I've also been
-					getting into more <strong>React Native</strong> development recently and am excited to get
-					a <a href="https://beerbuddy.io" target="_blank" class="content-link">BeerBuddy</a> mobile
-					app built on top of the existing
-					<a href="https://github.com/drewcook/beerbuddy-api" target="_blank" class="content-link">
-						backend API </a
-					>. I'm interested in the new blockchain technologies and how we can write code around
-					that. Finally, I'm definitely excited about <strong>TypeScript</strong> and the adoption
-					of it that is currently taking place across our industry. It's the future of JavaScript.
+					Recently, I've really been enjoying working within the <strong>Vue ecosystem</strong> and
+					building things with <strong>Nuxt.js</strong>. Since most of my past exerpience involves
+					React to some degree, it has been really refreshing working with these frameworks. I'm
+					also super stoked about <strong>TypeScript</strong> and the adoption of it that has been
+					taking place across our industry. Classes and interfaces are truly a powerful combination
+					for writing within the object-oriented programming paradigm.
 				</p>
 				<p class="blocky">Clefairy, meet Clefable. No moon stone needed.</p>
 				<v-divider />
 				<h2>What else are you into?</h2>
 				<p>
-					When I'm not writing code, I mostly love spending time with my girlfriend and dog, Roscoe.
-					I also write and produce
+					When I'm not writing code, I spend most of my time living the dream with my wonderful
+					girlfriend and my four-legged companion. I also write and produce my own music and play
+					guitar in a funk/rock group called
+					<a
+						href="https://open.spotify.com/artist/2Fv03ttGxfHRtBvwSDtyhc"
+						target="_blank"
+						class="content-link"
+					>
+						Vanimal Kingdom,
+					</a>
+					where we play shows in Denver and the surrounding areas. And of course, I enjoy all the
+					outdoor activites that Colorado has to offer - snowboarding, backpacking, the large
+					selection of craft brew and local breweries, and seeing the Rockies at Coors Field.
+				</p>
+				<p class="blocky">
+					Check out some of my music on
 					<a
 						href="https://soundcloud.com/thenotesbetween"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="content-link"
 					>
-						my own music
+						Soundcloud!
 					</a>
-					and play guitar in a Denver-based rock band,
-					<a
-						href="https://open.spotify.com/artist/2Fv03ttGxfHRtBvwSDtyhc"
-						target="_blank"
-						class="content-link"
-					>
-						Vanimal Kingdom.
-					</a>
-					I've also picked up woodworking recently, I'm learning Spanish, and of course I enjoy all
-					the outdoor activites that Colorado has to offer - snowboarding, backpacking, cycling, the
-					large selection of craft brew and local breweries, and seeing the Rockies at Coors Field.
 				</p>
 			</v-col>
 		</v-row>

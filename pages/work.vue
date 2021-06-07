@@ -4,9 +4,10 @@
 		<p class="text-center mb-10">
 			Here are a few selected projects that I have built in my spare time.<br />You can view a
 			larger body of work, including this
-			<a href="https://github.com/drewcook/portfolio-website" target="_blank" class="content-link"
-				>portfolio website</a
-			>, on my
+			<a href="https://github.com/drewcook/portfolio-website" target="_blank" class="content-link">
+				portfolio website
+			</a>
+			on my
 			<a href="https://github.com/drewcook" target="_blank" class="content-link">Github page</a>.
 		</p>
 		<p class="text-center mb-10">
@@ -26,12 +27,11 @@
 					<v-chip
 						v-for="tag in tags.types"
 						:key="tag.title"
-						:close="tag.checked"
 						:data-filter="tag.filter"
 						active-class="active"
 						color="info"
+						:outlined="!tag.checked"
 						@click="e => filterByChip(e, 'type')"
-						@click:close="e => filterByChip(e, 'type')"
 					>
 						{{ tag.title }}
 					</v-chip>
@@ -43,12 +43,11 @@
 					<v-chip
 						v-for="tag in tags.frameworks"
 						:key="tag.title"
-						:close="tag.checked"
 						:data-filter="tag.filter"
 						active-class="active"
 						color="primary"
+						:outlined="!tag.checked"
 						@click="e => filterByChip(e, 'framework')"
-						@click:close="e => filterByChip(e, 'framework')"
 					>
 						{{ tag.title }}
 					</v-chip>
