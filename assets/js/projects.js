@@ -24,18 +24,6 @@ const projects = [
 		techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
 	},
 	{
-		title: 'BeerBuddy Mobile',
-		type: 'Mobile Application',
-		imgSrc: '/img/beerbuddy_mobile.png',
-		demoUrl: 'https://beerbuddy.io',
-		codeUrl: 'https://github.com/drewcook/beerbuddy-web',
-		description:
-			'BeerBuddy is a cross-platform application powered by JavaScript. The client mobile application is written in React Native on top of the Expo framework. It incorporates user authentication with JWT.',
-		filters: ['mobile', 'react native', 'graphql'],
-		frameworks: ['React Native / Expo', 'GraphQL / Apollo'],
-		techStack: ['React Native', 'Expo', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
-	},
-	{
 		title: 'Flick Finder',
 		type: 'Web Application',
 		imgSrc: '/img/flickfinder.png',
@@ -94,6 +82,18 @@ const projects = [
 		filters: ['web', 'vue'],
 		frameworks: ['Vue / Nuxt'],
 		techStack: ['Nuxt.js', 'Vue.js'],
+	},
+	{
+		title: 'BeerBuddy Mobile',
+		type: 'Mobile Application',
+		imgSrc: '/img/beerbuddy_mobile.png',
+		demoUrl: 'https://beerbuddy.io',
+		codeUrl: 'https://github.com/drewcook/beerbuddy-web',
+		description:
+			'BeerBuddy is a cross-platform application powered by JavaScript. The client mobile application is written in React Native on top of the Expo framework. It incorporates user authentication with JWT.',
+		filters: ['mobile', 'react native', 'graphql'],
+		frameworks: ['React Native / Expo', 'GraphQL / Apollo'],
+		techStack: ['React Native', 'Expo', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
 	},
 	// {
 	// 	title: 'Powder Chat',
