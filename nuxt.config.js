@@ -45,10 +45,19 @@ export default {
 		'@nuxtjs/vuetify',
 		// https://google-fonts.nuxtjs.org/
 		'@nuxtjs/google-fonts',
+		// https://google-analytics.nuxtjs.org/
+		'@nuxtjs/google-analytics',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [],
+
+	publicRuntimeConfig: {
+		googleAnalytics: {
+			id: process.env.GOOGLE_ANALYTICS_ID,
+			dev: process.env.NODE_ENV !== 'production',
+		},
+	},
 
 	googleFonts: {
 		families: {
@@ -60,6 +69,11 @@ export default {
 		},
 		preconnect: true,
 		preload: true,
+	},
+
+	googleAnalytics: {
+		id: process.env.GOOGLE_ANALYTICS_ID,
+		dev: process.env.NODE_ENV !== 'production',
 	},
 
 	// Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

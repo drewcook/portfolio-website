@@ -9,42 +9,33 @@ $dc-neutral: #f1faee;
 $dc-blue-lt: #a8dadc;
 $dc-blue-md: rgb(69, 123, 157);
 $dc-blue-dk: #1d3557;
+$dc-green: #24a58e;
 $dc-heading: #324055;
-
 $dc-light: #efefef;
 $dc-gray: #646d78;
 $dc-gray-dk: #505458;
 $dc-gray-lt: #d0cdcd;
 $dc-dark: #071104;
-$dc-green: #24a58e;
-
-/* Roscoe Color Palette */
-$r-green: #1eb095;
-$r-cyan: #2ba0b4;
-
 
 // Colors to Use
 $primary: $dc-blue-md;
 $secondary: $dc-blue-lt;
 $accent: $dc-red;
-
 $bg-color: $dc-light;
 $border-color: $dc-gray;
 $scroll-btn-color: #36ff7c;
 
-
-/* Fonts and Typography */
+/* Fonts */
 $exo-font: 'Exo', sans-serif;
 $casual-font: 'Kalam', sans-serif;
 $serif-font: 'Libre Franklin', serif;
 $prompt-font: 'Prompt', monospace;
 $mono-font: 'Titillium Web', monospace;
 
+/* Typography */
 $font-size-root: 20px;
-
 $heading-font-family: $prompt-font;
 $heading-color: $dc-heading;
-
 $body-font-family: $exo-font;
 $body-color: $dc-dark;
 
