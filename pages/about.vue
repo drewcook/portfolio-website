@@ -76,9 +76,9 @@
 				<p>
 					If you haven't already, first check out some of my
 					<nuxt-link to="/work" class="content-link">projects</nuxt-link> - you'll see a lot of code
-					written in JavaScript. Aside from the flexability of writing within either object-oriented
-					or functional programming paradigms, I choose to work in JavaScript primarily for two
-					reasons:
+					written in JavaScript and across the JAMstack. Aside from the flexability of writing
+					within either object-oriented with TypeScript or functional programming paradigms, I
+					choose to work in JavaScript primarily for two reasons:
 				</p>
 				<h3>It Keeps Me Learning</h3>
 				<p>
@@ -90,7 +90,9 @@
 				<p>
 					How convenient is it that JavaScript can be run on both the server and the client? I think
 					it's pretty awesome, especially since you don't have to code-switch while jumping from
-					server to client code and vice versa.
+					server to client code and vice versa. TypeScript interfaces and classes make it easy to
+					write object-oriented code for a substantial backend and business layer, and client-side
+					frameworks make it a joy to spin up elegant, reactive UIs.
 				</p>
 				<p class="blocky">
 					I'm sorry, C#. I prefer my single quotes, and now I don't have to be reminded to switch.

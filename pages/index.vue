@@ -19,7 +19,7 @@
 						<h3>I build things for the interwebs.</h3>
 						<p>
 							I'm a Denver-based, full-stack software engineer with a specialization in JavaScript
-							and other frontend technologies for both native web and mobile applications. I'm
+							and other JAMstack technologies for both native web and mobile applications. I'm
 							currently operating as a freelance consultant under my own company,
 							<a href="https://altheaweb.services" class="content-link" target="_blank">
 								Althea Web Services,

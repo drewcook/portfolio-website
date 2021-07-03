@@ -81,7 +81,7 @@
 						to: '/work',
 					},
 					{
-						title: 'Experience',
+						title: 'Resume',
 						to: '/experience',
 					},
 					{

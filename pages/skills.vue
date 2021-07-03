@@ -59,7 +59,17 @@
 					{
 						title: 'Languages',
 						info: 'The foundational pillars',
-						skills: ['JavaScript ES6', 'HTML', 'CSS', 'SCSS/LESS', 'GraphQL', 'C#', 'PHP', 'SQL'],
+						skills: [
+							'JavaScript ES6',
+							'TypeScript',
+							'HTML',
+							'CSS',
+							'SCSS/LESS',
+							'GraphQL',
+							'C#',
+							'PHP',
+							'SQL',
+						],
 					},
 					{
 						title: 'Frameworks',

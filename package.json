@@ -19,9 +19,11 @@
     "npm": ">=6"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.4",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "core-js": "^3.14.0",
+    "express": "^4.17.1",
     "hamburgers": "^1.1.3",
     "hover.css": "^2.3.2",
     "nuxt": "^2.15.6",
