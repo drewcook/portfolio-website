@@ -140,7 +140,6 @@
 		flex-direction: column;
 		margin-right: 10px;
 		margin-top: -60px;
-		opacity: 90%;
 		position: fixed;
 		right: 0;
 		top: 50%;
