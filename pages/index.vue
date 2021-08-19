@@ -19,14 +19,25 @@
 						<h3>I build things for the interwebs.</h3>
 						<p>
 							I'm a Denver-based, full-stack software engineer with a specialization in JavaScript
-							and other JAMstack technologies for both native web and mobile applications. I'm
-							currently operating as a freelance consultant under my own company,
+							and Jamstack technologies for both native web and mobile applications.
+						</p>
+						<p>
+							I'm currently working as a Design Technologist with
+							<a href="https://corporate.charter.com/" class="content-link" target="_blank">
+								Charter Communications
+							</a>
+							. I also operate as a freelance consultant under my own company,
 							<a href="https://altheaweb.services" class="content-link" target="_blank">
 								Althea Web Services,
 							</a>
 							where I provide engineering support for a host of tech-based products.
 						</p>
-						<p>I am currently open to new positions and full-time opportunities.</p>
+						<p>
+							This website is powered by
+							<a href="https://nuxtjs.org/" class="content-link" target="_blank">Nuxt.js</a>
+							and written with
+							<a href="https://v3.vuejs.org/" class="content-link" target="_blank">Vue 3</a>.
+						</p>
 						<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
 					</div>
 				</transition>
@@ -166,7 +177,7 @@
 
 	p {
 		margin: 15px auto 30px;
-		max-width: 700px;
+		max-width: 800px;
 	}
 
 	.sky {
