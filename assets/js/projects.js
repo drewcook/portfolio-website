@@ -1,5 +1,17 @@
 const projects = [
 	{
+		title: 'Battleship',
+		type: 'Web Application',
+		imgSrc: '/img/battleship.png',
+		demoUrl: 'https://battleship.dco.dev',
+		codeUrl: 'https://github.com/drewcook/ts-battleship',
+		description:
+			'This is the classic game of battleship. It is a full-stack web app built in TypeScript, Node, Koa, and React. It uses object-oriented programming principals for modelling and business logic and a Koa web server to initiate actions via a React client application.',
+		filters: ['api', 'node', 'web', 'react'],
+		frameworks: ['Node / Koa', 'React'],
+		techStack: ['Node', 'Koa', 'React'],
+	},
+	{
 		title: 'BeerBuddy API',
 		type: 'Backend API',
 		imgSrc: '/img/beerbuddy_dashboard.png',
