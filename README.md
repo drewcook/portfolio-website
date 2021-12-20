@@ -2,7 +2,7 @@
 
 This is the code for my online portfolio hosted at [https://dco.dev](https://dco.dev).
 
-There is also version that is deployed to AWS on S3 as a static site [here](https://dco-bucket.s3.us-east-1.amazonaws.com/portfolio/index.html).
+There is also version that is deployed to AWS on S3 as a static site at [https://dco.digital](https://dco.digital).
 
 ### Tech Stack
 
