@@ -36,7 +36,11 @@
 							This website is powered by
 							<a href="https://nuxtjs.org/" class="content-link" target="_blank">Nuxt.js</a>
 							and written with
-							<a href="https://v3.vuejs.org/" class="content-link" target="_blank">Vue 3</a>.
+							<a href="https://v3.vuejs.org/" class="content-link" target="_blank">Vue 3</a>. This
+							site is deployed in two ways:
+							<a href="https://dco.dev/" class="content-link">one</a> is deployed on Heroku, and
+							<a href="https://dco.digital/" class="content-link">another</a> is deployed on Amazon
+							Web Services using CloudFront, Route 53, and S3 with OAI.
 						</p>
 						<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
 					</div>

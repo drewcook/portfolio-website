@@ -82,6 +82,7 @@
 							'React Native',
 							'Expo',
 							'Vue',
+							'VuePress',
 							'Nuxt.js',
 							'.NET Core & MVC',
 						],
@@ -89,7 +90,14 @@
 					{
 						title: 'Storage',
 						info: 'The warehouses & datastores',
-						skills: ['MongoDB', 'Google Firebase', 'MS SQL Server', 'MySQL', 'S3'],
+						skills: [
+							'MongoDB',
+							'Google Firebase',
+							'MS SQL Server',
+							'MySQL',
+							'S3',
+							'Firebase / Firestore',
+						],
 					},
 					{
 						title: 'Tooling',
@@ -118,23 +126,21 @@
 					{
 						title: 'Deployment',
 						info: 'The shipping & handling',
-						skills: ['Heroku', 'CircleCI', 'TravisCI', 'Docker', 'Git'],
+						skills: ['Amazon Web Services', 'Heroku', 'CircleCI', 'TravisCI', 'Docker', 'Git'],
 					},
-					// {
-					// 	title: 'More',
-					// 	skills: [
-					// 		'Progressive Web Apps',
-					// 		'Blockchain tech',
-					// 		'Vue',
-					// 		'Go',
-					// 		'Docker',
-					// 		'Kubernetes',
-					// 		'Flutter',
-					// 		'Firebase / Firestore',
-					// 		'System Design',
-					// 		'Amazon Web Services',
-					// 	],
-					// },
+					{
+						title: 'Learning & More',
+						skills: [
+							'Progressive Web Apps',
+							'Blockchain Development',
+							'Web3',
+							'Ethereum',
+							'Go',
+							'Docker',
+							'Kubernetes',
+							'System Design',
+						],
+					},
 				],
 			}
 		},
