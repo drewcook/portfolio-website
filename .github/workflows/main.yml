@@ -22,6 +22,6 @@ jobs:
       - name: Build application
         run: npm run generate
       - name: Deploy to S3
-        run: aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_ID }} --recursive
+        run: aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_ID }}
       - name: Create CloudFront invalidation
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*" # invalidates everything (to start, build upon this if needed)
