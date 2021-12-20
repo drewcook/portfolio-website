@@ -2,6 +2,8 @@
 
 This is the code for my online portfolio hosted at [https://dco.dev](https://dco.dev).
 
+There is also version that is deployed to AWS on S3 as a static site [here](https://dco-bucket.s3.us-east-1.amazonaws.com/portfolio/index.html).
+
 ### Tech Stack
 
 - Built within the [Nuxt.js](https://nuxtjs.org) framework and written in [Vue](https://v3.vuejs.org).
