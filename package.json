@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy:s3": "npm run generate && aws s3 cp ./dist s3://dco.digital --recursive",
+    "deploy:s3": "aws s3 cp ./dist s3://dco.digital --recursive",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "fix:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore --fix",
