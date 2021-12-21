@@ -12,18 +12,6 @@ const projects = [
 		techStack: ['Node', 'Koa', 'React', 'MongoDB', 'Mongoose'],
 	},
 	{
-		title: 'BeerBuddy API',
-		type: 'Backend API',
-		imgSrc: '/img/beerbuddy_dashboard.png',
-		demoUrl: 'https://beerbuddy.io',
-		codeUrl: 'https://github.com/drewcook/beerbuddy-api',
-		description:
-			'BeerBuddy is a cross-platform application powered by JavaScript. This is a RESTful API that is built with Node and Express and uses MongoDB for storage. It includes authentication with JWT, authorization, logging, testing, and can be reused for multiple client applications.',
-		filters: ['api', 'node'],
-		frameworks: ['Node / Express'],
-		techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
-	},
-	{
 		title: 'BeerBuddy Web',
 		type: 'Web Application',
 		imgSrc: '/img/beerbuddy_web.png',
@@ -46,6 +34,18 @@ const projects = [
 		filters: ['web', 'graphql', 'react'],
 		frameworks: ['React / Next', 'GraphQL / Apollo'],
 		techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest'],
+	},
+	{
+		title: 'BeerBuddy API',
+		type: 'Backend API',
+		imgSrc: '/img/beerbuddy_dashboard.png',
+		demoUrl: 'https://beerbuddy.io',
+		codeUrl: 'https://github.com/drewcook/beerbuddy-api',
+		description:
+			'BeerBuddy is a cross-platform application powered by JavaScript. This is a RESTful API that is built with Node and Express and uses MongoDB for storage. It includes authentication with JWT, authorization, logging, testing, and can be reused for multiple client applications.',
+		filters: ['api', 'node'],
+		frameworks: ['Node / Express'],
+		techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
 	},
 	{
 		title: 'Guitar Exchange',
