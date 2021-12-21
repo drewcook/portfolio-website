@@ -2,7 +2,13 @@
 
 This is the code for my online portfolio hosted at [https://dco.dev](https://dco.dev).
 
-There is also version that is deployed to AWS on S3 as a static site at [https://dco.digital](https://dco.digital).
+It's hosted on Amazon Web Services:
+- S3 for holding the statically-generated site assets
+- Route 53 for DNS
+- Cloudfront for caching and distribution
+- Lamda serverless functions for response header inception
+
+There is also version that is deployed to Heroku at [https://drewcook.dev](https://drewcook.dev).
 
 ### Tech Stack
 
