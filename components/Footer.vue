@@ -59,6 +59,11 @@
 						</small>
 					</v-col>
 				</v-row>
+				<p class="donate">ETH: dco.eth</p>
+				<p class="donate">
+					ADA:
+					addr1q9lq7j5nawed9vdywddklly5vpcgu8a52lsjr04akw6dr6yfzw8yqdn30d74dvh3acuses65l24r4vtpuy48xx4jxnns8kj9uj>
+				</p>
 			</v-container>
 		</section>
 	</v-footer>
@@ -134,6 +139,12 @@
 			background-color: $dc-dark !important;
 			padding: 10px 0;
 			text-align: center;
+
+			.donate {
+				font-size: 13px;
+				font-style: italic;
+				margin: 3px 0;
+			}
 
 			.copyright {
 				@media (min-width: 600px) {

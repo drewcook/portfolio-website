@@ -130,6 +130,7 @@
 					},
 					{
 						title: 'Learning & More',
+						info: 'The trajectory',
 						skills: [
 							'Progressive Web Apps',
 							'Blockchain Development',
@@ -138,7 +139,6 @@
 							'Go',
 							'Docker',
 							'Kubernetes',
-							'System Design',
 						],
 					},
 				],
