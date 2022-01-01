@@ -129,6 +129,7 @@
 
 	.front {
 		.v-image {
+			border-bottom: 1px solid #ccc;
 			border-top-left-radius: 24px; // match 'shaped' card
 		}
 	}

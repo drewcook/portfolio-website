@@ -90,6 +90,11 @@
 				tags: {
 					types: [
 						{
+							title: 'Decentralized Application',
+							checked: false,
+							filter: 'dapp',
+						},
+						{
 							title: 'Backend API',
 							checked: false,
 							filter: 'api',
@@ -115,6 +120,11 @@
 							title: 'React / Next',
 							checked: false,
 							filter: 'react',
+						},
+						{
+							title: 'Truffle / Solidity / Web3 / Ethereum',
+							checked: false,
+							filter: 'dapp',
 						},
 						{
 							title: 'React Native / Expo',

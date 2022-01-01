@@ -1,5 +1,17 @@
 const projects = [
 	{
+		title: 'Fundraisers DApp',
+		type: 'Decentralized Application',
+		imgSrc: '/img/fundraisers.png',
+		demoUrl: 'https://fundraisers.drewcook.dev',
+		codeUrl: 'https://github.com/drewcook/dapp-fundraisers',
+		description:
+			'This is a decentralized Web3 application for creating your own fundraisers to allow for donations through a Web3 wallet in the browser. You may donate to other fundraisers that other users have created. Funds can be withdrawn out to an Ethereum wallet.',
+		filters: ['smart-contracts', 'node', 'web', 'react', 'dapp', 'solidity', 'truffle'],
+		frameworks: ['Truffle', 'Web3', 'Ethereum', 'Solidity'],
+		techStack: ['Solidity', 'Truffle', 'React', 'NodeJS', 'Web3', 'Mocha'],
+	},
+	{
 		title: 'Battleship',
 		type: 'Web Application',
 		imgSrc: '/img/battleship.png',
@@ -9,7 +21,7 @@ const projects = [
 			'This is the classic game of battleship. It is a full-stack web app built in TypeScript, Node, Koa, and React. It uses object-oriented programming principals for modelling and business logic and a Koa web server to initiate actions via a React client application. It uses MongoDB to keep track of high scores.',
 		filters: ['api', 'node', 'web', 'react', 'mongodb'],
 		frameworks: ['Node / Koa', 'React'],
-		techStack: ['Node', 'Koa', 'React', 'MongoDB', 'Mongoose'],
+		techStack: ['NodeJS', 'Koa', 'React', 'MongoDB', 'Mongoose'],
 	},
 	{
 		title: 'BeerBuddy Web',
@@ -45,7 +57,7 @@ const projects = [
 			'BeerBuddy is a cross-platform application powered by JavaScript. This is a RESTful API that is built with Node and Express and uses MongoDB for storage. It includes authentication with JWT, authorization, logging, testing, and can be reused for multiple client applications.',
 		filters: ['api', 'node'],
 		frameworks: ['Node / Express'],
-		techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
+		techStack: ['NodeJS', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
 	},
 	{
 		title: 'Guitar Exchange',
@@ -69,7 +81,7 @@ const projects = [
 			'Vidly is a backend API that mocks a system that movie rental store may use. It built in Node and Express, and it uses a MongoDB database for storage.  It includes features for authentication, authorization, logging, and testing.',
 		filters: ['api', 'node'],
 		frameworks: ['Node / Express'],
-		techStack: ['Node', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
+		techStack: ['NodeJS', 'Express', 'MongoDB', 'Mongoose', 'Jest', 'JWT', 'Winston', 'Joi'],
 	},
 	{
 		title: 'You Got Served',
@@ -117,7 +129,7 @@ const projects = [
 	// 		'Powderchat is both a full-stack web and native mobile application.  It attempts to connect ski and snowboard riders on the mountain via chat.  Users can log in, check into a mountain resort via search or GPS, and start chatting with other checked in users.  Users can also choose to set up private groups within the mountain, or connect with their friends via social media.  This allows for groups to keep in touch and not get lost while riding together.',
 	// 	filters: ['mobile', 'node', 'react native'],
 	// 	frameworks: ['Node / Express', 'React Native / Expo'],
-	// 	techStack: ['Node', 'Express', 'JWT', 'Firebase', 'React Native'],
+	// 	techStack: ['NodeJS', 'Express', 'JWT', 'Firebase', 'React Native'],
 	// },
 ]
 
