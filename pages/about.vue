@@ -101,12 +101,25 @@
 				<v-divider />
 				<h2>What are you currently excited about?</h2>
 				<p>
-					Recently, I've really been enjoying working within the <strong>Vue ecosystem</strong> and
-					building things with <strong>Nuxt.js</strong>. Since most of my past exerpience involves
-					React to some degree, it has been really refreshing working with these frameworks. I'm
-					also super stoked about <strong>TypeScript</strong> and the adoption of it that has been
-					taking place across our industry. Classes and interfaces are truly a powerful combination
-					for writing within the object-oriented programming paradigm.
+					I am so excited about the next generation of the internet that is Web3 ecosystem, and I am
+					currently reading a lot about smart contract development with Solidity. I have been
+					building a bit with the Truffle framework primarily to write smart contracts and DApps
+					(decentralized applications) with React, utilizing the smart contracts from Solidity.
+					There are many different parts to the Web3 ecosystem, several layers, sidechains, IPFS,
+					ENS, different blockchain protocols using their own consensus mechanism, etc. There's a
+					lot out there. At the moment, I am currently focused on writing smart contracts and Web3
+					client applications, since I can leverage my existing skillset for this. I am excited to
+					get better at writing secure Solidity code and working with the Ethereum blockchain at the
+					moment.
+				</p>
+				<p>
+					Aside from blockchain development and research, I've really been enjoying working within
+					the <strong>Vue ecosystem</strong> and building things with <strong>Nuxt.js</strong>.
+					Since most of my past experience involves React to some degree, it has been really
+					refreshing working with these frameworks. I'm also super stoked about
+					<strong>TypeScript</strong> and the adoption of it that has been taking place across our
+					industry. Classes and interfaces are truly a powerful combination for writing within the
+					object-oriented programming paradigm.
 				</p>
 				<p class="blocky">Clefairy, meet Clefable. No moon stone needed.</p>
 				<v-divider />

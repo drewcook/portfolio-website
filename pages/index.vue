@@ -18,8 +18,10 @@
 						<div class="sm-divider" />
 						<h3>I build things for the interwebs.</h3>
 						<p>
-							I'm a Denver-based, full-stack software engineer with a specialization in JavaScript
-							and Jamstack technologies for both native web and mobile applications.
+							I'm a Denver-based, full-stack software engineer with a specialization in TypeScript
+							for building backends and client applications for the web. I am also an aspiring
+							blockchain engineer, building DApps for Web3 and writing smart contracts in Solidity
+							on the Ethereum protocol.
 						</p>
 						<p>
 							I'm currently working as a Design Technologist with
