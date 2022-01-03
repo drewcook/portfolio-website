@@ -3,7 +3,7 @@ const projects = [
 		title: 'Fundraisers DApp',
 		type: 'Decentralized Application',
 		imgSrc: '/img/fundraisers.png',
-		demoUrl: 'https://fundraisers.drewcook.dev',
+		demoUrl: 'https://fundraisers.dco.dev',
 		codeUrl: 'https://github.com/drewcook/dapp-fundraisers',
 		description:
 			'This is a decentralized Web3 application deployed on the Rinkeby testnet for creating your own fundraisers to allow for donations through a Web3 wallet in the browser. You may donate to other fundraisers that other users have created. Funds can be withdrawn out to an Ethereum wallet.',
