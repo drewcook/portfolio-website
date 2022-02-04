@@ -1,15 +1,15 @@
 const projects = [
 	{
-		title: 'Fundraisers DApp',
+		title: 'Fundraisers Defi',
 		type: 'Decentralized Application',
 		imgSrc: '/img/fundraisers.png',
 		demoUrl: 'https://fundraisers.dco.dev',
 		codeUrl: 'https://github.com/drewcook/dapp-fundraisers',
 		description:
-			'This is a decentralized Web3 application deployed on the Rinkeby testnet for creating your own fundraisers to allow for donations through a Web3 wallet in the browser. You may donate to other fundraisers that other users have created. Funds can be withdrawn out to an Ethereum wallet.',
+			'This is a decentralized Web3 application deployed on the Ethereum networks for creating your own fundraisers to allow for donations through a Web3 wallet in the browser. You may donate to other fundraisers that other users have created. Funds can be withdrawn out to an Ethereum wallet.',
 		filters: ['smart-contracts', 'node', 'web', 'react', 'dapp', 'solidity', 'truffle'],
 		frameworks: ['Truffle', 'Web3', 'Ethereum', 'Solidity'],
-		techStack: ['Solidity', 'Truffle', 'React', 'NodeJS', 'Web3', 'Mocha'],
+		techStack: ['Solidity', 'Truffle', 'React', 'NodeJS', 'Web3', 'Jest'],
 	},
 	{
 		title: 'Battleship',
@@ -22,6 +22,18 @@ const projects = [
 		filters: ['api', 'node', 'web', 'react', 'mongodb'],
 		frameworks: ['Node / Koa', 'React'],
 		techStack: ['NodeJS', 'Koa', 'React', 'MongoDB', 'Mongoose'],
+	},
+	{
+		title: 'IPFS Drive',
+		type: 'Decentralized Application',
+		imgSrc: '/img/ipfs_drive.png',
+		demoUrl: 'https://drive.dco.dev',
+		codeUrl: 'https://github.com/drewcook/dapp-ipfs-drive',
+		description:
+			'This is a decentralized Web3 application deployed on the Ethereum networks that connects to IPFS for uploading and viewing files. Connect with a browser wallet and store files on a P2P network.',
+		filters: ['smart-contracts', 'node', 'web', 'react', 'dapp', 'solidity', 'truffle'],
+		frameworks: ['Truffle', 'Web3', 'Ethereum', 'Solidity'],
+		techStack: ['Solidity', 'Truffle', 'React', 'IPFS', 'Web3'],
 	},
 	{
 		title: 'BeerBuddy Web',
