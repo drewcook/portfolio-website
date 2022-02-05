@@ -47,6 +47,18 @@ const projects = [
 		frameworks: ['React / Next', 'GraphQL / Apollo'],
 		techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Jest', 'JWT'],
 	},
+  {
+    title: 'Uptime Monitor',
+		type: 'Backend API',
+		imgSrc: '/img/uptime_monitor.png',
+		demoUrl: 'https://github.com/drewcook/nodejs-uptime-monitor',
+		codeUrl: 'https://github.com/drewcook/nodejs-uptime-monitor',
+		description:
+			'This is a Node.js project with zero dependencies, relying solely on native modules, that allows users to set uptime checks for different URLs and be sent an SMS message when the up/down status changes.  This is a fullstack app with background workers, all written in Node.',
+		filters: ['api', 'node', 'web'],
+		frameworks: ['Node / Express'],
+		techStack: ['NodeJS'],
+  }
 	{
 		title: 'Flick Finder',
 		type: 'Web Application',
