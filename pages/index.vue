@@ -42,9 +42,7 @@
 							deployed as a statically-generated
 							<a href="https://dco.dev/" class="content-link" target="_blank">website</a> on Amazon
 							Web Services infrastructure, making use of S3, CloudFront, Route 53. and Lambda
-							serverless functions. There is an alternative
-							<a href="https://drewcook.dev/" class="content-link">deployment</a> hosted on the
-							Heroku platform as well.
+							serverless functions.
 						</p>
 						<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
 					</div>
