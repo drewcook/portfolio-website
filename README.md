@@ -38,3 +38,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+<p align="center">
+ <img src="https://visitor-badge.glitch.me/badge?page_id=drewcook.portfolio-website" alt="visitor count"/>
+</p>
