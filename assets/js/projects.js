@@ -51,7 +51,7 @@ const projects = [
 		title: 'URL Uptime Monitor',
 		type: 'Backend API',
 		imgSrc: '/img/uptime_monitor.png',
-		demoUrl: 'https://github.com/drewcook/nodejs-uptime-monitor',
+		demoUrl: 'https://nodejs-uptime-monitor.herokuapp.com/',
 		codeUrl: 'https://github.com/drewcook/nodejs-uptime-monitor',
 		description:
 			'This is a Node.js project with zero dependencies, relying solely on native modules, that allows users to set uptime checks for different URLs and be sent an SMS message when the up/down status changes.  This is a fullstack app with background workers, all written in Node.',
