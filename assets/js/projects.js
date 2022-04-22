@@ -1,5 +1,17 @@
 const projects = [
 	{
+		title: 'Polyecho',
+		type: 'Decentralized Application',
+		imgSrc: '/img/polyecho.png',
+		demoUrl: 'https://polyecho.xyz',
+		codeUrl: 'https://github.com/polyecho',
+		description:
+			'Polyecho is a decentralized Web3 application, centered around music NFTs, that puts ownership back into creators. Producers and musicians can upload their dusty stems onto projects, where they can collaborate with others to build a song, which can be minted as an NFT. Sale proceeds are split evenly amonsst collaborators, and secondary sales generate evergreen royalties.  It is deployed on the Ethereum layer 2 network Polygon.',
+		filters: ['smart-contracts', 'node', 'web', 'react', 'dapp', 'solidity', 'truffle'],
+		frameworks: ['Truffle', 'Web3', 'Ethereum', 'Solidity'],
+		techStack: ['Solidity', 'Truffle', 'React', 'NodeJS', 'Web3', 'Jest'],
+	},
+	{
 		title: 'Fundraisers Defi',
 		type: 'Decentralized Application',
 		imgSrc: '/img/fundraisers.png',

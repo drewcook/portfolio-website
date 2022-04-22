@@ -16,12 +16,20 @@
 					<div v-show="loaded">
 						<h2>Hi, I'm Drew Cook.</h2>
 						<div class="sm-divider" />
-						<h3>I build things for the interwebs.</h3>
+						<h3>I build things for the interwebs. Web3 here we go!</h3>
 						<p>
-							I'm a Denver-based, full-stack software engineer with a specialization in TypeScript
-							for building backends and client applications for the web. I am also an aspiring
-							blockchain engineer, building DApps for Web3 and writing smart contracts in Solidity
-							on the Ethereum protocol.
+							I'm a Denver-based, full-stack software engineer with a specialization in JavaScript
+							for building backends and client applications for the web. I am also working in Web3,
+							building DApps and writing smart contracts in Solidity, mainly on the Ethereum
+							blockchain.
+						</p>
+						<p>
+							I am also a co-founder and the CTO for a Web3 project called
+							<a href="https://polyecho.xyz" class="content-link" target="_blank">Polyecho</a>, a
+							collaborative music-making platform where producers and musicians can upload stems
+							onto a project to build a song, which can be minted as an NFT on-chain. Profits from
+							the sale price get evenly distributed to the collaborators, and secondary sales
+							generate evergreen kickbacks through the form of royalties.
 						</p>
 						<p>
 							I'm currently working as a Design Technologist with
@@ -34,7 +42,7 @@
 							</a>
 							where I provide engineering support for a host of tech-based products.
 						</p>
-						<p>
+						<p class="small-text">
 							This website is powered by
 							<a href="https://nuxtjs.org/" class="content-link" target="_blank">Nuxt.js</a>
 							and written with
@@ -250,5 +258,9 @@
 			color: #fff !important;
 			font-weight: bold;
 		}
+	}
+
+	.small-text {
+		font-size: 0.7rem;
 	}
 </style>
