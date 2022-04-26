@@ -157,7 +157,17 @@
 					{
 						title: 'Learning & More',
 						info: 'The trajectory',
-						skills: ['Zero Knowledge Proofs', 'Rust', 'Go', 'Docker', 'Kubernetes', 'Kafka'],
+						skills: [
+							'Zero Knowledge Proofs',
+							'Rust',
+							'Go',
+							'Docker',
+							'Kubernetes',
+							'Kafka',
+							'WebGL',
+							'WASM',
+							'Creative Coding',
+						],
 					},
 				],
 			}
