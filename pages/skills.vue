@@ -87,6 +87,7 @@
 							'VuePress',
 							'Nuxt.js',
 							'.NET Core & MVC',
+							'Progressive Web Apps',
 						],
 					},
 					{
@@ -155,7 +156,7 @@
 					{
 						title: 'Learning & More',
 						info: 'The trajectory',
-						skills: ['Progressive Web Apps', 'Rust', 'Go', 'Docker', 'Kubernetes', 'Kafka'],
+						skills: ['Zero Knowledge Proofs', 'Rust', 'Go', 'Docker', 'Kubernetes', 'Kafka'],
 					},
 				],
 			}
