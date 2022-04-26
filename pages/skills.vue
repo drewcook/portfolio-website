@@ -147,6 +147,7 @@
 							'Infura',
 							'Alchemy',
 							'Heroku',
+							'Vercel',
 							'CircleCI',
 							'TravisCI',
 							'Docker',
