@@ -70,11 +70,18 @@ const experience = [
 			'I work with a new team to rewrite the existing app I worked on in 2018 to migrate from .NET MVC 4 to .NET Core 3. I also take the opportunity to clean up my code and rewrite all the class-based components into function components with hooks, and I wrote over 300 tests with Jest and React Testing Library.',
 	},
 	{
-		timeframe: 'Aut 2021 - Present',
+		timeframe: 'Aug 2021 - Present',
 		title: 'Charter Communications',
 		category: 'Contract',
 		description:
 			'I work as web-based software engineer in support of the Core Designs System team, providing technical consulting for the team and building out the design system documentation site in VuePress with Vue 3.',
+	},
+	{
+		timeframe: 'Feb 2022 - Present',
+		title: 'Polyecho Labs',
+		category: 'Part-Time',
+		description:
+			"I'm one of three co-founders of a startup working on a generative music NFT protocol with royalties. The product is built on top of the Ethereum blockchain network and utilizes decentralized storage and infrastructure.",
 	},
 	{
 		timeframe: 'Present',

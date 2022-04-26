@@ -76,6 +76,7 @@
 						title: 'Frameworks',
 						info: 'The ecosystems & paradigms',
 						skills: [
+							'Ethereum',
 							'Node',
 							'Express',
 							'React',
@@ -92,7 +93,9 @@
 						title: 'Storage',
 						info: 'The warehouses & datastores',
 						skills: [
+							'IPFS',
 							'MongoDB',
+							'Postgres',
 							'Google Firebase',
 							'MS SQL Server',
 							'MySQL',
@@ -104,6 +107,9 @@
 						title: 'Tooling',
 						info: 'The parts & accessories',
 						skills: [
+							'Truffle',
+							'Hardhat',
+							'Ganache',
 							'Babel',
 							'Webpack',
 							'Redux',
@@ -117,9 +123,6 @@
 							'Bootstrap',
 							'SignalR',
 							'Hangfire',
-							'Truffle',
-							'Hardhat',
-							'Ganache',
 						],
 					},
 					{
@@ -138,22 +141,21 @@
 					{
 						title: 'Deployment',
 						info: 'The shipping & handling',
-						skills: ['Amazon Web Services', 'Heroku', 'CircleCI', 'TravisCI', 'Docker', 'Git'],
+						skills: [
+							'Amazon Web Services',
+							'Infura',
+							'Alchemy',
+							'Heroku',
+							'CircleCI',
+							'TravisCI',
+							'Docker',
+							'Git',
+						],
 					},
 					{
 						title: 'Learning & More',
 						info: 'The trajectory',
-						skills: [
-							'Progressive Web Apps',
-							'Blockchain Development',
-							'Web3',
-							'Ethereum',
-							'Solidity',
-							'Smart Contracts',
-							'Go',
-							'Docker',
-							'Kubernetes',
-						],
+						skills: ['Progressive Web Apps', 'Rust', 'Go', 'Docker', 'Kubernetes', 'Kafka'],
 					},
 				],
 			}
