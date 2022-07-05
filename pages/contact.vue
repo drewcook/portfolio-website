@@ -7,7 +7,7 @@
 		</p>
 		<p>
 			Feel free to send me an email at
-			<a href="mailto:drew@drewcook.dev" class="content-link">drew@drewcook.dev</a>.
+			<a href="mailto:drew@dco.dev" class="content-link">drew@dco.dev</a>.
 		</p>
 		<h4 class="mb-3">Or let's connect online!</h4>
 		<div class="social-wrap">

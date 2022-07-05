@@ -61,11 +61,20 @@
 					<a href="https://aoc.gov/" class="content-link" target="_blank" rel="noopener noreferrer">
 						federal government agency,
 					</a>
-					and as a frontend specialist for a
+					as a frontend specialist for a
 					<a href="https://gloo.us/" class="content-link" target="_blank" rel="noopener noreferrer">
 						tech startup
 					</a>
-					in Boulder, Colorado.
+					in Boulder, Colorado, and now I am working as a blockchain engineer at pretty well-known
+					<a
+						href="https://aave.com/"
+						class="content-link"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						DeFi company
+					</a>
+					.
 				</p>
 				<p class="blocky">
 					You can check out more details about my work experience on my

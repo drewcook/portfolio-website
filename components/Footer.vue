@@ -16,9 +16,9 @@
 					<v-col cols="12" sm="6">
 						<h5>Connect With Me</h5>
 						<p class="lead">
-							<a href="mailto:drew@drewcook.dev" class="content-link">
+							<a href="mailto:drew@dco.dev" class="content-link">
 								<v-icon class="icon">{{ emailIcon }}</v-icon>
-								drew@drewcook.dev
+								drew@dco.dev
 							</a>
 						</p>
 						<div class="social-wrap">

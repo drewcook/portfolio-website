@@ -20,11 +20,18 @@
 						<p>
 							I'm a Denver-based, full-stack software engineer with a specialization in JavaScript
 							for building backends and client applications for the web. I am also working in Web3,
-							building DApps and writing smart contracts in Solidity, mainly on the Ethereum
-							blockchain.
+							building DApps and writing smart contracts in Solidity, mainly on Ethereum.
 						</p>
 						<p>
-							I am also a co-founder and the CTO for a Web3 project called
+							I'm currently working as a full-stack engineer at
+							<a href="https://corporate.charter.com/" class="content-link" target="_blank">
+								Aave,
+							</a>
+							interacting with an array of blockchain technologies and crypto, and shaping the
+							future of how we use the Internet.
+						</p>
+						<p>
+							I am also a co-founder of a Web3 product called
 							<a href="https://polyecho.xyz" class="content-link" target="_blank">Polyecho</a>, a
 							collaborative music-making platform where producers and musicians can upload stems
 							onto a project to build a song, which can be minted as an NFT on-chain. Profits from
@@ -32,25 +39,11 @@
 							generate evergreen kickbacks through the form of royalties.
 						</p>
 						<p>
-							I'm currently working as a Design Technologist with
-							<a href="https://corporate.charter.com/" class="content-link" target="_blank">
-								Charter Communications
-							</a>
-							. I also operate as a freelance consultant under my own company,
+							I also operate as a freelance consultant under my own company,
 							<a href="https://altheaweb.services" class="content-link" target="_blank">
 								Althea Web Services,
 							</a>
 							where I provide engineering support for a host of tech-based products.
-						</p>
-						<p class="small-text">
-							This website is powered by
-							<a href="https://nuxtjs.org/" class="content-link" target="_blank">Nuxt.js</a>
-							and written with
-							<a href="https://v3.vuejs.org/" class="content-link" target="_blank">Vue 3</a>. It is
-							deployed as a statically-generated
-							<a href="https://dco.dev/" class="content-link" target="_blank">website</a> on Amazon
-							Web Services infrastructure, making use of S3, CloudFront, Route 53. and Lambda
-							serverless functions.
 						</p>
 						<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
 					</div>
