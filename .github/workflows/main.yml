@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '15.x'
+          node-version: '16.x'
           check-latest: false
       - name: Checkout
         uses: actions/checkout@v2
