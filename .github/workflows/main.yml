@@ -9,6 +9,11 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '15.x'
+          check-latest: false
       - name: Checkout
         uses: actions/checkout@v2
       - name: Configure AWS Credentials
