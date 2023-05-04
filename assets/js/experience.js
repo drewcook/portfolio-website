@@ -78,13 +78,13 @@ const experience = [
 	},
 	{
 		timeframe: 'Feb 2022 - Present',
-		title: 'Polyecho Labs',
+		title: 'Arbor Labs',
 		category: 'Part-Time',
 		description:
 			"I'm one of three co-founders of a startup working on a generative music NFT protocol with royalties. The product is built on top of the Ethereum blockchain network and utilizes decentralized storage and infrastructure.",
 	},
 	{
-		timeframe: 'Jul 2022 - Present',
+		timeframe: 'Jul 2022 - Feb 2023',
 		title: 'Aave',
 		category: 'Full-Time',
 		description:

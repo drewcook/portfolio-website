@@ -23,20 +23,27 @@
 							building DApps and writing smart contracts in Solidity, mainly on Ethereum.
 						</p>
 						<p>
-							I'm currently working as a full-stack engineer at
+							I'm recently coming off of a role working as a senior full-stack engineer at
 							<a href="https://corporate.charter.com/" class="content-link" target="_blank">
-								Aave,
+								Aave Companies,
 							</a>
 							interacting with an array of blockchain technologies and crypto, and shaping the
-							future of how we use the Internet.
+							future of how we use the Internet through decentralized finance and social graphs.
 						</p>
 						<p>
-							I am also a co-founder of a Web3 product called
-							<a href="https://polyecho.xyz" class="content-link" target="_blank">Polyecho</a>, a
-							collaborative music-making platform where producers and musicians can upload stems
+							I am also a co-founder of a Web3 product and protocol called the
+							<a href="https://arbor.audio" class="content-link" target="_blank">Arbor Protocol</a>,
+							a collaborative music-making platform where producers and musicians can upload stems
 							onto a project to build a song, which can be minted as an NFT on-chain. Profits from
 							the sale price get evenly distributed to the collaborators, and secondary sales
 							generate evergreen kickbacks through the form of royalties.
+						</p>
+						<p>
+							Aside from these main projects and roles, I spend my free engineering time researching
+							smart contract security and zero-knowledge products. I have attended a zero-knowledge
+							bootcamp called Zero Knowledge University and am part of the zkDAO, where we learn and
+							build zero-knowledge products. In security, I compete in auditing contests for finding
+							critical bugs in Solidity code for Web3 protocols.
 						</p>
 						<p>
 							I also operate as a freelance consultant under my own company,
