@@ -6,10 +6,10 @@
 				<v-row>
 					<v-col cols="12" md="8" lg="9" xl="10">
 						<h2>Who Are You?</h2>
+						<p>Hi there! My name is Drew Cook, and you're reading about me.</p>
 						<p>
-							Hi there! My name is Drew Cook, and I currently live in Denver, Colorado. I've always
-							enjoyed creating something out of nothing and being creative, and I think there's
-							nothing that can't be built when adopting a growth mindset.
+							I've always enjoyed creating something out of nothing and being creative, and I think
+							there's nothing that can't be built when adopting a growth mindset.
 						</p>
 						<p>
 							I'm super passionate about what I do, and I love working with other people that are
