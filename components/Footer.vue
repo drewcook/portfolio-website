@@ -40,7 +40,7 @@
 								target="_blank"
 								class="content-link"
 							>
-								Althea Web Services, LLC
+								Drew Cook
 							</a>
 							• All Rights Reserved.
 						</small>
@@ -53,7 +53,7 @@
 								target="_blank"
 								class="content-link"
 							>
-								Designed &amp; Built by Drew Cook.
+								View Source Code
 							</a>
 							• {{ new Date().getFullYear() }}
 						</small>

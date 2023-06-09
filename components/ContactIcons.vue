@@ -1,11 +1,6 @@
 <template>
 	<div class="contact-links">
 		<div class="d-flex justify-space-around align-center">
-			<a href="https://linkedin.com/in/drewcook2" target="_blank" rel="noopener noreferrer">
-				<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
-					<v-icon color="secondary">{{ linkedInIcon }}</v-icon>
-				</v-btn>
-			</a>
 			<a href="https://github.com/drewcook" target="_blank" rel="noopener noreferrer">
 				<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
 					<v-icon color="secondary">{{ githubIcon }}</v-icon>
@@ -38,6 +33,13 @@
 			}
 		},
 	}
+	/*
+    <a href="https://linkedin.com/in/drewcook2" target="_blank" rel="noopener noreferrer">
+      <v-btn color="primary" elevation="2" fab class="hvr-grow" small>
+        <v-icon color="secondary">{{ linkedInIcon }}</v-icon>
+      </v-btn>
+    </a>
+  */
 </script>
 
 <style lang="scss" scoped>

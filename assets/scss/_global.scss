@@ -32,14 +32,16 @@ h6 {
 
 // Links that appear within page content or elsewhare with cleaner style
 .content-link {
-	color: $primary;
+	color: inherit !important;
+	font-style: italic;
 	text-decoration: none;
-	transition: color 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 .content-link:hover {
-	color: $accent;
-	transition: color 200ms ease-in-out;
+	color: $accent !important;
+	text-decoration: underline;
+	transition: all 200ms ease-in-out;
 }
 
 .page-title {

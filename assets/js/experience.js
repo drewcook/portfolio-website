@@ -11,35 +11,35 @@ const experience = [
 		title: 'The Books',
 		category: 'Education',
 		description:
-			'I enroll at LSU to study landscape architecture and communications. I learn AutoCAD, and Adobe Creative Suite (Photoshop/Illustrator/In Design) for digital layouts and 3D modelling.',
+			'I enroll at LSU to study some and make poor decisions. But I ended up learning AutoCAD, and Adobe Creative Suite (Photoshop/Illustrator/In Design) for digital layouts and 3D modelling along the way, so worth it.',
 	},
 	{
 		timeframe: 'Sep 2014',
 		title: 'Seedpaths',
 		category: 'Full-Time',
 		description:
-			'I attend an 8-week intensive bootcamp from a Denver startup and learn fundamental OOP using .NET MVC 4, SQL, lambdas, console applications, and jQuery.',
+			'I attend an 8-week intensive bootcamp from a Denver startup and learn fundamental OOP using .NET MVC 4, SQL, lambdas, console applications, and jQuery. This was a big pivot in being shown that the Matrix is in fact, just code.',
 	},
 	{
 		timeframe: 'Dec 2014 - Feb 2015',
 		title: 'Access Now',
 		category: 'Full-Time',
 		description:
-			'I learn Wordpress and utilize Photoshop and In Design to design and build websites and marketing materials for a digital marketing agency based in Englewood, CO.',
+			'I learn Wordpress and utilize Photoshop and In Design to design and build websites and marketing materials for a digital marketing agency based in Colorado. Lots and lots of Wordpress.',
 	},
 	{
 		timeframe: 'Sep 2015 - Apr 2017',
 		title: "Crawford & O'Brien",
 		category: 'Full-Time',
 		description:
-			'I lead the technical develepment and maintenance for 50+ Wordpress websites for a digital marketing agency within a small team of developers. The company employees were 100% remote.',
+			'I lead the technical develepment and maintenance for 50+ Wordpress websites for a digital marketing agency within a small team of developers. The company employees were 100% remote. Oh the Wordpress...',
 	},
 	{
 		timeframe: 'Aug 2016',
 		title: 'I start a company.',
 		category: 'Part-Time',
 		description:
-			'I register Althea Web Services, LLC for the purpose of doing freelance and contract work as an operating business. I also publish any personal products under this name.',
+			"I register Althea Web Services, LLC for the purpose of doing freelance and contract work as an operating business. I also publish any personal products under this name. Don't sue me.",
 	},
 	{
 		timeframe: 'Apr 2017 - Aug 2018',
@@ -81,7 +81,14 @@ const experience = [
 		title: 'Arbor Labs',
 		category: 'Part-Time',
 		description:
-			"I'm one of three co-founders of a startup working on a generative music NFT protocol with royalties. The product is built on top of the Ethereum blockchain network and utilizes decentralized storage and infrastructure.",
+			"I'm one of three co-founders of a startup working on a generative music NFT protocol with royalties. The product is built on top of the Ethereum blockchain network and utilizes decentralized storage and infrastructure with IPFS, ERC721 tokens, and was incubated by zkDAO. The project is open source and has had many different engineers contribute to it since then.",
+	},
+	{
+		timeframe: 'May 2022 - July 2022',
+		title: 'Zero Knowledge University',
+		category: 'Part-Time',
+		description:
+			"I'm part of a small sized cohort of Zero Knowledge University, a Harmony-backed 10-week bootcamp where we researched and built with zero knowledge technologies, running MPC for a trusted setup, writing circuits, and executing them in WASM in the browser running the dapp connected to the verifying smart contracts. I learned a lot at an early time in ZKP development.",
 	},
 	{
 		timeframe: 'Jul 2022 - Feb 2023',
@@ -91,11 +98,25 @@ const experience = [
 			"I'm operating as a full-stack engineer working with blockchain technologies in Web3. We're building bleeding edge products and shaping the future of the internet and how we use it moving forward.",
 	},
 	{
+		timeframe: 'July 2022 - Nov 2022',
+		title: 'PhaNFT',
+		category: 'Part-Time',
+		description:
+			"I'm launching a whitelisted pre-sale, reveal-based NFT collection launch for a niche community in the jam band scene, offering digital collectables with band folklore used in the images where each token was backed by on-chain digital righted tied to the token which states what a user can do IP-based when owning the token, a first of it's kind for the time.",
+	},
+	{
+		timeframe: 'March 2023 - Present',
+		title: 'Smart Contract Auditor',
+		category: 'Part-Time',
+		description:
+			"I'm working as a part-time auditor reviewing smart contract code for bugs and vulnerabilities using a variety of tools and techniques to prevent exploits by ensuring the contracts are secure prior to deployment.",
+	},
+	{
 		timeframe: 'Present',
 		title: "Now We're Here",
 		category: 'Be In The Now',
 		description:
-			"If you've made it this far, enhorabuenas! You know more about me than I probably do of you. But feel free to reach out to me if you'd like to connect!",
+			"If you've made it this far, enhorabuenas! You know more about me than I probably do of you. Should I be scared? Well, feel free to reach out to me if you'd like to connect!",
 	},
 ]
 

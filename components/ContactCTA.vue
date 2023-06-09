@@ -41,9 +41,8 @@
 
 <style lang="scss" scoped>
 	#footer-cta {
-		background-color: $dc-heading;
+		// background-color: $dc-heading;
 		border-top: 1px dotted $dc-gray;
-		margin-top: 60px;
 		padding: 60px 0;
 
 		.v-btn {

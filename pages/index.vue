@@ -14,45 +14,28 @@
 			<v-container>
 				<transition name="jumbo">
 					<div v-show="loaded">
-						<h2>Hi, I'm Drew Cook.</h2>
+						<h2>Hello, World.</h2>
 						<div class="sm-divider" />
-						<h3>I build things for the interwebs. Web3 here we go!</h3>
+						<h3>I'm a full-stack software engineer working in Web.</h3>
 						<p>
-							I'm a Denver-based, full-stack software engineer with a specialization in JavaScript
-							for building backends and client applications for the web. I am also working in Web3,
-							building DApps and writing smart contracts in Solidity, mainly on Ethereum.
+							I'm focused on building web applications that interact with permissionless software
+							running on decentralized networks and writing transparent data to storage within
+							blockchains, by building and working with backend systems and protocols written as
+							smart contracts for executing transactions on EVM-based chains like Ethereum, and
+							building the client web applications and APIs that interact with them.
 						</p>
 						<p>
-							I'm recently coming off of a role working as a senior full-stack engineer at
-							<a href="https://corporate.charter.com/" class="content-link" target="_blank">
-								Aave Companies,
-							</a>
-							interacting with an array of blockchain technologies and crypto, and shaping the
-							future of how we use the Internet through decentralized finance and social graphs.
+							My main stack is Solidity, TypeScript, Node, Go, React, Next.js, Redis, MongoDB, &
+							PostgreSQL for writing the smart contracts, the REST-APIs, client UIs, and off-chain
+							storage. I use tools like Foundry, Slither, Echidna, Tenderly, and Hardhat for smart
+							contract development, testing, auditing, and deploying.
 						</p>
 						<p>
-							I am also a co-founder of a Web3 product and protocol called the
-							<a href="https://arbor.audio" class="content-link" target="_blank">Arbor Protocol</a>,
-							a collaborative music-making platform where producers and musicians can upload stems
-							onto a project to build a song, which can be minted as an NFT on-chain. Profits from
-							the sale price get evenly distributed to the collaborators, and secondary sales
-							generate evergreen kickbacks through the form of royalties.
+							Currently, I spend my free engineering time studying the security pitfalls of Solidity
+							code and vulnerabilities in Defi protocols as well as researching about new
+							advandements and seeing the uprise in zero-knowledge use case implementations.
 						</p>
-						<p>
-							Aside from these main projects and roles, I spend my free engineering time researching
-							smart contract security and zero-knowledge products. I have attended a zero-knowledge
-							bootcamp called Zero Knowledge University and am part of the zkDAO, where we learn and
-							build zero-knowledge products. In security, I compete in auditing contests for finding
-							critical bugs in Solidity code for Web3 protocols.
-						</p>
-						<p>
-							I also operate as a freelance consultant under my own company,
-							<a href="https://altheaweb.services" class="content-link" target="_blank">
-								Althea Web Services,
-							</a>
-							where I provide engineering support for a host of tech-based products.
-						</p>
-						<v-btn color="primary" nuxt to="/work">Portfolio</v-btn>
+						<v-btn color="primary" nuxt to="/work">My Personal Projects</v-btn>
 					</div>
 				</transition>
 			</v-container>
@@ -76,27 +59,45 @@
 					<div class="sm-divider" />
 					<h3>I love to collaborate.</h3>
 					<p>
-						I've worked in both public and private sectors and have had the opportunity to work with
-						a variety of team sizes over my career. It has given me insight into the pros and cons
-						of both large and small engineering departments.
+						I've worked on teams large and small, as an independence, in startups, and in large
+						organizations, both public and private sectors and have seen a lot of ways on how to set
+						goals, execute, and innovate as a collective group. There are many ways to get it done,
+						but I genuinely am most happy when working alongside peers who are just as driven and
+						passionate about what they do on a daily basis to make a positive change with technology
+						as I am.
 					</p>
-					<v-btn color="secondary" nuxt to="/experience">Experience</v-btn>
-				</div>
-			</v-container>
-		</section>
-
-		<section id="home-about" class="sky text-center">
-			<v-container>
-				<div data-aos="fade-up" data-aos-delay="300">
-					<h2>About Me</h2>
-					<div class="sm-divider" />
-					<h3>I love to create.</h3>
 					<p>
-						I enjoy the process of making an idea come to life. All you need is to start with a
-						seed, and that through consistent nurture and dedication to an end-goal in mind, it can
-						become something great that can last the test of time, rooted in furtile soil.
+						I had the opportunity to work directly with Vitalik Buterin, the founder of Ethereum, on
+						implementing dark mode onto his
+						<a href="https://vitalik.ca/" class="content-link" target="_blank">popular blog.</a> It
+						was sponsored through a Gitcoin grant, and you can view the PRs I merged in
+						<a
+							href="https://github.com/vbuterin/blogmaker/pull/11"
+							class="content-link"
+							target="_blank"
+							>here</a
+						>
+						and
+						<a href="https://github.com/vbuterin/blog/pull/40" class="content-link" target="_blank"
+							>here</a
+						>.
 					</p>
-					<v-btn color="primary" nuxt to="/about">Read More</v-btn>
+					<p>
+						In a previous role, I have worked as an engineer at
+						<a href="https://aave.com/" class="content-link" target="_blank"> Aave Companies, </a>
+						building out and maintaining the primary user interface and APIs that interact with the
+						Aave Protocol smart contracts, which is deployed on a variety of blockchain networks.
+					</p>
+					<p>
+						I am also the founder of a Web3 protocol and music NFT platform called
+						<a href="https://arbor.audio/" class="content-link" target="_blank">Arbor</a>. It is a
+						collaborative music-making platform where producers and musicians can upload individual
+						stems onto a project to build a song, which users can then buy mint as an NFT on-chain
+						directly from the artists. Profits from the sale price get evenly distributed to the
+						collaborators, and secondary sales generate evergreen kickbacks through the form of
+						royalties, all while creating and fostering community.
+					</p>
+					<v-btn color="secondary" nuxt to="/experience">My Contributions</v-btn>
 				</div>
 			</v-container>
 		</section>
@@ -108,11 +109,48 @@
 					<div class="sm-divider" />
 					<h3>I love to learn.</h3>
 					<p>
-						I welcome the opportunity when the solution to a problem calls for a new technology,
-						language, or library. Knowledge is power, and it is also the ability to determine what
-						tool is the right one for the best outcome when working through different solutions.
+						I approach learning like approaching the weather for the day, as in there will always be
+						something new to experience. I live a life of curiosity in exploring new territory and
+						the understanding it can provide in the bigger picture, carrying with me the perspective
+						from the things I have learned or practiced and the humbleness in not knowing
+						everything, which perpetuates this process.
 					</p>
-					<v-btn color="info" nuxt to="/skills">My Skills</v-btn>
+					<p>
+						As I said earlier, I am currently interested in smart contract security and working to
+						find vulnerabilities in protocols and attack vectors that can be performed to help
+						prevent $MM of other people's crypto ending up in the hands of a hacker. It is vitally
+						important to our ecosystems, the power of decentralized software, and our broader
+						reputation for crypto as a whole. I am spending time practicing as anonymous auditor for
+						a medium sized smart contract auditing firm. I review a protocol every few weeks and
+						practice techniques like static analysis, fuzz testing, symbolic analysis, formal
+						verification, and manual analysis by combing through the code and docs.
+					</p>
+					<p>
+						In the summer of 2022, I was part of a cohort that went through a Harmony-backed
+						bootcamp called Zero Knowledge University, where we researched and wrote code
+						implementing zero-knowledge proof technology in the blockchain space. We learned and
+						practiced some of the following: how to sign an MPC, perform a trusted setup, using
+						different proving mechanisms, wrote a variety of circuits in Circom, and ultimately
+						implemented a new unique ZKP-based feature into a new or existing application.
+					</p>
+					<v-btn color="info" nuxt to="/skills">My Skillset</v-btn>
+				</div>
+			</v-container>
+		</section>
+
+		<section id="home-about" class="sky text-center">
+			<v-container>
+				<div data-aos="fade-up" data-aos-delay="300">
+					<h2>About Me</h2>
+					<div class="sm-divider" />
+					<h3>I love to create.</h3>
+					<p>
+						In short, I'm a creator and builder, both parts art and engineering. I enjoy the process
+						of making an idea come to life. All you need is to start with a seed, and that through
+						consistent nurture and dedication to an end-goal in mind, it can become something great
+						that can last the test of time, rooted in furtile soil.
+					</p>
+					<v-btn color="primary" nuxt to="/about">Read More</v-btn>
 				</div>
 			</v-container>
 		</section>
@@ -185,7 +223,6 @@
 	.melon {
 		background-color: $dc-neutral;
 		border-bottom: 10px solid $dc-blue-lt;
-		margin-bottom: -60px;
 		padding: 60px 0;
 	}
 
