@@ -26,7 +26,7 @@
 								max-height="400"
 							/>
 							<div class="text-center">
-								<small><em>R.I.P. man bun</em></small>
+								<small><em>Hey, that's me!</em></small>
 							</div>
 						</div>
 					</v-col>
@@ -65,7 +65,7 @@
 					<a href="https://gloo.us/" class="content-link" target="_blank" rel="noopener noreferrer">
 						tech startup
 					</a>
-					in Boulder, Colorado, and now I am working as a blockchain engineer at pretty well-known
+					in Boulder, Colorado, and as a blockchain/web3 engineer at pretty well-known
 					<a
 						href="https://aave.com/"
 						class="content-link"
@@ -85,15 +85,17 @@
 				<p>
 					If you haven't already, first check out some of my
 					<nuxt-link to="/work" class="content-link">projects</nuxt-link> - you'll see a lot of code
-					written in JavaScript and across the JAMstack. Aside from the flexability of writing
-					within either object-oriented with TypeScript or functional programming paradigms, I
-					choose to work in JavaScript primarily for two reasons:
+					written in JavaScript, guilty. Aside from the flexability of writing within either
+					object-oriented design, with the type safety of TypeScript, the rich package management
+					system, and the open-ended assumptions about <i>how to</i> write it (double edged sword),
+					I choose to work in JavaScript primarily for two reasons:
 				</p>
 				<h3>It Keeps Me Learning</h3>
 				<p>
 					The JavaScript world moves fast, and the ever-changing ecosystem holds myself accountable
 					for staying sharp and relevant. Thanks to the passionate community members and open source
 					contributions, existing libraries are being improved upon and new ones pop up quite often.
+					It's super versital!
 				</p>
 				<h3>It Is Isomorphic</h3>
 				<p>
@@ -111,42 +113,21 @@
 				<h2>What are you currently excited about?</h2>
 				<p>
 					I am so excited about the next generation of the internet that is Web3 ecosystem, and I am
-					currently reading a lot about smart contract development with Solidity. I have been
-					building a bit with the Truffle framework primarily to write smart contracts and DApps
-					(decentralized applications) with React, utilizing the smart contracts from Solidity.
-					There are many different parts to the Web3 ecosystem, several layers, sidechains, IPFS,
-					ENS, different blockchain protocols using their own consensus mechanism, etc. There's a
-					lot out there. At the moment, I am currently focused on writing smart contracts and Web3
-					client applications, since I can leverage my existing skillset for this. I am excited to
-					get better at writing secure Solidity code and working with the Ethereum blockchain at the
-					moment.
+					currently reading a lot about smart contract development and security with Solidity. There
+					are many different parts to the Web3 ecosystem, several layers, sidechains, IPFS, ENS,
+					different blockchain protocols using their own consensus mechanism, etc. There's a lot out
+					there. I'm genuinely passionate about the power in the technology advancements and
+					onboarding the next wave of users into this ecosystem by building decentralized systems
+					that support our societies at scale.
 				</p>
-				<p>
-					Aside from blockchain development and research, I've really been enjoying working within
-					the <strong>Vue ecosystem</strong> and building things with <strong>Nuxt.js</strong>.
-					Since most of my past experience involves React to some degree, it has been really
-					refreshing working with these frameworks. I'm also super stoked about
-					<strong>TypeScript</strong> and the adoption of it that has been taking place across our
-					industry. Classes and interfaces are truly a powerful combination for writing within the
-					object-oriented programming paradigm.
-				</p>
-				<p class="blocky">Clefairy, meet Clefable. No moon stone needed.</p>
+				<p class="blocky">Clefairy, meet Clefable. No moon stone needed, just consensus.</p>
 				<v-divider />
 				<h2>What else are you into?</h2>
 				<p>
-					When I'm not writing code, I spend most of my time living the dream with my wonderful
-					girlfriend and my four-legged companion. I also write and produce my own music and play
-					guitar in a funk/rock group called
-					<a
-						href="https://open.spotify.com/artist/2Fv03ttGxfHRtBvwSDtyhc"
-						target="_blank"
-						class="content-link"
-					>
-						Vanimal Kingdom,
-					</a>
-					where we play shows in Denver and the surrounding areas. And of course, I enjoy all the
-					outdoor activites that Colorado has to offer - snowboarding, backpacking, the large
-					selection of craft brew and local breweries, and seeing the Rockies at Coors Field.
+					When I'm not writing code, I spend most of my time enjoying life in Colorado. Mostly that
+					means being outside with my dog, but also writing and producing my own music,
+					snowboarding, backpacking, enjoying the large selection of craft brew and local breweries,
+					and catching a Rockies baseball game at Coors Field.
 				</p>
 				<p class="blocky">
 					Check out some of my music on
