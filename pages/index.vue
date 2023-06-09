@@ -16,7 +16,7 @@
 					<div v-show="loaded">
 						<h2>Hello, World.</h2>
 						<div class="sm-divider" />
-						<h3>I'm a full-stack software engineer working in Web.</h3>
+						<h3>I'm a full-stack software engineer working in Web3.</h3>
 						<p>
 							I'm focused on building web applications that interact with permissionless software
 							running on decentralized networks and writing transparent data to storage within
