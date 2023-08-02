@@ -18,8 +18,8 @@
 						<p class="lead">
 							<a href="mailto:drew@dco.dev" class="content-link">
 								<v-icon class="icon">{{ emailIcon }}</v-icon>
-								drew@dco.dev
-							</a>
+								drew@dco.dev</a
+							>
 						</p>
 						<div class="social-wrap">
 							<contact-icons />
@@ -40,8 +40,8 @@
 								target="_blank"
 								class="content-link"
 							>
-								Drew Cook
-							</a>
+								Drew Cook</a
+							>
 							• All Rights Reserved.
 						</small>
 					</v-col>
@@ -53,8 +53,8 @@
 								target="_blank"
 								class="content-link"
 							>
-								View Source Code
-							</a>
+								View Source Code</a
+							>
 							• {{ new Date().getFullYear() }}
 						</small>
 					</v-col>
@@ -82,6 +82,7 @@
 
 		a {
 			color: $dc-neutral;
+			text-decoration: none;
 		}
 
 		a:hover {

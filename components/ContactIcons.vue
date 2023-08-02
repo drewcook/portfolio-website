@@ -6,6 +6,11 @@
 					<v-icon color="secondary">{{ githubIcon }}</v-icon>
 				</v-btn>
 			</a>
+			<a href="https://twitter.com/dcodev_" target="_blank" rel="noopener noreferrer">
+				<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
+					<v-icon color="secondary">{{ twitterIcon }}</v-icon>
+				</v-btn>
+			</a>
 			<a href="https://www.npmjs.com/~drewcook" target="_blank" rel="noopener noreferrer">
 				<v-btn color="primary" elevation="2" fab class="hvr-grow" small>
 					<v-icon color="secondary" large>{{ npmIcon }}</v-icon>
@@ -21,11 +26,12 @@
 </template>
 
 <script>
-	import { mdiEmail, mdiGithub, mdiLinkedin, mdiNpm, mdiSoundcloud } from '@mdi/js'
+	import { mdiEmail, mdiGithub, mdiTwitter, mdiLinkedin, mdiNpm, mdiSoundcloud } from '@mdi/js'
 	export default {
 		data() {
 			return {
 				githubIcon: mdiGithub,
+				twitterIcon: mdiTwitter,
 				linkedInIcon: mdiLinkedin,
 				npmIcon: mdiNpm,
 				soundcloudIcon: mdiSoundcloud,
@@ -44,7 +50,7 @@
 
 <style lang="scss" scoped>
 	.v-btn {
-		background-color: $dc-blue-dk !important;
+		background-color: $dc-red !important;
 
 		&.info {
 			background-color: $dc-green !important;
