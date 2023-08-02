@@ -36,7 +36,7 @@
 							well as researching about new advancements and seeing the uprise in zero-knowledge
 							use-case implementations.
 						</p>
-						<v-btn color="primary" nuxt to="/portfolio">View My Portfolio</v-btn>
+						<v-btn color="primary" nuxt to="/portfolio">My Portfolio</v-btn>
 					</div>
 				</transition>
 			</v-container>
@@ -101,7 +101,7 @@
 						In short, I'm a creator and builder, both parts art and engineering. I enjoy the process
 						of making an idea come to life. All you need is to start with a seed, and that through
 						consistent nurture and dedication to an end-goal in mind, it can become something great
-						that can last the test of time, rooted in furtile soil.
+						that can last the test of time, rooted in fertile soil.
 					</p>
 					<v-btn color="primary" nuxt to="/about">Read More</v-btn>
 				</div>

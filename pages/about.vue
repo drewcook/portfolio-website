@@ -13,8 +13,8 @@
 						</p>
 						<p>
 							I've always enjoyed making something out of nothing and being creative since I was
-							just a young kid playing with legos and building blocks of sorts or drawing endless
-							sketches of refridgerator art. Over the years through many trials and errors and by
+							just a young kid playing with LEGOs and building blocks of sorts or drawing endless
+							sketches of refrigerator art. Over the years through many trials and errors and by
 							adopting a growth mindset, I have found that there are no limits to exploring ideas
 							and start materializing it, regardless of the medium, whether it be concrete, music,
 							or code.
@@ -40,7 +40,8 @@
 						</div>
 					</v-col>
 				</v-row>
-				<h3>Let me see your credentials.</h3>
+				<v-divider />
+				<h2>Let me see your credentials.</h2>
 				<p>
 					Over my career, I've worked in a variety of public and private sectors and industries, as
 					an independent consultant, in fast-paced high-growth startups, and in large slow-moving
@@ -48,19 +49,38 @@
 					innovate as a collective group.
 				</p>
 				<p>
-					In a previous Web3 role, I worked as an engineer at
+					I have worked as a full-stack engineer at
 					<a href="https://aave.com/" class="content-link" target="_blank"> Aave Companies</a>,
-					building out and maintaining the primary user interface and APIs that interact with the
-					Aave Protocol smart contracts, which is deployed on a variety of blockchain networks.
+					building out and maintaining the primary application user interface and backend APIs that
+					interact with the Aave Protocol smart contracts, which are deployed on a variety of L1
+					networks.
 				</p>
 				<p>
-					I've also been a co-founder of a Web3 music NFT protocol and platform,
+					I've been a co-founder of a Web3 music NFT protocol and platform,
 					<a href="https://arbor.audio/" class="content-link" target="_blank">Arbor</a>. It is a
 					collaborative music-making platform where producers and musicians can upload individual
 					stems onto a project to build a song, which users can then buy mint as an NFT on-chain
 					directly from the artists. Profits from the sale price get evenly distributed to the
 					collaborators, and secondary sales generate evergreen kickbacks through the form of
-					royalties, all while creating and fostering community.
+					royalties, all while creating and fostering community. You can read more about what we
+					accomplished in the ETHDenver 2022 hackathon in
+					<a href="https://dorahacks.io/buidl/2059" class="content-link" target="_blank"
+						>this writeup</a
+					>. You can also see how we
+					<a
+						href="https://twitter.com/Filecoin/status/1501013407205519361"
+						class="content-link"
+						target="_blank"
+						>won 1st place from Filecoin</a
+					>
+					as well as
+					<a
+						href="https://harmonyone.notion.site/2022-July-newsletter-be944fc5db364ccc94537ea6e0a72522"
+						class="content-link"
+						target="_blank"
+						>got incubated from Harmony zkDAO</a
+					>. The project has reached a natural conclusion with the team disbanding and me inheriting
+					it as a passion project.
 				</p>
 				<p>
 					I've even had the opportunity to work directly with Vitalik Buterin by implementing dark
@@ -79,6 +99,35 @@
 					<a href="https://github.com/vbuterin/blog/pull/40" class="content-link" target="_blank"
 						>here</a
 					>.
+				</p>
+				<p>
+					In the summer of 2022, I enrolled in and graduated from
+					<a href="https://zku.gnomio.com/" class="content-link" target="_blank"
+						>Zero Knowledge University</a
+					>, a Harmony-backed bootcamp where we researched and wrote code implementing
+					zero-knowledge proofs within the blockchain space. We learned and practiced some of the
+					following: how to sign an MPC, perform a trusted setup, using different proving mechanisms
+					between Plonk and Groth16, wrote a variety of circuits in Circom, and ultimately
+					implemented a new unique ZKP-based feature into a new or existing application. The program
+					has since been sunsetted following the Harmony Bridge hack, but you can read more about
+					the program in
+					<a
+						href="https://medium.com/harmony-one/on-boarding-10-000-developers-harmonys-zero-knowledge-university-3a6f9583acdd"
+						class="content-link"
+						target="_blank"
+						>this article</a
+					>.
+				</p>
+				<p>
+					As I've mentioned, I am very interested in smart contract security and working to find and
+					patch vulnerabilities in Web3 protocols to help prevent substantial losses of other
+					people's crypto ending up in the hands of a hacker. It is vitally important to our
+					different ecosystems, the power of decentralized software, and our broader reputation for
+					crypto as a whole. I am spending time practicing as anonymous auditor for
+					<a href="https://secure3.io" class="content-link" target="_blank">Secure3</a>. I review a
+					protocol every few weeks and practice techniques like static analysis, fuzz testing,
+					symbolic analysis, some formal verification, and the manual analysis required by combing
+					through the code and docs.
 				</p>
 				<p>
 					In previous Web2 roles, I've worked as a tech lead for
@@ -175,6 +224,10 @@
 		margin: 30px 0;
 	}
 
+	h2 {
+		margin-bottom: 1rem;
+	}
+
 	.image {
 		background: #fff;
 		border: 1px solid $dc-gray-lt;
@@ -191,6 +244,7 @@
 		border-top-right-radius: 4px;
 		display: inline-block;
 		font-family: $casual-font;
+		margin: 1rem 0;
 		padding: 15px 10px;
 		padding-right: 30px;
 	}
