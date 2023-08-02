@@ -26,7 +26,7 @@
 	export default {
 		data() {
 			return {
-				experience,
+				experience: experience.reverse(),
 			}
 		},
 	}

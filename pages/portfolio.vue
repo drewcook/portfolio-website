@@ -1,14 +1,14 @@
 <template>
 	<v-container>
-		<h1 class="page-title">My Work</h1>
+		<h1 class="page-title">Personal Projects</h1>
 		<p class="text-center mb-10">
 			Here are a few selected projects that I have built in my spare time.<br />You can view a
-			larger body of work, including this
+			larger body of work on my
+			<a href="https://github.com/drewcook" target="_blank" class="content-link">Github</a>,
+			including this
 			<a href="https://github.com/drewcook/portfolio-website" target="_blank" class="content-link">
-				portfolio website
-			</a>
-			on my
-			<a href="https://github.com/drewcook" target="_blank" class="content-link">Github page</a>.
+				portfolio website</a
+			>.
 		</p>
 		<p class="text-center mb-10">
 			Each project has a live demo that you can test out by clicking the
@@ -90,29 +90,34 @@
 				tags: {
 					types: [
 						{
-							title: 'Decentralized Application',
+							title: 'Web3 Application',
 							checked: false,
-							filter: 'dapp',
+							filter: 'web3',
 						},
 						{
-							title: 'Backend API',
+							title: 'Web2 Application',
 							checked: false,
-							filter: 'api',
-						},
-						{
-							title: 'Web Application',
-							checked: false,
-							filter: 'web',
+							filter: 'web2',
 						},
 						{
 							title: 'Mobile Application',
 							checked: false,
 							filter: 'mobile',
 						},
+						{
+							title: 'Backend API',
+							checked: false,
+							filter: 'api',
+						},
 					],
 					frameworks: [
 						{
-							title: 'Node / Express',
+							title: 'Foundry / Hardhat / Truffle',
+							checked: false,
+							filter: 'dapp',
+						},
+						{
+							title: 'Node / Express / Koa',
 							checked: false,
 							filter: 'node',
 						},
@@ -122,14 +127,9 @@
 							filter: 'react',
 						},
 						{
-							title: 'Truffle / Solidity / Web3 / Ethereum',
-							checked: false,
-							filter: 'dapp',
-						},
-						{
 							title: 'React Native / Expo',
 							checked: false,
-							filter: 'react native',
+							filter: 'react-native',
 						},
 						{
 							title: 'Vue / Nuxt',

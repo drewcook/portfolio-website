@@ -25,7 +25,7 @@
 					heading: 'Check out some of my work!',
 					text: 'I have built a number of things over the years in my spare time.',
 					btn: 'View Projects',
-					link: '/work',
+					link: '/portfolio',
 				}
 				const page = {
 					heading: 'Would you like to work together?',

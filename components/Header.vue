@@ -77,8 +77,8 @@
 						to: '/about',
 					},
 					{
-						title: 'Work',
-						to: '/work',
+						title: 'Portfolio',
+						to: '/portfolio',
 					},
 					{
 						title: 'Resume',

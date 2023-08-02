@@ -22,8 +22,8 @@
 			</v-col>
 		</v-row>
 		<v-divider />
-		<h2>Work Experience</h2>
-		<p class="lead">Travel down the rabbit hole. Scoll down for the journey.</p>
+		<h2>Professional Experience</h2>
+		<p class="lead">Travel down the rabbit hole. Scroll down for the journey.</p>
 		<experience-timeline />
 	</v-container>
 </template>
@@ -55,7 +55,7 @@
 						title: 'Save To Google Drive',
 						icon: mdiGoogleDrive,
 						download: false,
-						href: 'https://drive.google.com/file/d/1swcX3zSFgRMQaizNxL7jb1wJgs-Ij9O2/view?usp=sharing',
+						href: 'https://drive.google.com/file/d/1vKFLa3cEAGyHFfGPveS6eZwTYpoC9IJx/view?usp=sharing',
 						newTab: true,
 					},
 				],

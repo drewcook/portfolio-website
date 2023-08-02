@@ -84,8 +84,8 @@
 				<h2>Why do you like JavaScript so much?</h2>
 				<p>
 					If you haven't already, first check out some of my
-					<nuxt-link to="/work" class="content-link">projects</nuxt-link> - you'll see a lot of code
-					written in JavaScript, guilty. Aside from the flexability of writing within either
+					<nuxt-link to="/portfolio" class="content-link">projects</nuxt-link> - you'll see a lot of
+					code written in JavaScript, guilty. Aside from the flexability of writing within either
 					object-oriented design, with the type safety of TypeScript, the rich package management
 					system, and the open-ended assumptions about <i>how to</i> write it (double edged sword),
 					I choose to work in JavaScript primarily for two reasons:

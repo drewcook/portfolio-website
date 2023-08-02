@@ -14,28 +14,29 @@
 			<v-container>
 				<transition name="jumbo">
 					<div v-show="loaded">
-						<h2>Hello, World.</h2>
+						<h2>Hello, Decentralization.</h2>
 						<div class="sm-divider" />
 						<h3>I'm a full-stack software engineer working in Web3.</h3>
 						<p>
-							I'm focused on building web applications that interact with permissionless software
-							running on decentralized networks and writing transparent data to storage within
-							blockchains, by building and working with backend systems and protocols written as
-							smart contracts for executing transactions on EVM-based chains like Ethereum, and
-							building the client web applications and APIs that interact with them.
+							I'm focused on building permissionless web applications that interact with
+							decentralized, EVM-based blockchain networks. This means building deterministic
+							programs with smart contracts, the client web applications, and APIs that interact
+							with them.
 						</p>
 						<p>
-							My main stack is Solidity, TypeScript, Node, Go, React, Next.js, Redis, MongoDB, &
-							PostgreSQL for writing the smart contracts, the REST-APIs, client UIs, and off-chain
-							storage. I use tools like Foundry, Slither, Echidna, Tenderly, and Hardhat for smart
-							contract development, testing, auditing, and deploying.
+							The stack I am most comfortable in is Solidity, TypeScript, Node, Go, React, Next.js,
+							Redis, MongoDB, & PostgreSQL. This entails all the things, the REST-APIs, client UIs,
+							and off-chain storage. I also use tools like Foundry, Slither, Echidna, and Tenderly
+							for smart contract development, testing, auditing, and deploying. When working with
+							zero-knowledge circuits, my experience mostly lies in Circom and snarkjs.
 						</p>
 						<p>
-							Currently, I spend my free engineering time studying the security pitfalls of Solidity
-							code and vulnerabilities in Defi protocols as well as researching about new
-							advandements and seeing the uprise in zero-knowledge use case implementations.
+							Currently, I'm spending my free engineering time studying the security pitfalls of
+							Solidity code, and reading over all the vulnerabilities occurring in Defi protocols as
+							well as researching about new advancements and seeing the uprise in zero-knowledge
+							use-case implementations.
 						</p>
-						<v-btn color="primary" nuxt to="/work">My Personal Projects</v-btn>
+						<v-btn color="primary" nuxt to="/portfolio">View My Portfolio</v-btn>
 					</div>
 				</transition>
 			</v-container>
@@ -67,10 +68,12 @@
 						as I am.
 					</p>
 					<p>
-						I had the opportunity to work directly with Vitalik Buterin, the founder of Ethereum, on
-						implementing dark mode onto his
-						<a href="https://vitalik.ca/" class="content-link" target="_blank">popular blog.</a> It
-						was sponsored through a Gitcoin grant, and you can view the PRs I merged in
+						I've even had the opportunity to work directly with Vitalik Buterin by implementing dark
+						mode onto his
+						<a href="https://vitalik.ca/" class="content-link" target="_blank">popular blog</a>. It
+						was sponsored through a
+						<a href="https://gitcoin.co" class="content-link" target="_blank">Gitcoin</a> grant, and
+						you can view the PRs I merged in
 						<a
 							href="https://github.com/vbuterin/blogmaker/pull/11"
 							class="content-link"
@@ -112,26 +115,11 @@
 						I approach learning like approaching the weather for the day, as in there will always be
 						something new to experience. I live a life of curiosity in exploring new territory and
 						the understanding it can provide in the bigger picture, carrying with me the perspective
-						from the things I have learned or practiced and the humbleness in not knowing
-						everything, which perpetuates this process.
-					</p>
-					<p>
-						As I said earlier, I am currently interested in smart contract security and working to
-						find vulnerabilities in protocols and attack vectors that can be performed to help
-						prevent $MM of other people's crypto ending up in the hands of a hacker. It is vitally
-						important to our ecosystems, the power of decentralized software, and our broader
-						reputation for crypto as a whole. I am spending time practicing as anonymous auditor for
-						a medium sized smart contract auditing firm. I review a protocol every few weeks and
-						practice techniques like static analysis, fuzz testing, symbolic analysis, formal
-						verification, and manual analysis by combing through the code and docs.
-					</p>
-					<p>
-						In the summer of 2022, I was part of a cohort that went through a Harmony-backed
-						bootcamp called Zero Knowledge University, where we researched and wrote code
-						implementing zero-knowledge proof technology in the blockchain space. We learned and
-						practiced some of the following: how to sign an MPC, perform a trusted setup, using
-						different proving mechanisms, wrote a variety of circuits in Circom, and ultimately
-						implemented a new unique ZKP-based feature into a new or existing application.
+						from the things I have learned or practiced and the humbleness in not knowing everything
+						which perpetuates this process. I truly enjoy the process of learning and the
+						compounding effect from exposure to different concepts and emerging tech which it
+						brings. It allows me to see the bigger picture and then focus in on a unique problem and
+						solution.
 					</p>
 					<v-btn color="info" nuxt to="/skills">My Skillset</v-btn>
 				</div>

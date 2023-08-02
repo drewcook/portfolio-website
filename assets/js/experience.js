@@ -32,7 +32,7 @@ const experience = [
 		title: "Crawford & O'Brien",
 		category: 'Full-Time',
 		description:
-			'I lead the technical develepment and maintenance for 50+ Wordpress websites for a digital marketing agency within a small team of developers. The company employees were 100% remote. Oh the Wordpress...',
+			'I lead the technical development and maintenance for 50+ Wordpress websites for a digital marketing agency within a small team of developers. The company employees were 100% remote. Oh the Wordpress...',
 	},
 	{
 		timeframe: 'Aug 2016',
@@ -99,7 +99,7 @@ const experience = [
 	},
 	{
 		timeframe: 'July 2022 - Nov 2022',
-		title: 'PhaNFT',
+		title: 'Phanft',
 		category: 'Part-Time',
 		description:
 			"I'm launching a whitelisted pre-sale, reveal-based NFT collection launch for a niche community in the jam band scene, offering digital collectables with band folklore used in the images where each token was backed by on-chain digital righted tied to the token which states what a user can do IP-based when owning the token, a first of it's kind for the time.",
@@ -113,10 +113,9 @@ const experience = [
 	},
 	{
 		timeframe: 'Present',
-		title: "Now We're Here",
+		title: 'Forever A Student',
 		category: 'Be In The Now',
-		description:
-			"If you've made it this far, enhorabuenas! You know more about me than I probably do of you. Should I be scared? Well, feel free to reach out to me if you'd like to connect!",
+		description: 'WAGMI energy still runs high with me, regardless what Crypto Twitter has to say.',
 	},
 ]
 
