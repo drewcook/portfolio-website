@@ -60,45 +60,13 @@
 					<div class="sm-divider" />
 					<h3>I love to collaborate.</h3>
 					<p>
-						I've worked on teams large and small, as an independence, in startups, and in large
-						organizations, both public and private sectors and have seen a lot of ways on how to set
-						goals, execute, and innovate as a collective group. There are many ways to get it done,
-						but I genuinely am most happy when working alongside peers who are just as driven and
-						passionate about what they do on a daily basis to make a positive change with technology
-						as I am.
-					</p>
-					<p>
-						I've even had the opportunity to work directly with Vitalik Buterin by implementing dark
-						mode onto his
-						<a href="https://vitalik.ca/" class="content-link" target="_blank">popular blog</a>. It
-						was sponsored through a
-						<a href="https://gitcoin.co" class="content-link" target="_blank">Gitcoin</a> grant, and
-						you can view the PRs I merged in
-						<a
-							href="https://github.com/vbuterin/blogmaker/pull/11"
-							class="content-link"
-							target="_blank"
-							>here</a
-						>
-						and
-						<a href="https://github.com/vbuterin/blog/pull/40" class="content-link" target="_blank"
-							>here</a
-						>.
-					</p>
-					<p>
-						In a previous role, I have worked as an engineer at
-						<a href="https://aave.com/" class="content-link" target="_blank"> Aave Companies, </a>
-						building out and maintaining the primary user interface and APIs that interact with the
-						Aave Protocol smart contracts, which is deployed on a variety of blockchain networks.
-					</p>
-					<p>
-						I am also the founder of a Web3 protocol and music NFT platform called
-						<a href="https://arbor.audio/" class="content-link" target="_blank">Arbor</a>. It is a
-						collaborative music-making platform where producers and musicians can upload individual
-						stems onto a project to build a song, which users can then buy mint as an NFT on-chain
-						directly from the artists. Profits from the sale price get evenly distributed to the
-						collaborators, and secondary sales generate evergreen kickbacks through the form of
-						royalties, all while creating and fostering community.
+						Teamwork makes the dream work, we can all support each other to meet our goals and use
+						our collective knowledge to create something unique and innovative. We all have
+						different backgrounds and expertise, both professionally and personally, and the
+						diversity in that creates a much more unified product in the end. I'm happiest working
+						with others that are passionate about what they do and want to make a positive change
+						with technology and are driven to make that happen as much as I am. I feed off that
+						energy and give it back in return.
 					</p>
 					<v-btn color="secondary" nuxt to="/experience">My Contributions</v-btn>
 				</div>
@@ -112,14 +80,11 @@
 					<div class="sm-divider" />
 					<h3>I love to learn.</h3>
 					<p>
-						I approach learning like approaching the weather for the day, as in there will always be
-						something new to experience. I live a life of curiosity in exploring new territory and
-						the understanding it can provide in the bigger picture, carrying with me the perspective
-						from the things I have learned or practiced and the humbleness in not knowing everything
-						which perpetuates this process. I truly enjoy the process of learning and the
-						compounding effect from exposure to different concepts and emerging tech which it
-						brings. It allows me to see the bigger picture and then focus in on a unique problem and
-						solution.
+						I approach learning as a lifelong pursuit, forever growing in perspective and knowledge
+						that can be applied in compounding ways. I truly enjoy the process of researching into a
+						new area of study and exploring it, practicing it, seeing where it takes me and how it
+						melds in with other areas of study. All of the great minds of our time had an emphasis
+						of continued learning, so there must be good reason to believe it, right?
 					</p>
 					<v-btn color="info" nuxt to="/skills">My Skillset</v-btn>
 				</div>
