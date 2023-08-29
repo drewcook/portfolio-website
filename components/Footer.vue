@@ -7,7 +7,7 @@
 						<h5>Quick Links</h5>
 						<ul>
 							<li><nuxt-link class="content-link" to="/about">About</nuxt-link></li>
-							<li><nuxt-link class="content-link" to="/work">Work</nuxt-link></li>
+							<li><nuxt-link class="content-link" to="/portfolio">Portfolio</nuxt-link></li>
 							<li><a class="content-link" href="/resume.pdf" target="_blank">Resume</a></li>
 							<li><nuxt-link class="content-link" to="/experience">Experience</nuxt-link></li>
 							<li><nuxt-link class="content-link" to="/contact">Contact</nuxt-link></li>
@@ -36,7 +36,7 @@
 							&copy;
 							<a
 								rel="noopener noreferrer"
-								href="https://altheaweb.services"
+								href="https://github.com/drewcook"
 								target="_blank"
 								class="content-link"
 							>
