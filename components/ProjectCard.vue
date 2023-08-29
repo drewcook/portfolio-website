@@ -12,9 +12,6 @@
 				/>
 				<v-card-title class="d-flex justify-space-between align-center card-title">
 					{{ project.title }}
-					<a :href="project.demoUrl" target="_blank" color="primary">
-						<v-icon>{{ demoIcon }}</v-icon>
-					</a>
 				</v-card-title>
 				<v-card-text>
 					<v-chip-group column>
@@ -34,9 +31,34 @@
 					</v-chip-group>
 				</v-card-text>
 				<v-card-actions class="justify-space-between px-5">
-					<a :href="project.codeUrl" target="_blank" color="primary">
-						<v-icon>{{ githubIcon }}</v-icon>
-					</a>
+					<div>
+						<a
+							v-if="project.codeUrl"
+							:href="project.codeUrl"
+							target="_blank"
+							color="primary"
+							title="View Code Repo"
+							class="card-icon-link"
+						>
+							<v-icon>{{ githubIcon }}</v-icon>
+						</a>
+						<a v-else color="primary" title="No Repo Available" class="card-icon-link disabled">
+							<v-icon>{{ githubIcon }}</v-icon>
+						</a>
+						<a
+							v-if="project.demoUrl"
+							:href="project.demoUrl"
+							target="_blank"
+							color="primary"
+							title="View Demo App"
+							class="card-icon-link"
+						>
+							<v-icon>{{ demoIcon }}</v-icon>
+						</a>
+						<a v-else color="primary" title="No Demo Available" class="card-icon-link disabled">
+							<v-icon>{{ demoIcon }}</v-icon>
+						</a>
+					</div>
 					<v-btn color="secondary" outlined small @click="flipOver">
 						Details
 						<v-icon>{{ detailsIcon }}</v-icon>
@@ -65,10 +87,30 @@
 					</v-card-text>
 					<v-card-actions class="actions d-flex justify-space-between align-center px-5">
 						<div>
-							<a :href="project.codeUrl" target="_blank" color="primary">
+							<a
+								v-if="project.codeUrl"
+								:href="project.codeUrl"
+								target="_blank"
+								color="primary"
+								title="View Code Repo"
+								class="card-icon-link"
+							>
 								<v-icon>{{ githubIcon }}</v-icon>
 							</a>
-							<a :href="project.demoUrl" target="_blank" color="primary">
+							<a v-else color="primary" title="No Repo Available" class="card-icon-link disabled">
+								<v-icon>{{ githubIcon }}</v-icon>
+							</a>
+							<a
+								v-if="project.demoUrl"
+								:href="project.demoUrl"
+								target="_blank"
+								color="primary"
+								title="View Demo App"
+								class="card-icon-link"
+							>
+								<v-icon>{{ demoIcon }}</v-icon>
+							</a>
+							<a v-else color="primary" title="No Demo Available" class="card-icon-link disabled">
 								<v-icon>{{ demoIcon }}</v-icon>
 							</a>
 						</div>
@@ -119,12 +161,28 @@
 </script>
 
 <style lang="scss" scoped>
+	.card-title {
+		font-size: 1.1rem;
+	}
+
 	.card-title,
 	.tech-stack {
 		a {
 			display: inherit;
 			vertical-align: sub;
 		}
+	}
+
+	.card-icon-link.disabled {
+		pointer-events: none;
+	}
+
+	.card-icon-link.disabled > span {
+		color: rgba(0, 0, 0, 0.25);
+	}
+
+	.card-icon-link:hover > span {
+		color: $dc-green;
 	}
 
 	.front {

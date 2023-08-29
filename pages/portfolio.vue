@@ -66,10 +66,10 @@
 		</v-row>
 		<p class="text-center mt-16">
 			<small>
-				<strong>NOTE:</strong> Some apps will ask you to sign in or create an account to use the
-				features. All I require is usually an email and password. I use this data for authentication
-				purposes and improving the user experience across my applications. I hash all account
-				passwords before storing them, and under no circumstances will I ever sell your data.
+				<strong>NOTE:</strong> Some apps will ask you to sign in or create an account to use all the
+				features. The only data I require is typically an email and a password which is hashed with
+				MD5 before storing it in a database. I use this data for authentication purposes and
+				improving the overall, catered user experience.
 			</small>
 		</p>
 	</v-container>

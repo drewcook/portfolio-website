@@ -13,6 +13,7 @@ const projects = [
 			'Ethereum',
 			'Polygon',
 			'Solidity',
+			'Hardhat',
 			'React',
 			'Next.js',
 			'Redis',
@@ -34,6 +35,7 @@ const projects = [
 		techStack: [
 			'Ethereum',
 			'Solidity',
+			'Hardhat',
 			'React',
 			'Next.js',
 			'IPFS',
@@ -52,7 +54,7 @@ const projects = [
 			'This is a decentralized Web3 application deployed on the Ethereum networks for creating your own fundraisers to allow for donations through a Web3 wallet in the browser. You may donate to other fundraisers that other users have created. Funds can be withdrawn out to an Ethereum wallet.',
 		filters: ['web3', 'dapp', 'react'],
 		frameworks: ['Foundry / Hardhat / Truffle', 'React / Next'],
-		techStack: ['Ethereum', 'Solidity', 'React', 'IPFS', 'web3.js'],
+		techStack: ['Ethereum', 'Solidity', 'Truffle', 'React', 'IPFS', 'web3.js'],
 	},
 	{
 		title: 'RPSLS (Rock Paper Scissors)',
@@ -64,7 +66,7 @@ const projects = [
 			'This is an onchain version of Rock Paper Scissors with two added weapons: Lizard & Spock. Players have to stake some ETH to create/join a game, and moves are made on-chain using a commit-reveal scheme. This repo is designed to ensure that the player claiming the winnings is the same one who played the winning move, handled via a salt. The contract: https://bit.ly/45AspCA',
 		filters: ['web3', 'dapp', 'react'],
 		frameworks: ['Foundry / Hardhat / Truffle', 'React / Next'],
-		techStack: ['Ethereum', 'Solidity', 'TypeScript', 'React', 'wagmi', 'viem'],
+		techStack: ['Ethereum', 'TypeScript', 'React', 'wagmi', 'viem'],
 	},
 	{
 		title: 'IPFS Drive',
@@ -76,7 +78,7 @@ const projects = [
 			'This is a decentralized Web3 application deployed on the Ethereum networks that connects to IPFS for uploading and viewing files. Connect with a browser wallet and store files on a P2P network.',
 		filters: ['web3', 'dapp', 'react'],
 		frameworks: ['Foundry / Hardhat / Truffle', 'React / Next'],
-		techStack: ['Ethereum', 'Solidity', 'React', 'IPFS'],
+		techStack: ['Ethereum', 'React', 'IPFS'],
 	},
 	{
 		title: 'Recent Blocks Feed',
@@ -89,6 +91,30 @@ const projects = [
 		filters: ['web3', 'dapp', 'react', 'node'],
 		frameworks: ['Node / Express / Koa', 'React / Next'],
 		techStack: ['Ethereum', 'TypeScript', 'NodeJS', 'Express', 'React', 'MongoDB', 'wagmi', 'viem'],
+	},
+	{
+		title: 'ETH/USD Price Oracle',
+		type: 'Web3 Application',
+		imgSrc: '/img/eth_usd_oracle.png',
+		demoUrl: null,
+		codeUrl: 'https://github.com/drewcook/eth-price-oracle',
+		description:
+			'This is a simple set of oracle contracts for the ETH/USD price on Ethereum Mainnet. There are two contracts and a backend TypeScript service interacting with the Binance API. The service queries the API and updates the price onchain to an oracle contract by first passing through a caller contract which helps process each request using UUIDs to prevent conflicts.',
+		filters: ['web3', 'dapp', 'node'],
+		frameworks: ['Foundry / Hardhat / Truffle'],
+		techStack: ['Ethereum', 'Solidity', 'Truffle', 'TypeScript', 'web3.js'],
+	},
+	{
+		title: 'Onchain Supply Chain',
+		type: 'Web3 Application',
+		imgSrc: '/img/supply_chain.png',
+		demoUrl: null,
+		codeUrl: 'https://github.com/drewcook/supply-chain',
+		description:
+			'This is an implementation of a supply chain using onchain smart contracts for tracking along the lifespan of a product. The supply chain contract contains Product, Participant, Registration structs and keeps track of the Products as they transfer through other Participants. There is also a custom ERC20 token which ties value to the product at each stage in the process.',
+		filters: ['web3', 'dapp'],
+		frameworks: ['Foundry / Hardhat / Truffle'],
+		techStack: ['Ethereum', 'Solidity', 'Foundry'],
 	},
 	{
 		title: 'Battleship',
