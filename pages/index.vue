@@ -173,6 +173,40 @@
 		}
 	}
 
+	#home-jumbo {
+		position: relative;
+	}
+
+	.scroll-down {
+		scroll-behavior: smooth;
+
+		@media (min-width: 700px) {
+			bottom: 10%;
+			position: absolute;
+		}
+
+		span {
+			height: 100%;
+		}
+	}
+
+	.jumbo {
+		background-color: $dc-light;
+		margin-top: -$header-height-mobile + 32px;
+		padding: 60px 0;
+		width: 100vw;
+
+		@media (min-width: 700px) {
+			height: 100vh;
+			margin-top: -$header-height;
+		}
+
+		.v-btn {
+			color: #fff !important;
+			font-weight: bold;
+		}
+	}
+
 	.melon {
 		background-color: $dc-neutral;
 		border-bottom: 10px solid $dc-blue-lt;
@@ -215,37 +249,6 @@
 		}
 
 		.v-btn {
-			font-weight: bold;
-		}
-	}
-
-	#home-jumbo {
-		position: relative;
-	}
-
-	.scroll-down {
-		bottom: 10%;
-		position: absolute;
-		scroll-behavior: smooth;
-
-		span {
-			height: 100%;
-		}
-	}
-
-	.jumbo {
-		background-color: $dc-light;
-		height: 100vh;
-		margin-top: -$header-height-mobile;
-		padding: 60px 0;
-		width: 100vw;
-
-		@media (min-width: 700px) {
-			margin-top: -$header-height;
-		}
-
-		.v-btn {
-			color: #fff !important;
 			font-weight: bold;
 		}
 	}
