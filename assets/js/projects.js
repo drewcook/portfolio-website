@@ -1,6 +1,6 @@
 const projects = [
 	{
-		title: 'Arbor Protocol',
+		title: 'Arbor Protocol - Music NFTs',
 		type: 'Web3 Application',
 		imgSrc: '/img/arbor.png',
 		demoUrl: 'https://arbor.audio',
@@ -45,7 +45,7 @@ const projects = [
 		],
 	},
 	{
-		title: 'Fundraisers Defi',
+		title: 'Fundraisers DeFi',
 		type: 'Web3 Application',
 		imgSrc: '/img/fundraisers.png',
 		demoUrl: 'https://fundraisers.dco.dev',
@@ -111,13 +111,37 @@ const projects = [
 		demoUrl: null,
 		codeUrl: 'https://github.com/drewcook/supply-chain',
 		description:
-			'This is an implementation of a supply chain using onchain smart contracts for tracking along the lifespan of a product. The supply chain contract contains Product, Participant, Registration structs and keeps track of the Products as they transfer through other Participants. There is also a custom ERC20 token which ties value to the product at each stage in the process.',
+			'This is an implementation of a supply chain using onchain smart contracts for tracking along the lifespan of a product. The supply chain contract contains Product, Participant, Registration structs and keeps track of the Products as they transfer through to other Participants. There is also a custom ERC20 token which ties value to the product at each stage in the process.',
 		filters: ['web3', 'dapp'],
 		frameworks: ['Foundry / Hardhat / Truffle'],
 		techStack: ['Ethereum', 'Solidity', 'Foundry'],
 	},
 	{
-		title: 'Battleship',
+		title: 'Onchain Raffle',
+		type: 'Web3 Application',
+		imgSrc: '/img/raffle.png',
+		demoUrl: null,
+		codeUrl: 'https://github.com/drewcook/solidity-foundry/tree/main/05-Lottery',
+		description:
+			'This is an onchain raffle/lottery that allows users to join by staking some ETH. A winner is picked after a timelock has passed. The winner is chosen using Chainlink VRF to ensure safe randomness onchain, and Chainlink Automation is used to continually check the contract for minimum participants and balance and then calls the VRF for the random winner.',
+		filters: ['web3', 'dapp'],
+		frameworks: ['Foundry / Hardhat / Truffle'],
+		techStack: ['Ethereum', 'Solidity', 'Foundry', 'Chainlink VRF', 'Chainlink Automation'],
+	},
+	{
+		title: 'ETH/USD Oracle Vault',
+		type: 'Web3 Application',
+		imgSrc: '/img/oracle_vault.png',
+		demoUrl: null,
+		codeUrl: 'https://github.com/drewcook/solidity-foundry/tree/main/04-Forge-FundMe',
+		description:
+			'This is simplified vault contract that takes in user deposits but ensures that they are of a minimum USD value. It uses a Chainlink Price Feed for ETH/USD on Sepolia to check the price, and uses a conversion helper function to assess the msg.value. Users can withdraw their amounts at any time.',
+		filters: ['web3', 'dapp'],
+		frameworks: ['Foundry / Hardhat / Truffle'],
+		techStack: ['Ethereum', 'Solidity', 'Foundry', 'Chainlink Price Feed'],
+	},
+	{
+		title: 'Battleship (SOLID OOP)',
 		type: 'Web2 Application',
 		imgSrc: '/img/battleship.png',
 		demoUrl: 'https://battleship.drewcook.dev',
