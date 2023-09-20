@@ -55,7 +55,7 @@
 						title: 'Save To Google Drive',
 						icon: mdiGoogleDrive,
 						download: false,
-						href: 'https://drive.google.com/file/d/1vKFLa3cEAGyHFfGPveS6eZwTYpoC9IJx/view?usp=sharing',
+						href: 'https://drive.google.com/file/d/1PkRa7fd0PycqtkpFCwm3sj5DryI-kq-5/view?usp=drive_link',
 						newTab: true,
 					},
 				],
