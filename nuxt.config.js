@@ -47,8 +47,8 @@ export default {
 		'@nuxtjs/vuetify',
 		// https://google-fonts.nuxtjs.org/
 		'@nuxtjs/google-fonts',
-		// https://google-analytics.nuxtjs.org/
-		// '@nuxtjs/google-analytics',
+		// https://github.com/johannschopplich/nuxt-gtag
+		'nuxt-gtag',
 	],
 
 	/*
