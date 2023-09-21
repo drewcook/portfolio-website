@@ -63,7 +63,7 @@ export default {
 
 	publicRuntimeConfig: {
 		googleAnalytics: {
-			id: process.env.GOOGLE_ANALYTICS_ID,
+			id: 'G-Q4KF9QTM6Q',
 			dev: process.env.NODE_ENV !== 'production',
 		},
 	},
