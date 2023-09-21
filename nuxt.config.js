@@ -4,7 +4,7 @@ export default {
 	target: 'static',
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
-		titleTemplate: 'Drew Cook | Web Engineer and Software Enthusiast | %s',
+		titleTemplate: 'Drew Cook | Full Stack Web3 Software Engineer | %s',
 		title: 'Online Portfolio',
 		htmlAttrs: {
 			lang: 'en',
@@ -48,7 +48,7 @@ export default {
 		// https://google-fonts.nuxtjs.org/
 		'@nuxtjs/google-fonts',
 		// https://google-analytics.nuxtjs.org/
-		'@nuxtjs/google-analytics',
+		// '@nuxtjs/google-analytics',
 	],
 
 	/*
@@ -59,14 +59,13 @@ export default {
 	},
 
 	// Modules: https://go.nuxtjs.dev/config-modules
-	modules: [],
+	modules: ['nuxt-gtag'],
 
-	publicRuntimeConfig: {
-		googleAnalytics: {
-			id: 'G-Q4KF9QTM6Q',
-			dev: process.env.NODE_ENV !== 'production',
-		},
+	gtag: {
+		id: 'G-Q4KF9QTM6Q',
 	},
+
+	publicRuntimeConfig: {},
 
 	googleFonts: {
 		families: {
@@ -78,11 +77,6 @@ export default {
 		},
 		preconnect: true,
 		preload: true,
-	},
-
-	googleAnalytics: {
-		id: 'G-Q4KF9QTM6Q',
-		dev: process.env.NODE_ENV !== 'production',
 	},
 
 	// Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
