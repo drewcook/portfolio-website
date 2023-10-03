@@ -147,7 +147,7 @@ const projects = [
 		demoUrl: null,
 		codeUrl: 'https://github.com/drewcook/go-blockchain',
 		description:
-			'This is a simple implementation of a proof-of-work blockchain written in Go. This is not a peer-to-peer network with concensus, but rather an implementation of a single node that adds new blocks to the chain. It also exposes an API for clients to interact with.',
+			'This is a simple implementation of a proof-of-work blockchain written in Go. This is not a peer-to-peer network with a consensus mechanism, but rather an implementation of a single node that adds new blocks to the chain. It also exposes an API for clients to interact with.',
 		filters: ['web3', 'go', 'api'],
 		frameworks: ['Go'],
 		techStack: ['Go', 'SHA256', 'Gorilla Mux', 'HTTP'],
@@ -159,10 +159,10 @@ const projects = [
 		demoUrl: null,
 		codeUrl: 'https://github.com/drewcook/nodejs-blockchain',
 		description:
-			'This is a simple implementation of a proof-of-work blockchain written in Nodejs. This is not a peer-to-peer network with concensus, but rather an implementation of a single node that adds new blocks to the chain. It also includes a wallet implementation for signing transactions as well as an API for clients to interact with.',
+			'This is a simple implementation of a proof-of-work blockchain written in Nodejs. This implements a peer-to-peer network with WebSockets where a node can add new blocks to the chain. There is a rough implementation of consensus with chain selection. It also includes a wallet implementation for signing transactions as well as an API for clients to interact with.',
 		filters: ['web3', 'api', 'node'],
 		frameworks: ['Node / Express / Koa'],
-		techStack: ['TypeScript', 'NodeJS', 'Express', 'WebSockets'],
+		techStack: ['TypeScript', 'NodeJS', 'Express', 'WebSockets', 'P2P'],
 	},
 	{
 		title: 'Battleship (SOLID OOP)',
