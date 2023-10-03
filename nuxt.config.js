@@ -17,7 +17,10 @@ export default {
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 		// Google GA4
 		script: [
-			{ src: 'https://www.googletagmanager.com/gtag/js?id=G-Q4KF9QTM6Q', async: true },
+			{
+				src: 'https://www.googletagmanager.com/gtag/js?id=G-Q4KF9QTM6Q',
+				async: true,
+			},
 			{
 				hid: 'gtag',
 				innerHTML: `
