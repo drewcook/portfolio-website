@@ -122,6 +122,11 @@
 							filter: 'node',
 						},
 						{
+							title: 'Go',
+							checked: false,
+							filter: 'go',
+						},
+						{
 							title: 'React / Next',
 							checked: false,
 							filter: 'react',

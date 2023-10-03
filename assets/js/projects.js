@@ -141,6 +141,30 @@ const projects = [
 		techStack: ['Ethereum', 'Solidity', 'Foundry', 'Chainlink Price Feed'],
 	},
 	{
+		title: 'PoW Blockchain (Go)',
+		type: 'Web3 Application',
+		imgSrc: '/img/blockchain.png',
+		demoUrl: null,
+		codeUrl: 'https://github.com/drewcook/go-blockchain',
+		description:
+			'This is a simple implementation of a proof-of-work blockchain written in Go. This is not a peer-to-peer network with concensus, but rather an implementation of a single node that adds new blocks to the chain. It also exposes an API for clients to interact with.',
+		filters: ['web3', 'go', 'api'],
+		frameworks: ['Go'],
+		techStack: ['Go', 'SHA256', 'Gorilla Mux', 'HTTP'],
+	},
+	{
+		title: 'PoW Blockchain (Nodejs)',
+		type: 'Web3 Application',
+		imgSrc: '/img/blockchain2.png',
+		demoUrl: null,
+		codeUrl: 'https://github.com/drewcook/nodejs-blockchain',
+		description:
+			'This is a simple implementation of a proof-of-work blockchain written in Nodejs. This is not a peer-to-peer network with concensus, but rather an implementation of a single node that adds new blocks to the chain. It also includes a wallet implementation for signing transactions as well as an API for clients to interact with.',
+		filters: ['web3', 'api', 'node'],
+		frameworks: ['Node / Express / Koa'],
+		techStack: ['TypeScript', 'NodeJS', 'Express', 'WebSockets'],
+	},
+	{
 		title: 'Battleship (SOLID OOP)',
 		type: 'Web2 Application',
 		imgSrc: '/img/battleship.png',
