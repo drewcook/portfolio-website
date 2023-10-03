@@ -15,6 +15,22 @@ export default {
 			{ hid: 'description', name: 'description', content: '' },
 		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+		// Google GA4
+		script: [
+			{ src: 'https://www.googletagmanager.com/gtag/js?id=G-Q4KF9QTM6Q', async: true },
+			{
+				hid: 'gtag',
+				innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Q4KF9QTM6Q');
+        `,
+			},
+		],
+		__dangerouslyDisableSanitizersByTagID: {
+			gtag: ['innerHTML'],
+		},
 	},
 
 	// Global CSS: https://go.nuxtjs.dev/config-css
