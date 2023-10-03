@@ -30,25 +30,13 @@ export default {
 	buildModules: [
 		'@nuxt/http',
 		// https://go.nuxtjs.dev/eslint
-		[
-			'@nuxtjs/eslint-module',
-			{
-				fix: true,
-			},
-		],
+		['@nuxtjs/eslint-module', { fix: true }],
 		// https://go.nuxtjs.dev/stylelint
-		[
-			'@nuxtjs/stylelint-module',
-			{
-				fix: true,
-			},
-		],
+		['@nuxtjs/stylelint-module', { fix: true }],
 		// https://go.nuxtjs.dev/vuetify
 		'@nuxtjs/vuetify',
 		// https://google-fonts.nuxtjs.org/
 		'@nuxtjs/google-fonts',
-		// https://github.com/johannschopplich/nuxt-gtag
-		'nuxt-gtag',
 	],
 
 	/*
@@ -59,11 +47,7 @@ export default {
 	},
 
 	// Modules: https://go.nuxtjs.dev/config-modules
-	modules: ['nuxt-gtag'],
-
-	gtag: {
-		id: 'G-Q4KF9QTM6Q',
-	},
+	modules: [],
 
 	publicRuntimeConfig: {},
 
