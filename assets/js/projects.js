@@ -168,7 +168,7 @@ const projects = [
 		title: 'Battleship (SOLID OOP)',
 		type: 'Web2 Application',
 		imgSrc: '/img/battleship.png',
-		demoUrl: 'https://battleship.drewcook.dev',
+		demoUrl: 'https://battleship.dco.dev',
 		codeUrl: 'https://github.com/drewcook/ts-battleship',
 		description:
 			'This is the classic game of battleship. It is a full-stack web app built in TypeScript, Node, Koa, and React. It uses object-oriented programming principals for modelling and business logic and a Koa web server to initiate actions via a React client application. It uses MongoDB to keep track of high scores.',
@@ -216,7 +216,7 @@ const projects = [
 		title: 'Flick Finder',
 		type: 'Web2 Application',
 		imgSrc: '/img/flickfinder.png',
-		demoUrl: 'https://flickfinder.drewcook.dev',
+		demoUrl: 'https://flickfinder.dco.dev',
 		codeUrl: 'https://github.com/drewcook/flick-finder',
 		description:
 			"Flick Finder is a fullstack Web2 Application that allows users to search through the MovieDB.com database to for movies and actors. It is built on Next.js framework and uses Apollo Client for requests through a GraphQL server. Users are able to favorite movies as well as add them to a watchlist. The application uses JWT for user authentication, and it connects to a MongoDB database to store users' watchlists and favorited movies.",
@@ -228,7 +228,7 @@ const projects = [
 		title: 'Guitar Exchange',
 		type: 'Web2 Application',
 		imgSrc: '/img/guitar_exchange.png',
-		demoUrl: 'https://guitarxc.drewcook.dev',
+		demoUrl: 'https://guitarxc.dco.dev',
 		codeUrl: 'https://github.com/drewcook/guitar-exchange',
 		description:
 			'Gutar Exchange is built using the Nuxt.js framework. It is a Web2 Application that allows users to rent guitars in the style of AirBnb. You can rent out guitars which will then get added to your rental list.',
@@ -252,7 +252,7 @@ const projects = [
 		title: 'You Got Served',
 		type: 'Web2 Application',
 		imgSrc: '/img/yougotserved.png',
-		demoUrl: 'https://yougotserved.drewcook.dev',
+		demoUrl: 'https://yougotserved.dco.dev',
 		codeUrl: 'https://github.com/drewcook/you-got-served',
 		description:
 			'You Got Served is Web2 Application built on the Next.js framework and uses Apollo Client for requests to a GraphQL server. The application mimics a restaurant POS system, with different tables and tickets. Each ticket has a list of items to order, and each ticket can get assigned to a table. Tickets can be created or destroyed as patrons come and go to different tables.',
@@ -264,7 +264,7 @@ const projects = [
 		title: 'Dad Jokes',
 		type: 'Web2 Application',
 		imgSrc: '/img/dadjokes.png',
-		demoUrl: 'https://dadjokes.drewcook.dev',
+		demoUrl: 'https://dadjokes.dco.dev',
 		codeUrl: 'https://github.com/drewcook/nuxt-dadjokes',
 		description:
 			'DadJokes is built using the Nuxt.js framework. It connects with the Dadjokes.io API to list out jokes by category. You can search for a joke, filter by category, and view the setup and punchlines for each joke.',
