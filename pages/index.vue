@@ -19,22 +19,21 @@
 						<h3>I'm a full-stack software engineer working in Web3.</h3>
 						<p>
 							I'm focused on building permissionless web applications that interact with
-							decentralized, EVM-based blockchain networks. This means building deterministic
-							programs with smart contracts, the client web applications, and APIs that interact
-							with them.
+							decentralized blockchain networks. This means building deterministic programs with
+							smart contracts, the client web applications, and APIs that interact with them.
 						</p>
 						<p>
-							The stack I am most comfortable in is Solidity, TypeScript, Node, Go, React, Next.js,
-							Redis, MongoDB, & PostgreSQL. This entails all the things, the REST-APIs, client UIs,
-							and off-chain storage. I also use tools like Foundry, Slither, Echidna, and Tenderly
-							for smart contract development, testing, auditing, and deploying. When working with
-							zero-knowledge circuits, my experience mostly lies in Circom and snarkjs.
+							I'm currently building
+							<a href="https://alkimiya.io" target="_blank" class="content-link"> Alkimiya</a>, the
+							leading decentralized blockspace markets protocol. We are providing markets for
+							longing and shorting blockspace indices like ETH base gas fee and average BTC
+							transcation fee.
 						</p>
 						<p>
-							Currently, I'm spending my free engineering time studying the security pitfalls of
-							Solidity code, and reading over all the vulnerabilities occurring in Defi protocols as
-							well as researching about new advancements and seeing the uprise in zero-knowledge
-							use-case implementations.
+							I'm spending my free engineering time studying the security pitfalls of Solidity code,
+							and reading over all the vulnerabilities occurring in Defi protocols as well as
+							researching about new advancements and seeing the uprise in zero-knowledge use-case
+							implementations.
 						</p>
 						<v-btn color="primary" nuxt to="/portfolio">My Portfolio</v-btn>
 					</div>

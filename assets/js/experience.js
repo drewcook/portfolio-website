@@ -105,11 +105,18 @@ const experience = [
 			"I'm launching a whitelisted pre-sale, reveal-based NFT collection launch for a niche community in the jam band scene, offering digital collectables with band folklore used in the images where each token was backed by on-chain digital righted tied to the token which states what a user can do IP-based when owning the token, a first of it's kind for the time.",
 	},
 	{
-		timeframe: 'March 2023 - Present',
+		timeframe: 'March 2023 - Dec 2023',
 		title: 'Smart Contract Auditor',
 		category: 'Part-Time',
 		description:
-			"I'm working as a part-time auditor reviewing smart contract code for bugs and vulnerabilities using a variety of tools and techniques to prevent exploits by ensuring the contracts are secure prior to deployment.",
+			"I'm part-time auditing smart contract code through the Secure3 platform for bugs and vulnerabilities using a variety of tools and techniques to prevent exploits by ensuring the contracts are secure prior to deployment.",
+	},
+	{
+		timeframe: 'Jan 2024 - Present',
+		title: 'Alkimiya',
+		category: 'Full-Time',
+		description:
+			"I'm workign as a lead full-stack engineer owning the backend services for the off-chain infrastructure powering the Alkimiya Protocol as well as contribute to the smart contracts, protocol design, and frontend updates.",
 	},
 	{
 		timeframe: 'Present',

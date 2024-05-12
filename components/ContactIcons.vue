@@ -6,7 +6,7 @@
 					<v-icon>{{ githubIcon }}</v-icon>
 				</v-btn>
 			</a>
-			<a href="https://twitter.com/dcodev_" target="_blank" rel="noopener noreferrer">
+			<a href="https://twitter.com/dco_eth" target="_blank" rel="noopener noreferrer">
 				<v-btn elevation="2" fab class="hvr-grow" small>
 					<v-icon>{{ twitterIcon }}</v-icon>
 				</v-btn>
@@ -16,12 +16,12 @@
 					<v-icon>{{ linkedInIcon }}</v-icon>
 				</v-btn>
 			</a> -->
-			<a href="https://www.npmjs.com/~drewcook" target="_blank" rel="noopener noreferrer">
+			<a href="https://www.npmjs.com/org/drewcook" target="_blank" rel="noopener noreferrer">
 				<v-btn elevation="2" fab class="hvr-grow" small>
 					<v-icon large>{{ npmIcon }}</v-icon>
 				</v-btn>
 			</a>
-			<a href="https://soundcloud.com/thenotesbetween" target="_blank" rel="noopener noreferrer">
+			<a href="https://soundcloud.com/drewcookmusic" target="_blank" rel="noopener noreferrer">
 				<v-btn elevation="2" fab class="hvr-grow" small>
 					<v-icon>{{ soundcloudIcon }}</v-icon>
 				</v-btn>
