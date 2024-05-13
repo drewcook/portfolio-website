@@ -116,7 +116,7 @@ const experience = [
 		title: 'Alkimiya',
 		category: 'Full-Time',
 		description:
-			"I'm workign as a lead full-stack engineer owning the backend services for the off-chain infrastructure powering the Alkimiya Protocol as well as contribute to the smart contracts, protocol design, and frontend updates.",
+			"I'm working as a lead full-stack engineer owning the backend services for the off-chain infrastructure powering the Alkimiya Protocol as well as contributing to the smart contracts, protocol design, and frontend updates.",
 	},
 	{
 		timeframe: 'Present',
