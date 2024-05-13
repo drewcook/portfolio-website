@@ -3,7 +3,7 @@ const projects = [
 		title: 'Arbor Protocol - Music NFTs',
 		type: 'Web3 Application',
 		imgSrc: '/img/arbor.png',
-		demoUrl: 'https://arbor.audio',
+		demoUrl: 'https://arbor-ui.vercel.app',
 		codeUrl: 'https://github.com/drewcook/arbor-ui',
 		description:
 			'The Arbor Protocol is a decentralized Web3 application, centered around music NFTs, that puts ownership back into creators. Producers and musicians can upload their dusty stems onto projects, where they can collaborate with others to build a song, which can be minted as an NFT. Sale proceeds are split evenly amonsst collaborators, and secondary sales generate evergreen royalties.  It is deployed on the Ethereum layer 2 network Polygon.',

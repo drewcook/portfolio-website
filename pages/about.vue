@@ -57,11 +57,11 @@
 				</p>
 				<p>
 					I've been a co-founder of a Web3 music NFT protocol and platform,
-					<a href="https://arbor.audio/" class="content-link" target="_blank">Arbor</a>. It is a
-					collaborative music-making platform where producers and musicians can upload individual
-					stems onto a project to build a song, which users can then buy mint as an NFT on-chain
-					directly from the artists. Profits from the sale price get evenly distributed to the
-					collaborators, and secondary sales generate evergreen kickbacks through the form of
+					<a href="https://arbor-ui.vercel.app" class="content-link" target="_blank">Arbor</a>. It
+					is a collaborative music-making platform where producers and musicians can upload
+					individual stems onto a project to build a song, which users can then buy mint as an NFT
+					on-chain directly from the artists. Profits from the sale price get evenly distributed to
+					the collaborators, and secondary sales generate evergreen kickbacks through the form of
 					royalties, all while creating and fostering community. You can read more about what we
 					accomplished in the ETHDenver 2022 hackathon in
 					<a href="https://dorahacks.io/buidl/2059" class="content-link" target="_blank"
