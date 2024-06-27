@@ -23,10 +23,9 @@
 							smart contracts, the client web applications, and APIs that interact with them.
 						</p>
 						<p>
-							I'm currently building
-							<a href="https://alkimiya.io" target="_blank" class="content-link"> Alkimiya</a>, the
-							leading decentralized blockspace markets protocol. We are providing markets for
-							longing and shorting blockspace indices like ETH base gas fee and average BTC
+							My main focus is building
+							<a href="https://alkimiya.io" target="_blank" class="content-link"> Alkimiya Protocol</a> with a stellar team, the
+							leading decentralized blockspace markets protocol. We are providing financial markets around blockspace primitives, allowing users to long or short indicies, such as the ETH base gas fee and the average BTC
 							transcation fee.
 						</p>
 						<p>
