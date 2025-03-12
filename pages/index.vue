@@ -18,22 +18,17 @@
 						<div class="sm-divider" />
 						<h3>I'm a full-stack software engineer working in Web3.</h3>
 						<p>
-							I'm focused on building permissionless web applications that interact with
-							decentralized blockchain networks. This means building deterministic programs with
-							smart contracts, the client web applications, and APIs that interact with them.
+							I'm hyped on building permissionless web applications that interact with decentralized
+							blockchain networks. This means building deterministic programs with smart contracts,
+							the client web applications, and the APIs that interact with them.
 						</p>
 						<p>
-							My main focus is building
-							<a href="https://alkimiya.io" target="_blank" class="content-link"> Alkimiya Protocol</a> with a stellar team, the
-							leading decentralized blockspace markets protocol. We are providing financial markets around blockspace primitives, allowing users to long or short indicies, such as the ETH base gas fee and the average BTC
-							transcation fee.
+							I&apos;m always focused on delivering value through the means of modern technology to
+							solve real-world problems. Blockchains and crypto are one way to provide financial
+							freedom to anyone in the world, for example. Zero knowledge proofs offer a way to
+							secure individual privacy amongst the digital world. The possibilities are endless.
 						</p>
-						<p>
-							I'm spending my free engineering time studying the security pitfalls of Solidity code,
-							and reading over all the vulnerabilities occurring in Defi protocols as well as
-							researching about new advancements and seeing the uprise in zero-knowledge use-case
-							implementations.
-						</p>
+						<p>Check out some things I've built</p>
 						<v-btn color="primary" nuxt to="/portfolio">My Portfolio</v-btn>
 					</div>
 				</transition>
@@ -59,12 +54,10 @@
 					<h3>I love to collaborate.</h3>
 					<p>
 						Teamwork makes the dream work, we can all support each other to meet our goals and use
-						our collective knowledge to create something unique and innovative. We all have
-						different backgrounds and expertise, both professionally and personally, and the
-						diversity in that creates a much more unified product in the end. I'm happiest working
+						our collective knowledge to create something unique and innovative. I'm happiest working
 						with others that are passionate about what they do and want to make a positive change
-						with technology and are driven to make that happen as much as I am. I feed off that
-						energy and give it back in return.
+						with technology and are driven to make that happen. I thrive off thatenergy and give it
+						back in return.
 					</p>
 					<v-btn color="secondary" nuxt to="/experience">My Contributions</v-btn>
 				</div>
@@ -82,7 +75,7 @@
 						that can be applied in compounding ways. I truly enjoy the process of researching into a
 						new area of study and exploring it, practicing it, seeing where it takes me and how it
 						melds in with other areas of study. All of the great minds of our time had an emphasis
-						of continued learning, so there must be good reason to believe it, right?
+						of continued learning, nbd.
 					</p>
 					<v-btn color="info" nuxt to="/skills">My Skillset</v-btn>
 				</div>
@@ -96,10 +89,10 @@
 					<div class="sm-divider" />
 					<h3>I love to create.</h3>
 					<p>
-						In short, I'm a creator and builder, both parts art and engineering. I enjoy the process
-						of making an idea come to life. All you need is to start with a seed, and that through
-						consistent nurture and dedication to an end-goal in mind, it can become something great
-						that can last the test of time, rooted in fertile soil.
+						In short, I&apos;m a creator and builder, both parts art and engineering. I enjoy the
+						process of making an idea come to life. All you need is to start with a seed, and that
+						through consistent nurturing and dedication to an end-goal in mind, it can become
+						something great that can last the test of time.
 					</p>
 					<v-btn color="primary" nuxt to="/about">Read More</v-btn>
 				</div>

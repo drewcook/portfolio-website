@@ -112,7 +112,7 @@ const experience = [
 			"I'm part-time auditing smart contract code through the Secure3 platform for bugs and vulnerabilities using a variety of tools and techniques to prevent exploits by ensuring the contracts are secure prior to deployment.",
 	},
 	{
-		timeframe: 'Jan 2024 - Present',
+		timeframe: 'Jan 2024 - Jan 2025',
 		title: 'Alkimiya',
 		category: 'Full-Time',
 		description:
@@ -122,7 +122,7 @@ const experience = [
 		timeframe: 'Present',
 		title: 'Forever A Student',
 		category: 'Be In The Now',
-		description: 'WAGMI energy still runs high with me, regardless what Crypto Twitter has to say.',
+		description: 'WAGMI energy still runs high with me, regardless what CT has to say.',
 	},
 ]
 
