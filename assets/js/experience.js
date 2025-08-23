@@ -77,7 +77,7 @@ const experience = [
 			'I work as web-based software engineer in support of the Core Designs System team, providing technical consulting for the team and building out the design system documentation site in VuePress with Vue 3.',
 	},
 	{
-		timeframe: 'Feb 2022 - Present',
+		timeframe: 'Feb 2022 - Dec 2022',
 		title: 'Arbor Labs',
 		category: 'Part-Time',
 		description:
@@ -92,14 +92,14 @@ const experience = [
 	},
 	{
 		timeframe: 'Jul 2022 - Feb 2023',
-		title: 'Aave',
+		title: 'Aave Companies',
 		category: 'Full-Time',
 		description:
 			"I'm operating as a full-stack engineer working with blockchain technologies in Web3. We're building bleeding edge products and shaping the future of the internet and how we use it moving forward.",
 	},
 	{
 		timeframe: 'July 2022 - Nov 2022',
-		title: 'Phanft',
+		title: 'PhaNFT',
 		category: 'Part-Time',
 		description:
 			"I'm launching a whitelisted pre-sale, reveal-based NFT collection launch for a niche community in the jam band scene, offering digital collectables with band folklore used in the images where each token was backed by on-chain digital righted tied to the token which states what a user can do IP-based when owning the token, a first of it's kind for the time.",
@@ -117,6 +117,20 @@ const experience = [
 		category: 'Full-Time',
 		description:
 			"I'm working as a lead full-stack engineer owning the backend services for the off-chain infrastructure powering the Alkimiya Protocol as well as contributing to the smart contracts, protocol design, and frontend updates.",
+	},
+	{
+		timeframe: 'Dec 2024 - Present',
+		title: 'Hypotenuse Labs',
+		category: 'Part-Time',
+		description:
+			"I'm consulting within a boutique software development firm specializing in blockchain and web3 technologies, helping clients by deconstructing their product idea into an engineering scope, executing on client projects under contract, and interviewing candidates into the firm, all on a part-time basis.",
+	},
+	{
+		timeframe: 'May 2025 - Present',
+		title: 'Noble Assets',
+		category: 'Full-Time',
+		description:
+			"I join the defacto digital asset issuance appchain in the Cosmos ecosystem as a frontend engineer. I'm working on the UIs for a handful of product offerings while improving overall DX for the team and introducing a reusable React component library based off Tailwind CSS.",
 	},
 	{
 		timeframe: 'Present',
