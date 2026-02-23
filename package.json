@@ -15,7 +15,7 @@
     "fix:formatting": "npx prettier --config ./prettier.config.js **/*.* --write"
   },
   "engines": {
-    "node": ">=16",
+    "node": ">=20",
     "npm": ">=6"
   },
   "dependencies": {
