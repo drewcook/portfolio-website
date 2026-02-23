@@ -119,7 +119,7 @@ const experience = [
 			"I'm working as a lead full-stack engineer owning the backend services for the off-chain infrastructure powering the Alkimiya Protocol as well as contributing to the smart contracts, protocol design, and frontend updates.",
 	},
 	{
-		timeframe: 'Dec 2024 - Present',
+		timeframe: 'Dec 2024 - Aug 2025',
 		title: 'Hypotenuse Labs',
 		category: 'Part-Time',
 		description:
